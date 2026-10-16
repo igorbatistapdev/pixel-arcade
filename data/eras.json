@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pioneiros",
+    "label": "Pioneiros",
+    "range": "1958–1971",
+    "description": "Experimentos eletrônicos e jogos em computadores."
+  },
+  {
+    "id": "arcade",
+    "label": "Arcade e consoles",
+    "range": "1972–1982",
+    "description": "Arcades e sistemas domésticos ganham visibilidade."
+  },
+  {
+    "id": "8bit",
+    "label": "8-bit e portáteis",
+    "range": "1983–1989",
+    "description": "Consoles de 8 bits e jogos portáteis intercambiáveis."
+  },
+  {
+    "id": "16bit",
+    "label": "16-bit",
+    "range": "1990–1993",
+    "description": "Geração de consoles de 16 bits; mais marcos serão documentados."
+  },
+  {
+    "id": "3d",
+    "label": "3D e CD-ROM",
+    "range": "1994–1999",
+    "description": "Consoles com ênfase em gráficos 3D e mídia óptica."
+  },
+  {
+    "id": "moderna",
+    "label": "Era moderna",
+    "range": "2000–hoje",
+    "description": "Consoles, serviços e formas de jogar posteriores; expansão futura."
+  }
+]

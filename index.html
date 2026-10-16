@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071126">
+  <meta name="description" content="PIXEL — um museu interativo sobre a história dos videogames. Explore eras, consoles e revoluções tecnológicas.">
+  <title>PIXEL — Museu Interativo dos Videogames</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="./assets/logo.svg">
+  <link rel="stylesheet" href="./css/main.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="PIXEL, início">
+      <img class="brand-mark" src="./assets/logo.svg" alt="" width="42" height="39" aria-hidden="true">
+      <span class="brand-word">PIXEL<span class="brand-period">.</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Abrir menu</span><span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Navegação principal">
+      <a href="#/">Início</a>
+      <a href="#/sala/linha-do-tempo">Linha do tempo</a>
+      <a href="#/sala/consoles">Consoles</a>
+      <a href="#/sala/evolucao-grafica">Evolução gráfica</a>
+      <a class="nav-cta" href="#/sala/quiz">Quiz histórico <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="conteudo" tabindex="-1">
+    <div id="app-view" aria-live="polite">
+      <p class="loading-message section-shell">Carregando o museu…</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <a class="footer-brand" href="#/">PIXEL<span>.</span></a>
+    <p>Um museu digital sobre a história dos videogames.</p>
+    <a href="#/" class="back-top">Voltar ao início ↑</a>
+    <small>Projeto educacional independente · Conteúdo histórico com referências</small>
+  </footer>
+</body>
+</html>

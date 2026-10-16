@@ -1,0 +1,158 @@
+[
+  {
+    "id": "tennis-for-two",
+    "year": 1958,
+    "yearLabel": "1958",
+    "era": "pioneiros",
+    "category": "Experimento eletrônico",
+    "title": "Tennis for Two é apresentado",
+    "summary": "Um jogo de tênis eletrônico foi criado para ser jogado em um osciloscópio durante um evento de visitação em laboratório.",
+    "context": "O Computer History Museum descreve o projeto de William Higinbotham, desenvolvido com David Potter usando um computador analógico Donner Model 30 e um osciloscópio. É um marco importante dos experimentos que antecederam a indústria comercial dos videogames.",
+    "dateStatus": "Ano documentado",
+    "dateNote": "1958 é o ano indicado pelo Computer History Museum para a apresentação do experimento. Não significa lançamento comercial de um console.",
+    "sources": [
+      {
+        "name": "Computer History Museum — Graphics & Games timeline",
+        "url": "https://www.computerhistory.org/timeline/graphics-games/"
+      }
+    ]
+  },
+  {
+    "id": "spacewar",
+    "year": 1962,
+    "yearLabel": "1962",
+    "era": "pioneiros",
+    "category": "Jogo em computador",
+    "title": "Spacewar! aparece no MIT",
+    "summary": "O jogo de combate espacial foi desenvolvido para o computador PDP-1 e circulou em ambientes técnicos e universitários.",
+    "context": "O Computer History Museum registra a estreia de Spacewar! em 1962 e descreve sua distribuição posterior por meio da comunidade de usuários da DEC. O projeto é relevante para a história dos jogos em computadores, antes dos consoles domésticos de grande alcance.",
+    "dateStatus": "Ano documentado",
+    "dateNote": "O ano refere-se ao marco de estreia indicado pelo museu; versões e demonstrações podem ter datas específicas diferentes.",
+    "sources": [
+      {
+        "name": "Computer History Museum — Graphics & Games timeline",
+        "url": "https://www.computerhistory.org/timeline/graphics-games/"
+      }
+    ]
+  },
+  {
+    "id": "pong",
+    "year": 1972,
+    "yearLabel": "1972",
+    "era": "arcade",
+    "category": "Arcade",
+    "title": "Pong ganha destaque",
+    "summary": "A versão de tênis de mesa eletrônico associada à Atari torna-se um marco comercial dos jogos de arcade.",
+    "context": "O Computer History Museum relata que Nolan Bushnell pediu a Al Alcorn que desenvolvesse um jogo de tênis de mesa simplificado; testes iniciais foram muito populares e ajudaram a impulsionar a indústria moderna de arcade.",
+    "dateStatus": "Ano documentado",
+    "dateNote": "A ficha usa 1972 como ano do lançamento de Pong descrito pelo Computer History Museum. Não representa o primeiro jogo eletrônico da história.",
+    "sources": [
+      {
+        "name": "Computer History Museum — Graphics & Games timeline",
+        "url": "https://www.computerhistory.org/timeline/graphics-games/"
+      }
+    ]
+  },
+  {
+    "id": "atari-vcs",
+    "year": 1977,
+    "yearLabel": "1977",
+    "era": "arcade",
+    "category": "Console doméstico",
+    "title": "Atari lança o Video Computer System",
+    "summary": "O sistema doméstico conhecido posteriormente como Atari 2600 leva jogos baseados em cartuchos a uma ampla audiência.",
+    "context": "O Computer History Museum registra o lançamento do Atari Video Computer System em 1977 e observa que o nome Atari 2600 passou a ser usado posteriormente. O console ajudou a consolidar o mercado de videogames domésticos.",
+    "dateStatus": "Ano documentado",
+    "dateNote": "1977 é o ano do lançamento inicial nos Estados Unidos indicado pela fonte; disponibilidade em outros mercados pode variar.",
+    "sources": [
+      {
+        "name": "Computer History Museum — Graphics & Games timeline",
+        "url": "https://www.computerhistory.org/timeline/graphics-games/"
+      }
+    ]
+  },
+  {
+    "id": "famicom",
+    "year": 1983,
+    "yearLabel": "1983 · Japão",
+    "era": "8bit",
+    "category": "Console doméstico",
+    "title": "Nintendo lança o Family Computer",
+    "summary": "O Family Computer (Famicom) chega ao mercado japonês, tornando-se uma plataforma importante para a Nintendo.",
+    "context": "A história corporativa da Nintendo registra o lançamento do Family Computer em 1983. O nome e o calendário de lançamento internacional não devem ser confundidos com o lançamento japonês.",
+    "dateStatus": "Lançamento regional",
+    "dateNote": "1983 refere-se ao Japão. A versão norte-americana NES foi lançada em 1985, conforme o histórico corporativo da Nintendo.",
+    "sources": [
+      {
+        "name": "Nintendo — História corporativa (PDF)",
+        "url": "https://www.nintendo.co.jp/kessan/annual0503e.pdf"
+      },
+      {
+        "name": "Nintendo — História da Nintendo",
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html"
+      }
+    ]
+  },
+  {
+    "id": "game-boy",
+    "year": 1989,
+    "yearLabel": "1989",
+    "era": "8bit",
+    "category": "Console portátil",
+    "title": "Game Boy chega ao mercado",
+    "summary": "A Nintendo lança o Game Boy, sistema portátil com cartuchos intercambiáveis.",
+    "context": "A Nintendo registra o lançamento do Game Boy em 1989. A chegada a cada mercado ocorreu em datas próprias, por isso a ficha usa o ano de estreia informado pela fonte, sem sugerir lançamento mundial simultâneo.",
+    "dateStatus": "Ano documentado",
+    "dateNote": "1989 é o ano de lançamento citado no histórico corporativo da Nintendo; datas regionais específicas devem ser verificadas separadamente antes de detalhar cada mercado.",
+    "sources": [
+      {
+        "name": "Nintendo — História corporativa (PDF)",
+        "url": "https://www.nintendo.co.jp/kessan/annual0503e.pdf"
+      },
+      {
+        "name": "Nintendo — História da Nintendo",
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html"
+      }
+    ]
+  },
+  {
+    "id": "playstation-japan",
+    "year": 1994,
+    "yearLabel": "3 dez. 1994 · Japão",
+    "era": "3d",
+    "category": "Console doméstico",
+    "title": "PlayStation estreia no Japão",
+    "summary": "O primeiro PlayStation é lançado no Japão e ajuda a popularizar experiências 3D em consoles domésticos.",
+    "context": "A cronologia oficial da PlayStation informa o lançamento japonês em 3 de dezembro de 1994. A mesma página distingue os lançamentos na América do Norte e na Europa, ambos em 1995.",
+    "dateStatus": "Data regional precisa",
+    "dateNote": "3 de dezembro de 1994 refere-se ao Japão. América do Norte: 9 de setembro de 1995; Europa: 29 de setembro de 1995, segundo a cronologia oficial consultada.",
+    "sources": [
+      {
+        "name": "PlayStation — História de 1994 (Brasil)",
+        "url": "https://www.playstation.com/pt-br/playstation-history/1994-ps-one/"
+      },
+      {
+        "name": "Sony — História corporativa",
+        "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/company/"
+      }
+    ]
+  },
+  {
+    "id": "nintendo-64",
+    "year": 1996,
+    "yearLabel": "1996 · Japão",
+    "era": "3d",
+    "category": "Console doméstico",
+    "title": "Nintendo 64 é lançado",
+    "summary": "O Nintendo 64 chega ao mercado japonês e passa a integrar a geração de consoles com foco em gráficos 3D.",
+    "context": "O histórico corporativo da Nintendo lista o lançamento do Nintendo 64 em 1996. Esta entrada é mantida em nível anual; detalhes por região e especificações serão aprofundados na ficha do console.",
+    "dateStatus": "Ano documentado",
+    "dateNote": "A página histórica corporativa indica 1996, mas esta entrada não pretende representar uma data mundial única. Datas regionais exatas serão incluídas após conferência específica.",
+    "sources": [
+      {
+        "name": "Nintendo — História corporativa",
+        "url": "https://www.nintendo.co.jp/corporate/history/index.html"
+      }
+    ]
+  }
+]

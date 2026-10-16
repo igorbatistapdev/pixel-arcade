@@ -1,0 +1,104 @@
+[
+  {
+    "number": "ROOM 01",
+    "slug": "linha-do-tempo",
+    "icon": "◷",
+    "title": "Linha do tempo",
+    "description": "Viaje pelas eras e descubra marcos documentados que mudaram a história dos videogames.",
+    "action": "Explorar eras",
+    "content": {
+      "heading": "Uma história em construção, com fontes à vista.",
+      "text": "A linha do tempo reúne marcos selecionados e explica a diferença entre protótipos experimentais, jogos de arcade e consoles domésticos.",
+      "bullets": [
+        "Filtre os eventos por era.",
+        "Abra os registros para consultar contexto e fontes.",
+        "Observe notas sobre datas e regiões de lançamento."
+      ]
+    }
+  },
+  {
+    "number": "ROOM 02",
+    "slug": "consoles",
+    "icon": "▣",
+    "title": "Galeria de consoles",
+    "description": "Conheça dez máquinas marcantes, com datas por região, características técnicas, contexto e referências verificáveis.",
+    "action": "Ver a coleção",
+    "content": {
+      "heading": "De cartuchos e sprites a sistemas híbridos.",
+      "text": "A galeria reúne dez consoles com fichas individuais, contexto histórico, datas regionais, características técnicas e fontes consultáveis.",
+      "bullets": [
+        "Pesquise por nome, fabricante ou geração.",
+        "Abra cada ficha para consultar datas regionais e especificações.",
+        "Silhuetas originais em CSS evitam o uso de imagens sem licença confirmada."
+      ]
+    }
+  },
+  {
+    "number": "ROOM 03",
+    "slug": "evolucao-grafica",
+    "icon": "◈",
+    "title": "Evolução gráfica",
+    "description": "Compare estilos visuais e entenda a evolução de pixels, cores, resolução e 3D.",
+    "action": "Ver a evolução",
+    "content": {
+      "heading": "A imagem também conta a história da tecnologia.",
+      "text": "Esta sala vai comparar exemplos visuais com direitos de uso verificados e explicar limites técnicos de cada período sem reduzir a evolução a uma simples corrida por mais pixels.",
+      "bullets": [
+        "Paletas e limitações de cor.",
+        "Sprites, tiles e resolução.",
+        "Polígonos 3D e técnicas posteriores."
+      ]
+    }
+  },
+  {
+    "number": "ROOM 04",
+    "slug": "mundos-dos-jogos",
+    "icon": "▶",
+    "title": "PIXEL ARCADE",
+    "description": "Entre na Sala 004 e experimente três jogos com fases, recordes locais e controles para computador e celular.",
+    "action": "Jogar agora",
+    "content": {
+      "heading": "Três jogos. Nove fases. Uma sala para jogar.",
+      "text": "Escolha uma experiência de plataforma ou corrida arcade, avance por três fases e acompanhe seu recorde salvo localmente no navegador.",
+      "bullets": [
+        "Sonic: protótipo não oficial de mecânicas, sem assets oficiais e com publicação condicionada à verificação de permissões.",
+        "Pixel Quest: aventura autoral de plataforma.",
+        "Turbo Pixel: corrida retrô contra o tempo."
+      ]
+    }
+  },
+  {
+    "number": "ROOM 05",
+    "slug": "quiz",
+    "icon": "✦",
+    "title": "Quiz histórico",
+    "description": "Teste seus conhecimentos e receba explicações sobre as respostas.",
+    "action": "Preparar desafio",
+    "content": {
+      "heading": "Conhecimento, contexto e explicação.",
+      "text": "O quiz interativo será montado a partir dos registros históricos do museu. Cada resposta terá explicação e referência para que o visitante possa continuar pesquisando.",
+      "bullets": [
+        "Perguntas de múltipla escolha.",
+        "Feedback explicativo.",
+        "Pontuação e opção de tentar novamente."
+      ]
+    }
+  },
+  {
+    "number": "ROOM 06",
+    "slug": "pixel-quest",
+    "icon": "▶",
+    "title": "Pixel Quest",
+    "description": "Uma aventura original em estilo 16-bit está em desenvolvimento para o museu.",
+    "action": "Ver o projeto",
+    "content": {
+      "heading": "Uma aventura original em desenvolvimento.",
+      "text": "O jogo terá personagem original, cenário tropical, anéis com design próprio, obstáculos mecânicos e uma fase completa. Não utilizará sprites, música ou personagens de franquias existentes.",
+      "bullets": [
+        "Teclado e controles de toque.",
+        "HUD com pontuação, tempo e três vidas.",
+        "Efeitos sonoros próprios e opção de silenciar."
+      ]
+    }
+  }
+]
