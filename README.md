@@ -1,326 +1,593 @@
-# PIXEL — Museu Interativo dos Videogames
 
-<<<<<<< HEAD
-## Atualização — Identidade visual 01 + exposições interativas (2026)
+<div align="center">
 
-Esta versão preserva a estrutura completa do projeto e integra as decisões visuais mais recentes:
+  <img src="assets/pixel-logo-full.svg" alt="PIXEL — Museu Digital dos Videogames" width="420" />
 
-- **Logo 01 escolhida:** símbolo amarelo em pixel art e tipografia vetorial PIXEL em branco, com detalhes em azul/ciano e rosa. O cabeçalho, o rodapé e o favicon utilizam arquivos SVG locais (`assets/pixel-logo-full.svg`, `assets/logo.svg`).
-- **Paleta revisada:** fundo azul-marinho, azul elétrico, ciano, amarelo e pequenos acentos rosa. Estilos complementares em `css/pixel-brand-2026.css`.
-- **Home — Sinta a arte dos games:** a antiga prévia cronológica foi convertida em uma galeria de sensações (Descoberta, Desafio, Velocidade e Memória), com imagens de jogos que já estavam no projeto, seleção de cenas, navegação por setas e apresentação responsiva. As salas originais permanecem.
-- **Sala 003:** novo comparador deslizante com imagens do Sonic (1991 e 2022 por padrão) e quatro pares adicionais de materiais de jogos existentes. Há seleção por miniaturas e controle por mouse, toque ou teclado. O conteúdo histórico anterior, incluindo estudo de caso, linha do tempo e fontes, não foi apagado.
-- **Sala 006:** nova estação extra **Objetos que contam histórias**, acrescentada **depois** do experimento de desempenho, sem substituí-lo. Inclui uma ilustração original de controle retrô e dez sprites originais de itens de videogame; setas, miniaturas e efeitos de seleção. As imagens são **ilustrações originais**, não fotografias de peças nem modelos 3D reais.
-- **Sobre o PIXEL:** seção ampliada sobre arte, memória afetiva, cultura, tecnologia, educação e relações com o tema da Atividade Integradora VI — Sensibilidade e Estética.
-- **Acesso ao console:** o botão “Explorar o console” passa a rolar para a estação de inspeção sem modificar o hash da rota; a Sala 003 usa a mesma estratégia para sua galeria comparativa.
+  # PIXEL - Museu Interativo dos Videogames
 
-### Execução
+  ### Mais que jogos. Memórias que nos conectam.
 
-Dentro de `pixel/`, rode `py -m http.server 8000` no Windows ou `python -m http.server 8000`, depois abra `http://localhost:8000`.
+  Uma experiência digital para **explorar a história dos videogames**, compreender sua evolução e descobrir como a arte, a tecnologia e a memória afetiva transformam a maneira como sentimos e nos relacionamos com os jogos.
 
-### Testes e limitações
+  [![GitHub](https://img.shields.io/badge/GitHub-PIXEL_ARCADE-0B1E3A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/igorbatistapdev/pixel-arcade)
+  ![Projeto Acadêmico](https://img.shields.io/badge/Projeto-Acad%C3%AAmico-FFD200?style=for-the-badge&labelColor=0B1E3A)
+  ![Acesso Gratuito](https://img.shields.io/badge/Acesso-Gratuito-00C2FF?style=for-the-badge&labelColor=0B1E3A)
 
-Foram verificadas sintaxe dos arquivos JavaScript e CSS, integridade do ZIP, disponibilidade local das imagens renderizadas e preservação dos arquivos de jogos. **Não foi possível executar o teste visual completo no navegador deste ambiente por bloqueio de navegação**, então valide em um navegador real antes de publicar. O comparador usa materiais promocionais e capturas do acervo local, que **não são necessariamente idênticos às imagens conceituais dos mockups**. O uso de imagens de jogos não concede licença de redistribuição: confira os direitos correspondentes antes de deixar o repositório público.
+  <br>
 
----
+  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+  ![JSON](https://img.shields.io/badge/JSON-Dados-405D72?style=flat-square)
+  ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Publicação-222222?style=flat-square&logo=githubpages&logoColor=white)
 
-## Versão atual — Home animada e Sala 005 (quiz completo)
-
-**Projeto estático, pronto para GitHub Pages**, feito com HTML, CSS, JavaScript modular e dados JSON; sem React, servidor de aplicação ou banco de dados.
-
-### Como executar
-
-Abra o terminal **dentro da pasta `pixel/`** e execute `py -m http.server 8000` (Windows) ou `python -m http.server 8000`. Acesse `http://localhost:8000`. **Não abra `index.html` pelo explorador (`file://`)**: o carregamento de módulos e JSON precisa de HTTP. Para publicar no GitHub Pages, mantenha todo o conteúdo de `pixel/` na pasta publicada pelo Pages e use a página `index.html` como entrada.
-
-### Atualizações implementadas
-
-- **Home:** painel principal animado, mantendo a imagem `assets/metal-slug.jpg`; ambientação arcade, partículas, chips, brilho, movimentos suaves e opção de reduzir animações nas preferências do sistema.
-- **Cartões das seis salas:** novas ilustrações originais em SVG (`assets/home-room-*.svg`), entrada por rolagem, zoom suave, reflexos, foco por teclado e layouts responsivos.
-- **Como os jogos evoluíram:** quatro períodos apresentados com ilustrações vetoriais originais, linha do tempo em cores, detalhes textuais, botões anterior/próximo e controle por etapas (incluindo no celular).
-- **Sobre e rodapé:** painel visual revisado e links internos funcionais.
-- **Sala 005:** 24 questões no banco `data/quiz.json`, organizadas por dificuldade (8 fáceis, 8 médias e 8 avançadas); modo Jornada Histórica (18 perguntas) e Desafio Rápido (10 perguntas); seleção embaralhada; indicação de tema, fonte histórica e explicação por resposta; pontuação, combo, tela de resultados, revisão de erros e conquistas; recorde armazenado localmente quando o navegador permitir; cronômetro por pergunta, que pode ser desativado. Atalhos `1` a `4` para respostas e `Enter` para avançar.
-- **Preservação:** as salas 001, 002 e 003, a Sala 004 com seus arquivos de jogos e a imagem exata do gabinete `assets/arcade-cabinet-exato.png` permanecem no pacote.
-
-### Arquivos adicionados ou atualizados
-
-- `js/views.js` — home, cartões, períodos e interações.
-- `js/quiz.js` — estados, temporizador, correção, progresso e resultados do quiz.
-- `js/app.js` — roteamento da Sala 005, dados do quiz e carregamento da home.
-- `data/quiz.json` — perguntas com explicações e links de referência.
-- `css/home-v5.css` e `css/quiz.css` — visual animado, responsividade, legibilidade e movimento reduzido.
-- `assets/home-room-*.svg` / `assets/home-era-*.svg` — ilustrações próprias do projeto.
-
-### Notas técnicas e editoriais
-
-O site não coleta nem envia respostas do quiz para servidores. Recordes e conquistas usam armazenamento local do navegador quando disponível. O conteúdo das questões foi elaborado a partir de marcos e fontes já citados na linha do tempo e nas fichas do museu; ao atualizar essas referências, revise também o banco de questões.
-
-As novas ilustrações vetoriais são originais. **A imagem de Metal Slug e outros materiais de franquias que já existiam no projeto foram preservados a pedido do responsável pelo projeto**; a inclusão no ZIP não concede licença de redistribuição nem autorização de uso de marcas ou imagens de terceiros. Revise os direitos de utilização antes de publicar o repositório publicamente.
-
-### Compatibilidade e verificações
-
-Foram feitos testes automatizados de navegação, carregamento de imagens, perguntas, feedback, conclusão do modo Jornada, troca de etapas e ausência de rolagem horizontal em larguras entre 320 e 1920 pixels. Recomenda-se revisar em dispositivos reais e conferir eventuais restrições de licenciamento antes da publicação.
+</div>
 
 ---
 
-## Registro técnico das etapas anteriores
+<div align="center">
 
-=======
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
-## Etapa 2 — Navegação por salas e linha do tempo interativa
+**APRENDA · EXPLORE · JOGUE · SINTA**
 
-Projeto estático com HTML, CSS, JavaScript modular e JSON. Não usa React.
+## 🎮 Um museu que você não apenas visita. Você vive.
 
-### Executar localmente
-Na pasta do projeto, execute:
+</div>
+
+O **PIXEL** é um museu digital interativo dedicado à história e à cultura dos videogames. A proposta é transformar conteúdos históricos e tecnológicos em uma experiência **visual, acessível e participativa**, combinando exposições, comparações gráficas, jogos, desafios e experimentos sobre o funcionamento dos consoles.
+
+Mas existe uma pergunta que acompanha toda a experiência:
+
+> **Por que certos jogos continuam vivos na nossa memória, mesmo depois que desligamos o console?**
+
+A resposta envolve mais que processadores ou resolução de tela. Envolve **arte, trilhas sonoras, personagens, descobertas, desafios, amizade, imaginação e sentimentos**.
+
+O PIXEL parte desse encontro entre técnica e sensibilidade para mostrar que os videogames também são expressão cultural.
+
+### ✨ O projeto em números
+
+| 🏛️ 6 salas temáticas | 🕹️ 4 experiências no arcade | 🎓 24 questões no quiz | 🎨 8 artes no carrossel |
+|:---:|:---:|:---:|:---:|
+| História e experimentação | Jogos integrados ao museu | Aprendizado com explicações | Imagens e animações na home |
+
+O acervo de consoles é alimentado pelo arquivo `data/consoles.json`, com **39 registros**.
+
+---
+
+# 📚 Contexto acadêmico
+
+| Informação | Descrição |
+|---|---|
+| **Instituição** | Unilasalle-RJ — Rio de Janeiro |
+| **Curso** | Sistemas de Informação |
+| **Responsável pelo repositório** | Igor Batista Pereira |
+| **Componente curricular** | Atividade Integradora VI |
+| **Eixo temático** | Sensibilidade e Estética |
+| **Natureza** | Projeto acadêmico e educacional |
+| **Finalidade** | Sem fins comerciais |
+| **Formato** | Museu virtual interativo, acessível pelo navegador |
+
+## 🎓 Por que videogames em Sensibilidade e Estética?
+
+A estética não está restrita à pintura, à escultura ou ao cinema. Ela também se manifesta nas **cores, formas, sons, movimentos, interfaces e narrativas** que compõem um jogo digital.
+
+Um videogame pode ser observado tanto como **produto de uma evolução tecnológica** quanto como **obra de expressão artística**.
+
+A limitação de pixels nos primeiros consoles, por exemplo, influenciou decisões criativas de artistas e desenvolvedores. Com o avanço do hardware, surgiram novas possibilidades de composição, ambientação, iluminação, som e interatividade.
+
+No contexto da **Atividade Integradora VI — Sensibilidade e Estética**, o PIXEL propõe conectar diferentes dimensões:
+
+| Dimensão | Relação com o projeto |
+|---|---|
+| ❤️ **Sensibilidade** | Emoções, percepções e experiências despertadas pelos videogames |
+| 🎨 **Estética** | Linguagens visuais, sonoras e narrativas dos jogos |
+| 💭 **Memória afetiva** | Lembranças pessoais e coletivas associadas aos games |
+| 🤝 **Cultura e convivência** | Relações sociais construídas dentro e fora das partidas |
+| 💻 **Tecnologia** | Evolução dos consoles, do hardware e dos recursos computacionais |
+| 📖 **Educação** | Aprendizagem por meio de exploração e experimentação |
+
+> **Propósito acadêmico:** demonstrar, por meio de uma aplicação web, como a Computação pode contribuir para a divulgação cultural e para a construção de experiências educativas que valorizam a arte e a sensibilidade humana.
+
+## 🎯 Objetivos do projeto
+
+### Objetivo geral
+
+Desenvolver um ambiente digital educativo e interativo que apresente a trajetória dos videogames e relacione sua evolução tecnológica à estética, à cultura e à memória afetiva.
+
+### Objetivos específicos
+
+1. Organizar marcos históricos de forma compreensível e acompanhada de referências.
+2. Apresentar diferentes gerações de consoles e suas características.
+3. Evidenciar mudanças na linguagem visual dos jogos por meio de comparações.
+4. Promover aprendizagem ativa com jogos, desafios e atividades interativas.
+5. Explicar conceitos de hardware de maneira visual e experimental.
+6. Valorizar a dimensão artística e social dos videogames.
+7. Oferecer uma experiência responsiva, sem exigir cadastro ou instalação.
+
+---
+
+# 🎨 Identidade visual — do pixel à emoção
+
+A linguagem visual do PIXEL combina a atmosfera nostálgica dos fliperamas com uma interface digital contemporânea.
+
+| Elemento | Identidade | Intenção |
+|---|---|---|
+| **Azul-petróleo profundo** | `#0B1E3A` | Criar profundidade e ambientação imersiva |
+| **Ciano luminoso** | `#00C2FF` | Representar energia, tecnologia e movimento |
+| **Amarelo arcade** | `#FFD200` | Destacar interações e referências retrô |
+| **Pixel art e neon** | Geometria, luzes e animações | Remeter às origens dos jogos eletrônicos |
+| **Galeria afetiva** | Composições coloridas | Valorizar imaginação, lembranças e emoção |
+
+## 🖼️ Uma capa viva
+
+Na página inicial, um **painel inspirado em um monitor de arcade** exibe automaticamente oito imagens de universos marcantes dos videogames.
+
+O carrossel oferece:
+
+- Reprodução automática;
+- Transições suaves;
+- Controles manuais;
+- Brilhos e iluminação em neon;
+- Raios e efeitos elétricos estilizados;
+- Adaptação a diferentes tamanhos de tela.
+
+<div align="center">
+
+| | | | |
+|:---:|:---:|:---:|:---:|
+| <img src="assets/capa-mario.webp" width="170" alt="Mario"> | <img src="assets/capa-sonic.webp" width="170" alt="Sonic"> | <img src="assets/capa-street-fighter.webp" width="170" alt="Street Fighter"> | <img src="assets/capa-metal-slug.webp" width="170" alt="Metal Slug"> |
+| **Mario** | **Sonic** | **Street Fighter** | **Metal Slug** |
+| <img src="assets/capa-mortal-kombat.webp" width="170" alt="Mortal Kombat"> | <img src="assets/capa-star-wars.webp" width="170" alt="Star Wars"> | <img src="assets/capa-crash.webp" width="170" alt="Crash"> | <img src="assets/capa-mega-man.webp" width="170" alt="Mega Man"> |
+| **Mortal Kombat** | **Star Wars** | **Crash** | **Mega Man X** |
+
+</div>
+
+## 💛 Sinta a arte dos games
+
+Uma das propostas centrais do projeto é demonstrar que os videogames podem despertar diferentes sensações.
+
+| ✨ Descoberta | ⚔️ Desafio | ⚡ Velocidade | 💛 Memória |
+|:---:|:---:|:---:|:---:|
+| Imaginar novos mundos | Persistir e superar obstáculos | Sentir ritmo e movimento | Recordar histórias e pessoas |
+
+Essa área apresenta experiências visuais e referências a jogos conhecidos para convidar o visitante a refletir sobre como a arte digital influencia suas emoções.
+
+---
+
+# 🏛️ Explore as seis salas do museu
+
+Cada sala oferece uma maneira diferente de conhecer os videogames: **observar, comparar, jogar, responder e experimentar**.
+
+## 01 · Linha do Tempo — Uma história que continua
+
+<img src="assets/home-room-01.svg" alt="Sala 01 — Linha do tempo" width="640">
+
+Uma viagem por marcos históricos, dos experimentos que antecederam os consoles aos sistemas que ampliaram a presença dos games no cotidiano.
+
+### O que o visitante encontra?
+
+- Linha do tempo interativa;
+- Períodos importantes da história dos videogames;
+- Datas e acontecimentos históricos;
+- Filtros de navegação;
+- Explicações e curiosidades;
+- Referências para aprofundamento;
+- Contextualização da evolução tecnológica.
+
+A exposição procura distinguir experimentos, demonstrações, lançamentos comerciais e particularidades regionais quando aplicável.
+
+**Rota:** `#/sala/linha-do-tempo`
+
+---
+
+## 02 · Galeria de Consoles — Máquinas que fizeram história
+
+<img src="assets/home-room-02.svg" alt="Sala 02 — Galeria de consoles" width="640">
+
+Um acervo pesquisável dedicado às plataformas que marcaram diferentes gerações.
+
+### Funcionalidades
+
+- Pesquisa de consoles;
+- Fichas informativas;
+- Fabricantes e anos de lançamento;
+- Gerações de videogames;
+- Características técnicas;
+- Jogos representativos;
+- Curiosidades históricas;
+- Fontes e referências.
+
+A base atual reúne **39 registros**, incluindo informações regionais quando documentadas.
+
+**Rota:** `#/sala/consoles`
+
+---
+
+## 03 · Evolução Gráfica — Quando a imagem conta histórias
+
+<img src="assets/home-room-03.svg" alt="Sala 03 — Evolução gráfica" width="640">
+
+Uma exposição sobre como limitações e avanços técnicos influenciaram a direção de arte dos jogos — dos pixels e sprites às experiências tridimensionais e cinematográficas.
+
+### Experiências disponíveis
+
+- Exploração de diferentes linguagens visuais;
+- Comparações entre períodos técnicos;
+- Comparador de imagens com controle deslizante;
+- Estudos sobre mudanças em franquias conhecidas;
+- Conteúdo explicativo e histórico;
+- Estudo de caso sobre a evolução visual de Sonic.
+
+### Franquias utilizadas nas comparações
+
+| Franquia | Proposta de análise |
+|---|---|
+| **Mario** | Evolução de cenários, personagens e cores |
+| **Tomb Raider** | Transformação dos modelos e ambientes tridimensionais |
+| **Star Wars** | Mudanças na representação de universos cinematográficos |
+| **Street Fighter** | Evolução dos personagens e estilos de luta |
+| **Grand Theft Auto** | Ampliação dos cenários e do detalhamento visual |
+
+O objetivo não é apenas identificar qual jogo possui gráficos mais modernos, mas compreender **como diferentes tecnologias ampliaram as possibilidades artísticas dos desenvolvedores**.
+
+**Rota:** `#/sala/evolucao-grafica`
+
+---
+
+## 04 · PIXEL ARCADE — A história também se joga
+
+<img src="assets/home-room-04.svg" alt="Sala 04 — PIXEL Arcade" width="640">
+
+Inspirada nos fliperamas clássicos, essa sala transforma a visita ao museu em uma experiência jogável.
+
+O ambiente apresenta um gabinete de arcade interativo, seleção de experiências e jogos acessíveis diretamente pelo navegador.
+
+### 🕹️ Jogos disponíveis
+
+| Jogo / experiência | Características |
+|---|---|
+| **Space Invaders** | Reflexos, pontuação e ação arcade |
+| **Pac-Man** | Labirintos, coleta de pontos e estratégia |
+| **OutRun JS** | Corrida em perspectiva pseudo-3D e estética retrô |
+| **Open Sonic JS** | Plataforma lateral, velocidade e exploração |
+
+### Recursos da sala
+
+- Seleção de jogos;
+- Interface inspirada em máquinas de fliperama;
+- Jogos executados no navegador;
+- Experiências interativas;
+- Controles adaptados em partes do acervo;
+- Recursos de pontuação e recordes locais quando disponíveis.
+
+> **Por que incluir jogos jogáveis?** Porque compreender a história dos videogames também envolve experimentar suas mecânicas, suas limitações e as sensações produzidas pela interação.
+
+**Rota:** `#/sala/mundos-dos-jogos`
+
+---
+
+## 05 · Quiz Histórico — Aprenda jogando
+
+<img src="assets/home-room-05.svg" alt="Sala 05 — Quiz histórico" width="640">
+
+Uma experiência de aprendizagem ativa para testar o conhecimento adquirido durante a visita.
+
+### Funcionalidades
+
+- Banco com **24 questões**;
+- Diferentes níveis de dificuldade;
+- **Jornada Histórica:** 18 perguntas;
+- **Desafio Rápido:** 10 perguntas;
+- Alternativas e sistema de pontuação;
+- Feedback para as respostas;
+- Explicações educativas;
+- Revisão dos erros;
+- Conquistas e recordes locais;
+- Cronômetro configurável;
+- Suporte a atalhos de teclado.
+
+A proposta do quiz não é simplesmente avaliar o visitante.
+
+**Cada resposta representa uma oportunidade de descobrir algo novo sobre a história dos videogames.**
+
+**Rota:** `#/sala/quiz`
+
+---
+
+## 06 · Por Dentro do Console — O laboratório dos videogames
+
+<img src="assets/hardware-hero.svg" alt="Sala 06 — Laboratório de hardware" width="640">
+
+Uma abordagem interativa da tecnologia que sustenta as experiências digitais.
+
+### O que você pode explorar?
+
+- Funcionamento básico da CPU;
+- Memória e armazenamento;
+- Processamento gráfico;
+- Recursos de áudio;
+- Evolução dos componentes;
+- Representações visuais de hardware;
+- Experimentos interativos;
+- Comparações entre tecnologias.
+
+### 🔬 Hardware Lab 3D
+
+Uma experiência visual que permite explorar componentes e compreender suas funções.
+
+### 🎮 Experimentos de renderização
+
+O visitante pode modificar parâmetros de uma cena demonstrativa em Canvas para observar diferenças visuais e compreender conceitos relacionados ao processamento gráfico.
+
+### 💎 Objetos e significados
+
+Itens, ícones e elementos característicos dos jogos ajudam a demonstrar como pequenas representações visuais conseguem transmitir informações, emoções e significados.
+
+> **Observação:** os experimentos de renderização possuem finalidade didática. Seus indicadores não representam benchmarks reais de consoles comerciais.
+
+**Rota:** `#/sala/por-dentro-do-console`
+
+---
+
+# 🧠 A experiência que queremos provocar
+
+O PIXEL não foi pensado apenas como uma sequência de páginas.
+
+Seu percurso permite que visitantes de diferentes gerações façam conexões entre **o que os jogos eram**, **como se transformaram** e **o que significam para nós**.
+
+```text
+          DESCOBRIR
+    Conhecer marcos e histórias
+              │
+              ▼
+          OBSERVAR
+    Perceber estilos e mudanças
+              │
+              ▼
+          EXPERIMENTAR
+       Interagir e jogar
+              │
+              ▼
+           SENTIR
+   Reconhecer emoções e memórias
+              │
+              ▼
+         COMPARTILHAR
+   Conversar sobre experiências
+```
+
+**Tecnologia** explica parte de como os jogos foram construídos.
+
+**Arte e sensibilidade** ajudam a entender por que eles permanecem importantes para tantas pessoas.
+
+---
+
+# 🛠️ Tecnologias e arquitetura
+
+O PIXEL foi desenvolvido como uma aplicação web **estática, modular e executada no navegador**, sem necessidade de banco de dados ou servidor de aplicação.
+
+| Tecnologia | Utilização |
+|---|---|
+| **HTML5** | Estrutura das páginas e componentes |
+| **CSS3** | Estilização, responsividade e animações |
+| **JavaScript** | Navegação, interatividade, jogos e quiz |
+| **JSON** | Organização dos dados e conteúdos históricos |
+| **Canvas API** | Renderização e experimentos gráficos |
+| **SVG** | Logotipos, ícones e ilustrações |
+| **WebP** | Imagens otimizadas |
+| **Git** | Controle de versões |
+| **GitHub** | Hospedagem do repositório |
+| **GitHub Pages** | Publicação estática do site |
+
+## 📁 Estrutura do projeto
+
+```text
+pixel-arcade/
+│
+├── index.html                  # Página principal
+├── README.md                   # Documentação
+│
+├── assets/                     # Imagens, capas e identidade visual
+│   ├── pixel-logo-full.svg
+│   ├── capa-mario.webp
+│   ├── capa-sonic.webp
+│   └── ...
+│
+├── css/                        # Estilos e animações
+│   ├── main.css
+│   ├── home-v5.css
+│   ├── pixel-azul-petroleo.css
+│   ├── pixel-home-artistic.css
+│   ├── quiz.css
+│   └── hardware-lab.css
+│
+├── js/                         # Lógica da aplicação
+│   ├── app.js
+│   ├── views.js
+│   ├── navigation.js
+│   ├── timeline.js
+│   ├── consoles.js
+│   ├── graphics.js
+│   ├── arcade.js
+│   ├── quiz.js
+│   ├── inside-console.js
+│   └── ...
+│
+├── data/                       # Conteúdos estruturados
+│   ├── rooms.json
+│   ├── timeline-events.json
+│   ├── consoles.json
+│   ├── graphics-evolution.json
+│   └── quiz.json
+│
+└── games/                      # Experiências jogáveis
+    ├── space-invaders/
+    ├── pacman/
+    ├── outrun/
+    └── sonic/
+```
+
+---
+
+# 🚀 Como executar o projeto
+
+## Pré-requisitos
+
+- Navegador atualizado;
+- Python 3 ou outro servidor HTTP estático;
+- Git, caso deseje clonar o repositório.
+
+## 1. Clone o repositório
 
 ```bash
+git clone https://github.com/igorbatistapdev/pixel-arcade.git
+cd pixel-arcade
+```
+
+Se você baixou o projeto em ZIP, extraia o conteúdo e abra no terminal a pasta que contém o arquivo `index.html`.
+
+## 2. Inicie o servidor local
+
+### Windows — PowerShell
+
+```powershell
 py -m http.server 8000
 ```
 
-Se `py` não funcionar, tente `python -m http.server 8000`. Acesse `http://localhost:8000`.
+### Linux ou macOS
 
-Não abra `index.html` diretamente com `file://`: o site usa módulos JavaScript e `fetch()` para carregar arquivos JSON.
-
-### Estrutura
-```text
-pixel/
-├── index.html
-├── README.md
-├── css/
-│   └── main.css
-├── js/
-│   ├── app.js
-│   ├── navigation.js
-│   ├── views.js
-│   └── timeline.js
-├── data/
-│   ├── rooms.json
-│   ├── eras.json
-│   └── timeline-events.json
-└── assets/
-    └── images/
+```bash
+python3 -m http.server 8000
 ```
 
-### Funcionalidades desta etapa
-- Navegação real por hash routes (`#/` e `#/sala/<slug>`).
-- Seis salas temáticas com páginas individuais, ainda com conteúdo de apresentação para as etapas seguintes.
-- Linha do tempo interativa, com filtros por era.
-- Cada evento abre contexto, nota sobre data e links para as fontes.
-- Links externos abrem em nova aba com `rel="noopener noreferrer"`.
-- Menu móvel e suporte a Escape.
-- Layout responsivo e respeito à preferência por movimento reduzido.
+## 3. Acesse no navegador
 
-### Critérios de rigor histórico
-- Datas de protótipos, primeiras demonstrações e lançamentos comerciais não são tratados como equivalentes.
-- Lançamentos regionais são explicitados quando a fonte fornece essa informação.
-- As fontes são ligadas diretamente em cada marco.
-- A seleção é introdutória e não exaustiva. Informações adicionais devem ser verificadas antes de entrar no museu.
+```text
+http://localhost:8000
+```
 
-### Fontes históricas usadas na linha do tempo
-- Computer History Museum, “Graphics & Games timeline”: https://www.computerhistory.org/timeline/graphics-games/
-- Nintendo, história corporativa (PDF): https://www.nintendo.co.jp/kessan/annual0503e.pdf
-- Nintendo, história corporativa: https://www.nintendo.co.jp/corporate/history/index.html
-- Nintendo, história da Nintendo: https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html
-- PlayStation, história de 1994 (Brasil): https://www.playstation.com/pt-br/playstation-history/1994-ps-one/
-- Sony, história corporativa: https://www.sony.com/en/SonyInfo/CorporateInfo/History/company/
+Pronto! Agora você pode explorar as salas, consultar o acervo, realizar o quiz e experimentar os jogos.
 
-### Próximas etapas
-1. Fichas individuais dos 10 consoles.
-2. Comparação da evolução gráfica.
-3. Quiz histórico baseado nas fontes do museu.
-4. Uma fase completa de plataforma original.
-5. Testes de acessibilidade e publicação no GitHub Pages.
+Para encerrar o servidor, pressione `Ctrl + C` no terminal.
 
-### Créditos e direitos
-A ilustração principal é criada com CSS e não reproduz personagens ou sprites de franquias existentes. Imagens históricas serão adicionadas somente após verificar origem, licença e condições de reutilização. PIXEL é um projeto educacional independente e não é afiliado às empresas mencionadas nas fontes.
+> **Importante:** recomenda-se executar o projeto por um servidor HTTP local porque o JavaScript carrega módulos e dados JSON. Abrir diretamente o `index.html` pelo protocolo `file://` pode gerar restrições de acesso.
 
-## Etapa 3 — Galeria de consoles
+---
 
-A sala `#/sala/consoles` agora contém uma coleção pesquisável de dez consoles, com fichas individuais em diálogo acessível, contexto histórico, datas de lançamento por região, resumo técnico, jogos representativos, curiosidade e referências externas.
+# 🌍 Publicação no GitHub Pages
 
-### Dados e direitos visuais
+O PIXEL pode ser hospedado como um site estático pelo GitHub Pages.
 
-- Os registros estão em `data/consoles.json`; a interface está em `js/consoles.js` e é conectada pelo roteador em `js/app.js`.
-- Não foram embutidas fotografias de consoles nem logotipos de fabricantes. As formas visuais são silhuetas CSS esquemáticas originais, criadas para evitar reutilização de imagens sem licença confirmada.
-- As datas são separadas por região. Quando uma fonte apresenta apenas um ano ou intervalo, a ficha mantém esse nível de precisão e informa variações por país.
-- As especificações são resumos técnicos e podem variar por revisão de hardware, região ou jogo. Consulte as fontes listadas em cada ficha antes de reutilizar informações em material acadêmico.
-- As referências incluem cronologias oficiais da Nintendo e PlayStation/Sony, além de uma fonte especializada secundária para datas regionais do Mega Drive/Genesis. Alguns detalhes técnicos são amplamente documentados, mas nem todos os links institucionais usados são manuais técnicos completos; por isso, o texto evita afirmar especificações não necessárias.
+### Passo a passo
 
-### Teste local
+1. Acesse o repositório no GitHub.
+2. Abra **Settings**.
+3. Clique em **Pages**.
+4. Em **Build and deployment**, selecione **Deploy from a branch**.
+5. Escolha a branch `main`.
+6. Selecione a pasta `/(root)`.
+7. Salve as configurações.
+8. Aguarde a conclusão da publicação.
 
-Como o projeto carrega JSON com `fetch()`, execute por servidor HTTP, não abrindo `index.html` diretamente. Na pasta `pixel/`, use `py -m http.server 8000` (Windows) ou `python -m http.server 8000`, depois acesse `http://localhost:8000` e abra **Galeria de consoles**.
+O endereço esperado é:
 
-### Estado de validação
+```text
+https://igorbatistapdev.github.io/pixel-arcade/
+```
 
-Os arquivos JSON e a sintaxe JavaScript foram verificados automaticamente. Isso não substitui um teste manual completo em navegadores e dispositivos reais.
+> O endereço acima somente estará disponível após a configuração e a conclusão da publicação no GitHub Pages.
 
-## Etapa 4 — Evolução gráfica
+---
 
-A sala `#/sala/evolucao-grafica` agora possui linha do tempo visual, filtros por período, estudo de caso da evolução de Sonic, seção sobre gráficos modernos com GTA VI e comparação interativa entre períodos.
+# ♿ Responsividade e acessibilidade
 
-### Direitos de imagens e marcas
-- Os diagramas da sala são composições abstratas originais em CSS, não capturas de jogos nem reproduções de personagens/logotipos.
-- Nenhuma captura de Sonic ou GTA VI é redistribuída no pacote. O visitante pode abrir os materiais oficiais nos links de referência.
-- A política de conteúdo da Rockstar para fãs não é tratada como licença universal de reutilização; verifique as condições atuais e peça autorização quando necessário.
-- Sonic e GTA são marcas/propriedades de seus respectivos titulares; são citados para fins de contexto histórico e educativo.
+O projeto busca oferecer uma experiência acessível e adequada a diferentes dispositivos.
 
-### Referências adicionadas
-- SEGA — cronologia corporativa: https://www.sega.co.jp/en/company/history/index.html
-- SEGA — manual oficial de Sonic the Hedgehog (datas regionais): https://manuals.sega.com/wp-content/uploads/2022/06/SM_Sonic_Origin_En_220617.pdf
-- SEGA — Sonic Origins: https://asia.sega.com/SonicOrigins/en/about/
-- Computer History Museum — Graphics & Games: https://www.computerhistory.org/timeline/graphics-games/
-- Rockstar Games — mídia oficial de GTA VI: https://www.rockstargames.com/VI/media
-- Rockstar Games — política de publicação de material protegido: https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material
+### Cuidados adotados
 
-A sala é um panorama introdutório; antes de acrescentar datas precisas para jogos individuais da série Sonic, consulte páginas oficiais específicas por título e região. A ficha de Sonic Adventure sinaliza que 1998 se refere ao lançamento original japonês.
+- Interface responsiva;
+- Adaptação para celulares, tablets e computadores;
+- Navegação por botões e links identificáveis;
+- Descrições em elementos visuais;
+- Controles de teclado nas experiências em que foram implementados;
+- Atenção à preferência por movimento reduzido;
+- Pausa do carrossel durante determinadas interações;
+- Conteúdos disponíveis sem cadastro.
 
+A acessibilidade e a compatibilidade com dispositivos são aspectos de melhoria contínua e devem ser acompanhadas por testes práticos.
 
-## Correção de navegação e galerias oficiais (atualização)
+---
 
-- O botão **Conhecer as salas** usa a âncora `#salas-home`. A aplicação agora reconhece essa âncora como navegação interna da página inicial, em vez de interpretá-la como uma rota de sala inexistente (erro 404).
-- A sala de evolução gráfica inclui acesso direto ao Sonic Channel/SEGA e à galeria oficial de mídia de GTA VI da Rockstar.
-- Não foram copiados em lote arquivos oficiais para dentro do ZIP. A disponibilidade de uma imagem em um site oficial não equivale, por si só, a uma licença universal de redistribuição. Para publicação educativa, consulte os termos aplicáveis e use apenas material autorizado para o uso pretendido.
+# 🔎 Referências históricas
 
-Fontes de política e mídia consultadas:
-- SEGA, Streaming Guidelines: https://support.sega.com/hc/en-us/articles/44194402112529-STREAMING-GUIDELINES
-- Rockstar Games, GTA VI Media: https://www.rockstargames.com/VI/media
-- Rockstar Support, Policy on posting copyrighted material: https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material
+A curadoria procura distinguir fatos documentados, marcos tecnológicos e interpretações sobre estética e cultura.
 
+Entre as referências utilizadas no conteúdo histórico estão:
 
-## Etapa 4 — Evolução gráfica visual
+- [Computer History Museum — Graphics & Games](https://www.computerhistory.org/timeline/graphics-games/)
+- [Nintendo — História da empresa](https://www.nintendo.co.jp/corporate/history/index.html)
+- [Nintendo — História das consolas](https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html)
+- [PlayStation — História dos consoles](https://www.playstation.com/pt-br/playstation-history/)
 
-- Controle deslizante entre cinco épocas com cartões de navegação por período.
-- Comparação entre períodos com diagramas originais em CSS.
-- Linha do tempo de Sonic: Sonic the Hedgehog (1991), Sonic Adventure (1998), Sonic Generations (2011) e Sonic Frontiers (2022).
-- Cada card de Sonic exibe uma imagem local (`assets/sonic-*.jpg`), © SEGA, usada com finalidade educacional.
-- Fontes, créditos e política de imagens ficam disponíveis na própria sala.
+Outras referências específicas estão associadas aos registros das salas e aos arquivos disponíveis no diretório `data/`.
 
-Para executar: `py -m http.server 8000` na pasta `pixel` e abra `http://localhost:8000`. A página precisa de internet para fontes web.
+O acervo possui caráter educativo e não pretende representar de maneira exaustiva toda a história dos videogames.
 
+---
 
-### Sala 2 — fotografias reais dos consoles
-A galeria utiliza fotografias hospedadas no Wikimedia Commons. Os endereços das imagens, páginas-fonte, autoria e observações de licença estão registrados em `data/consoles.json`. As imagens são carregadas da internet; é necessário estar conectado para exibi-las. A página de cada arquivo é a referência definitiva para verificar autoria e licença antes de qualquer reutilização. Se uma imagem externa falhar, o card mostra um link para abrir sua fonte.
+# ⚖️ Direitos autorais e uso educacional
 
+O **PIXEL é um projeto acadêmico independente, sem finalidade comercial**, desenvolvido para fins de estudo e apresentação educacional.
 
-### Sala 2 — catálogo histórico ampliado
+O projeto não representa, não é patrocinado e não possui vínculo oficial com Nintendo, Sega, Capcom, Bandai Namco, Sony, Microsoft, Disney/Lucasfilm ou outras empresas e titulares de marcas mencionadas.
 
-A galeria foi ampliada para incluir consoles domésticos, portáteis e híbridos, do Magnavox Odyssey (1972) a modelos atuais, incluindo Telejogo, PS3, PS4, PS5, Xbox 360, Xbox Series X e Switch 2. Há filtros por geração, tipo e fabricante. As fotografias são carregadas de fontes externas; confira o arquivo original do Wikimedia Commons para validar autoria e licença. Como os nomes dos arquivos podem mudar, a galeria oferece link alternativo de busca caso uma fotografia não carregue.
+### Materiais de terceiros
 
+- Personagens, jogos, logotipos, capturas de tela e demais elementos protegidos pertencem aos respectivos titulares.
+- As imagens utilizadas como referências visuais não representam autorização automática para redistribuição.
+- Os jogos integrados ao museu podem utilizar código e recursos de projetos de terceiros.
+- Os arquivos de licença e documentação de cada jogo devem ser consultados antes de sua reutilização ou republicação.
+- A ausência de finalidade comercial não dispensa automaticamente o cumprimento dos direitos autorais.
+- Qualquer licença de uso do código autoral do PIXEL deverá ser definida separadamente.
 
-## Como abrir o projeto localmente
+A proposta do projeto é exclusivamente educativa, cultural e acadêmica.
 
-1. Extraia o ZIP inteiro para uma pasta.
-2. Entre na pasta `pixel` extraída.
-3. Abra essa pasta no VS Code.
-4. Inicie um servidor local (recomendado: extensão Live Server) e abra `index.html` por ele.
-5. Não mova `index.html`, `css`, `js` ou `data` para pastas separadas: os caminhos relativos dependem dessa estrutura.
+---
 
-Como o projeto usa módulos JavaScript (`type="module"`) e carrega arquivos JSON, abrir o arquivo com duplo clique (`file://`) pode impedir que os dados sejam carregados. Use Live Server ou outro servidor HTTP local.
+# 💛 O que torna o PIXEL especial?
 
-### Sobre as fotografias
-As imagens são carregadas de serviços externos e dependem de conexão com a internet, da disponibilidade do arquivo e das regras do servidor de origem. Se uma imagem não carregar, a ficha apresenta um link para consultar a fonte. Isso não significa que todas as licenças tenham sido verificadas individualmente; confira a página original antes de reutilizar qualquer fotografia.
+O PIXEL procura unir **rigor histórico, exploração interativa e sensibilidade estética** em uma experiência que conversa com quem jogou no passado, com quem joga hoje e com quem está descobrindo esse universo pela primeira vez.
 
+Não se trata apenas de comparar gráficos antigos com modernos ou conhecer especificações técnicas.
 
-## Ajuste de imagens (versão atualizada)
+Trata-se de compreender que, por trás de cada tela, também existem **pessoas, criatividade, escolhas artísticas, emoções e histórias compartilhadas**.
 
-Foram atualizados links diretos para arquivos do Wikimedia Commons em várias fichas que exibiam “Imagem indisponível”. As imagens continuam hospedadas externamente e dependem da disponibilidade do Commons e da conexão. A autoria/licença deve ser conferida na página indicada em cada ficha antes de reutilizar as imagens. O Coleco Telstar permanece pendente de confirmação de um arquivo direto confiável.
+A evolução dos videogames não pode ser medida apenas pela quantidade de pixels, pela potência de um processador ou pelo realismo de uma imagem.
 
+Ela também está presente na capacidade que os jogos possuem de **criar lembranças, despertar sentimentos e conectar pessoas**.
 
-### Correção de imagens (outubro de 2026)
+---
 
-Os links de Coleco Telstar, Sega Dreamcast, PlayStation 4, PlayStation 5 e Xbox Series X foram atualizados para arquivos específicos do Wikimedia Commons, em vez de páginas genéricas de pesquisa. Os créditos/licenças aparecem nos metadados das imagens; confira a página de origem antes de redistribuir imagens, especialmente a do Coleco Telstar. As imagens são carregadas pela internet e dependem da disponibilidade do Wikimedia Commons.
+<div align="center">
 
+  ### 🟡 PRESS START TO REMEMBER
 
-## Sala 004 — PIXEL ARCADE
+  **Os consoles mudam. As tecnologias evoluem. Algumas emoções permanecem.**
 
-<<<<<<< HEAD
-A rota `#/sala/mundos-dos-jogos` apresenta experiências jogáveis no navegador. Space Invaders e OutRun são carregados em páginas isoladas; os minijogos autorais usam Canvas e JavaScript modular:
+  <br>
 
-- **Sonic: teste de velocidade** — abre a versão web do projeto Open Sonic JS fornecido pelo usuário, isolada em `games/sonic/`. A integração inclui controles de toque para esquerda, direita, pulo e Enter. A licença MIT do código está preservada em `games/sonic/LICENSE-OpenSonicJS.txt`; ela não garante por si só a liberação de todos os assets de terceiros incluídos no jogo.
-- **Pac-Man — Labirinto e estratégia** — jogo de labirinto com fantasmas, pontos e controles para celular.
-=======
-A rota `#/sala/mundos-dos-jogos` agora apresenta três protótipos jogáveis, feitos com Canvas e JavaScript modular, sem backend obrigatório:
+  <img src="assets/pixel-logo-symbol.svg" alt="Símbolo do PIXEL" width="90" />
 
-- **Sonic: teste de velocidade** — protótipo não oficial de mecânicas de plataforma. A versão incluída usa formas temporárias originais, não distribui sprites, música ou arte oficial. A publicação com elementos da franquia depende de verificar direitos e obter as permissões necessárias.
-- **Pixel Quest** — jogo de plataforma original com cristais, obstáculos, plataformas e checkpoints.
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
-- **Turbo Pixel** — corrida arcade em visão superior, com obstáculos e percurso contra o tempo.
+  <br><br>
 
-Cada jogo possui três fases, controles por teclado e toque, HUD, tela de conclusão e recordes locais. Os recordes usam `localStorage` no navegador e dispositivo atuais; não há conta nem sincronização entre dispositivos. Para testar, execute o servidor HTTP descrito acima e abra a Sala 004. A implementação deve ser validada manualmente em navegadores e celulares reais antes da publicação.
+  **PIXEL · HISTÓRIA · ARTE · TECNOLOGIA · MEMÓRIA**
 
+  <br>
 
-## Atualização — Sala 4 e identidade visual
+  Desenvolvido no contexto da **Atividade Integradora VI — Sensibilidade e Estética**  
+  **Sistemas de Informação · Unilasalle-RJ**
 
-- Seção GTA VI removida da sala Evolução Gráfica.
-- Nova logo em pixel art (joystick arcade) em `assets/logo.svg`, também usada como favicon.
+  <br>
 
-- Sala 3 revisada: cada época do controle deslizante agora usa um jogo de referência (Space Invaders 1978, Super Mario Bros. 1985, Streets of Rage 1991, Tomb Raider 1996/Chronicles 2000 e GTA V 2013), com imagens em `assets/era-*.jpg`. Aviso amarelo removido e cabeçalho com colagem dos jogos.
+  [⬆ Voltar ao início](#pixel--museu-interativo-dos-videogames)
 
-- v3: Metal Slug na tela do fliperama da home; cards das salas com imagem; topo e filtros da galeria de consoles redesenhados (nota de direitos removida da página); linha do tempo interativa com hover, painel de detalhes e ilustrações em pixel art (`assets/tl-*.svg`, `assets/room-*.svg`).
-<<<<<<< HEAD
-
-
-## Sala 004 — PIXEL ARCADE
-
-A Sala 004 reúne experiências jogáveis em um catálogo visual. O **Space Invaders** está integrado em `games/space-invaders/` como uma página independente incorporada à sala, isolando o Canvas e o CSS do restante do museu.
-
-### Executar localmente
-
-Como o PIXEL carrega dados JSON por `fetch`, execute-o por um servidor HTTP local em vez de abrir `index.html` diretamente. Por exemplo, com Python instalado, entre na pasta `pixel/` e execute `python -m http.server 8000`; depois abra `http://localhost:8000`.
-
-Na Sala 004, selecione **Space Invaders**. Controles do jogo: setas esquerda/direita ou A/D para mover, Espaço para disparar e Enter para iniciar. O recorde é guardado pelo próprio jogo no armazenamento local do navegador. Para sair, use **Voltar aos jogos**.
-
-O Space Invaders é uma recriação de fã para fins educacionais; Space Invaders é marca da Taito. Consulte os termos e permissões aplicáveis antes de distribuir publicamente.
-
-
-## Etapa 5 — OutRun JS na Sala 004
-
-- O projeto de corrida pseudo-3D foi integrado em `games/outrun/`, mantendo a implementação e os arquivos do repositório original `guillecura/outrun--js` em uma página isolada, carregada por `iframe`.
-- `Space Invaders` continua disponível e não foi removido.
-- A Sala 004 ganhou um cartão próprio para **OutRun JS**, usando como arte de capa a imagem fornecida pelo usuário.
-- Foram acrescentados controles de toque para celular (esquerda/direita, acelerar, freio, nitro e freio de mão), mantendo as variáveis e a física originais do jogo. No desktop, continuam disponíveis os controles por teclado.
-- O jogo é um projeto independente de corrida pseudo-3D inspirado em jogos arcade, não uma emulação do OutRun original da SEGA.
-
-### Crédito e observação sobre direitos
-
-Código-fonte de referência: https://github.com/guillecura/outrun--js (derivado do projeto `jakesgordon/javascript-racer`: https://github.com/jakesgordon/javascript-racer). O repositório não inclui um arquivo de licença explícita na cópia recebida. As imagens, sprites e músicas presentes nele podem ter condições de reutilização distintas do código. Antes de publicar ou redistribuir o pacote publicamente, confirme as licenças e permissões de cada asset; a finalidade educacional ou não comercial, por si só, não elimina direitos autorais. A arte de capa foi fornecida pelo usuário e também deve ser tratada como material ilustrativo protegido, não como recurso de domínio público.
-
-### Teste
-
-Execute o PIXEL por HTTP local (não abra `index.html` via `file://`), por exemplo `py -m http.server 8000`, e navegue até **Sala 004 → OutRun JS**. Em celular, teste os botões de toque em orientação paisagem e retrato. O desempenho em dispositivos móveis pode variar por navegador e GPU.\n
-### Atualização da Sala 004 — integração de Open Sonic JS
-
-- O cartão **Sonic: teste de velocidade** carrega `games/sonic/sonic.html` em um iframe isolado.
-- O jogo é a versão web compilada de Open Sonic JS (não o protótipo Canvas anterior).
-- A pasta contém os arquivos necessários do build web: JavaScript, CSS, dados de fases, imagens e sons.
-- Foram adicionados botões de toque para mover à esquerda/direita, pular e acionar Enter em telas sensíveis ao toque.
-- OutRun, Space Invaders, Sonic e as demais salas permanecem no projeto; Pac-Man ocupa o lugar anteriormente reservado ao protótipo de plataforma autoral.
-- Para testar, sirva a pasta `pixel/` por HTTP (por exemplo, com Live Server); não abra apenas `index.html` via `file://`, pois o jogo carrega dados JSON.
-- Revise as licenças dos recursos gráficos e sonoros de terceiros antes de publicar o pacote.
-
-## Sala 006 — Hardware Lab (reformulação interativa)
-
-A Sala 006 fica em `#/sala/por-dentro-do-console` e mantém um redirecionamento de compatibilidade para `#/sala/pixel-quest`. O card correspondente foi atualizado na página inicial.
-
-**Inclui:** console tridimensional didático original; rotação e zoom por mouse, toque e pinça; desmontagem/montagem animada; seleção de oito subsistemas; tour guiado; minijogo que aciona uma explicação animada do fluxo de dados; sintetizador de tons Web Audio acionado pelo usuário; comparador com nove consoles; timeline técnica; demonstração com parâmetros reais de Canvas 2D e FPS estimado no navegador.
-
-O visualizador utiliza **WebGL** diretamente (sem dependências de rede) quando disponível. Em dispositivos sem WebGL, usa um renderizador espacial em **Canvas 2D** que mantém zoom, rotação, desmontagem e seleção de componentes. Os desenhos e a arquitetura 3D são didáticos e originais; **não** são réplicas técnicas de um console comercial específico nem fotografias.
-
-### Arquivos adicionados ou alterados
-
-- `js/console-lab-3d.js` — visualização em WebGL e renderizador 3D alternativo.
-- `js/inside-console.js` — layout, interação, tours, comparação, minijogo e experiência de desempenho.
-- `css/hardware-lab.css` — identidade visual, animações e responsividade.
-- `assets/hardware-hero.svg` — ilustração técnica original da placa e componentes.
-- `js/views.js` — arte e rótulo do card da Sala 006.
-- `js/app.js` — inicialização e limpeza dos recursos da nova sala.
-- `index.html` — referência à folha de estilo.
-
-### Notas técnicas e acessibilidade
-
-As simulações mostram relações didáticas, e não medem desempenho de consoles reais. Os controles usam botões com rótulos, o áudio só é gerado após interação, e as animações respeitam `prefers-reduced-motion`. Para explorar a cena com teclado, use os botões de seleção e zoom disponíveis abaixo do modelo. O menu de tour guiado também pode ser encerrado com Escape.
-
-Documentação histórica e referências adicionais: [Atari 2600 — Stella Programmer's Guide](https://www.atariage.com/2600/programming/2600_101/docs/stella.html), [SEGA — Mega Drive](https://www.sega.jp/history/hard/megadrive/) e [PlayStation Blog — especificações do PS5 de lançamento](https://blog.br.playstation.com/2020/09/16/playstation-5-sera-lancado-no-brasil-em-19-de-novembro-com-precos-a-partir-de-r-4499-para-a-edicao-digital-e-r-4999-para-o-ps5-com-leitor-blu-ray-ultra-hd/).
-
-Abra com servidor HTTP local (`python -m http.server 8000`) a partir da pasta `pixel` e visite `http://localhost:8000/#/sala/por-dentro-do-console`.
-=======
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
+</div>
