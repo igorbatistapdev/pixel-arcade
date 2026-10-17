@@ -1,0 +1,85 @@
+/*--------------------
+Leaderboard
+--------------------*/
+
+.leaderboard {
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 80%);
+  border-radius: var(--border);
+  height: var(--hud);
+  left: var(--distance);
+  position: absolute;
+  top: var(--hud-smaller);
+  width: calc(var(--hud) - var(--distance) * 2);
+}
+
+.leaderboard h1 {
+  color: var(--smoke-dark);
+  font-size: 1.25vh;
+  padding: var(--distance);
+  text-align: center;
+}
+
+.leaderboard ol {
+  counter-reset: leaderboard;
+  list-style-type: none;
+}
+
+.leaderboard ol li {
+  align-items: center;
+  backface-visibility: hidden;
+  counter-increment: leaderboard;
+  display: flex;
+  padding: var(--border);
+  position: relative;
+  width: 100%;
+}
+
+.leaderboard ol li::before {
+  background: var(--white);
+  border-radius: var(--distance);
+  color: var(--black-light);
+  content: counter(leaderboard);
+  display: block;
+  font-size: 0.8vh;
+  height: var(--distance);
+  line-height: var(--distance);
+  margin: var(--border);
+  min-width: var(--distance);
+  text-align: center;
+  width: var(--distance);
+}
+
+.leaderboard ol li mark {
+  background: none;
+  color: var(--white);
+  display: inline-block;
+  flex-grow: 1;
+  font-size: 1vh;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: var(--border);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.leaderboard ol li small {
+  color: var(--asphalt);
+  display: block;
+  font-size: 1vh;
+  position: relative;
+  text-align: right;
+  z-index: 2;
+}
+
+.leaderboard ol li:nth-child(1) {
+  background: var(--black-light);
+}
+
+.leaderboard ol li:nth-child(1)::before {
+  background: var(--backlot);
+}
+
+.leaderboard ol li:nth-child(1) small {
+  color: var(--grey);
+}

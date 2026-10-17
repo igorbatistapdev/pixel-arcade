@@ -55,6 +55,18 @@
     "slug": "mundos-dos-jogos",
     "icon": "▶",
     "title": "PIXEL ARCADE",
+<<<<<<< HEAD
+    "description": "Entre na Sala 004, escolha um fliperama e jogue experiências retrô diretamente no museu.",
+    "action": "Explorar fliperamas",
+    "content": {
+      "heading": "Escolha seu fliperama",
+      "text": "Explore jogos de diferentes épocas e experimente o clássico Space Invaders, com controles e recorde no próprio jogo. Novas experiências serão adicionadas gradualmente.",
+      "bullets": [
+        "Space Invaders: recriação jogável do arcade de 1978.",
+        "Pac-Man: labirinto, estratégia e perseguição arcade.",
+        "Pac-Man: labirinto e estratégia.",
+        "Sonic: teste de velocidade abre o projeto web Open Sonic JS integrado, com controles adaptados para toque."
+=======
     "description": "Entre na Sala 004 e experimente três jogos com fases, recordes locais e controles para computador e celular.",
     "action": "Jogar agora",
     "content": {
@@ -64,6 +76,7 @@
         "Sonic: protótipo não oficial de mecânicas, sem assets oficiais e com publicação condicionada à verificação de permissões.",
         "Pixel Quest: aventura autoral de plataforma.",
         "Turbo Pixel: corrida retrô contra o tempo."
+>>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
       ]
     }
   },
@@ -86,6 +99,24 @@
   },
   {
     "number": "ROOM 06",
+<<<<<<< HEAD
+    "slug": "por-dentro-do-console",
+    "icon": "◫",
+    "title": "Por dentro do console",
+    "description": "Descubra como CPU, memória, gráficos, áudio e mídia trabalham juntos para dar vida aos jogos.",
+    "action": "Explorar o laboratório",
+    "content": {
+      "heading": "Descubra o videogame por dentro.",
+      "text": "A Sala 006 apresenta os componentes centrais de um console e mostra como cada avanço técnico influenciou a experiência de jogar, da era dos cartuchos aos sistemas atuais.",
+      "bullets": [
+        "Mapa interativo com CPU, memória, gráficos, áudio e armazenamento.",
+        "Comparação entre gerações e capacidades técnicas.",
+        "Linha de evolução técnica com impacto prático nos jogos."
+      ]
+    }
+  }
+]
+=======
     "slug": "pixel-quest",
     "icon": "▶",
     "title": "Pixel Quest",
@@ -102,3 +133,4 @@
     }
   }
 ]
+>>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a

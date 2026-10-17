@@ -1,0 +1,510 @@
+{
+  "version": 1,
+  "title": "Quiz histórico PIXEL",
+  "questions": [
+    {
+      "id": "q01",
+      "topic": "1958",
+      "category": "Origens",
+      "era": "Pioneiros",
+      "difficulty": 1,
+      "question": "Em que ano Tennis for Two foi apresentado como experimento eletrônico?",
+      "options": [
+        "1958",
+        "1962",
+        "1972",
+        "1977"
+      ],
+      "correct": 0,
+      "explanation": "Tennis for Two foi demonstrado em 1958. O jogo usava um osciloscópio e um computador analógico. Era um experimento, não um console comercial.",
+      "image": "./assets/tl-tennis-for-two.svg",
+      "source": {
+        "url": "https://www.computerhistory.org/timeline/graphics-games/",
+        "label": "Computer History Museum"
+      }
+    },
+    {
+      "id": "q02",
+      "topic": "1962",
+      "category": "Origens",
+      "era": "Pioneiros",
+      "difficulty": 1,
+      "question": "Para qual computador foi desenvolvido Spacewar! (1962)?",
+      "options": [
+        "PDP-1",
+        "Atari VCS",
+        "NES",
+        "PlayStation"
+      ],
+      "correct": 0,
+      "explanation": "Spacewar! foi desenvolvido para o computador PDP-1, antes de os consoles domésticos se popularizarem.",
+      "image": "./assets/tl-spacewar.svg",
+      "source": {
+        "url": "https://www.computerhistory.org/timeline/graphics-games/",
+        "label": "Computer History Museum"
+      }
+    },
+    {
+      "id": "q03",
+      "topic": "1972",
+      "category": "Arcade",
+      "era": "Arcade",
+      "difficulty": 1,
+      "question": "Qual clássico de tênis de mesa eletrônico marcou os arcades em 1972?",
+      "options": [
+        "Pong",
+        "Pac-Man",
+        "Tetris",
+        "OutRun"
+      ],
+      "correct": 0,
+      "explanation": "Pong, associado à Atari, teve grande repercussão comercial nos fliperamas a partir de 1972.",
+      "image": "./assets/tl-pong.svg",
+      "source": {
+        "url": "https://www.computerhistory.org/timeline/graphics-games/",
+        "label": "Computer History Museum"
+      }
+    },
+    {
+      "id": "q04",
+      "topic": "1977",
+      "category": "Consoles",
+      "era": "Arcade",
+      "difficulty": 1,
+      "question": "Qual nome o console Atari 2600 utilizava quando foi lançado em 1977?",
+      "options": [
+        "Video Computer System",
+        "Family Computer",
+        "Game Boy",
+        "Master System"
+      ],
+      "correct": 0,
+      "explanation": "A Atari lançou o Video Computer System (VCS) em 1977; o nome Atari 2600 tornou-se comum posteriormente.",
+      "image": "./assets/tl-atari-vcs.svg",
+      "source": {
+        "url": "https://www.computerhistory.org/timeline/graphics-games/",
+        "label": "Computer History Museum"
+      }
+    },
+    {
+      "id": "q05",
+      "topic": "1983",
+      "category": "Consoles",
+      "era": "8 bits",
+      "difficulty": 1,
+      "question": "Qual console a Nintendo lançou no Japão em 1983?",
+      "options": [
+        "Family Computer (Famicom)",
+        "Super Nintendo",
+        "Nintendo 64",
+        "Wii"
+      ],
+      "correct": 0,
+      "explanation": "O Family Computer (Famicom) estreou no Japão em 1983. O NES teve outro calendário de lançamento em mercados externos.",
+      "image": "./assets/tl-family-computer.svg",
+      "source": {
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "label": "Nintendo — história oficial"
+      }
+    },
+    {
+      "id": "q06",
+      "topic": "1989",
+      "category": "Portáteis",
+      "era": "8 bits",
+      "difficulty": 1,
+      "question": "Qual console portátil da Nintendo estreou em 1989?",
+      "options": [
+        "Game Boy",
+        "Nintendo DS",
+        "Nintendo 3DS",
+        "Nintendo Switch"
+      ],
+      "correct": 0,
+      "explanation": "O Game Boy chegou ao mercado em 1989, com jogos em cartuchos intercambiáveis.",
+      "image": "./assets/tl-game-boy.svg",
+      "source": {
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "label": "Nintendo — história oficial"
+      }
+    },
+    {
+      "id": "q07",
+      "topic": "1994",
+      "category": "Consoles",
+      "era": "3D",
+      "difficulty": 1,
+      "question": "Qual empresa lançou o primeiro PlayStation?",
+      "options": [
+        "Sony",
+        "Sega",
+        "Atari",
+        "Mattel"
+      ],
+      "correct": 0,
+      "explanation": "O PlayStation é um console da Sony; sua estreia japonesa ocorreu em 1994.",
+      "image": "./assets/tl-playstation.svg",
+      "source": {
+        "url": "https://www.playstation.com/pt-br/playstation-history/1994-ps-one/",
+        "label": "PlayStation — história oficial"
+      }
+    },
+    {
+      "id": "q08",
+      "topic": "1996",
+      "category": "Consoles",
+      "era": "3D",
+      "difficulty": 1,
+      "question": "Qual desses consoles estreou no Japão em 1996?",
+      "options": [
+        "Nintendo 64",
+        "Wii",
+        "PlayStation 2",
+        "Game Boy Color"
+      ],
+      "correct": 0,
+      "explanation": "O Nintendo 64 foi lançado no Japão em 1996 e destacou experiências com gráficos tridimensionais.",
+      "image": "./assets/tl-nintendo-64.svg",
+      "source": {
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "label": "Nintendo — história oficial"
+      }
+    },
+    {
+      "id": "q09",
+      "topic": "1958",
+      "category": "Tecnologia",
+      "era": "Pioneiros",
+      "difficulty": 2,
+      "question": "Qual equipamento era usado para mostrar a imagem de Tennis for Two?",
+      "options": [
+        "Osciloscópio",
+        "Televisor de plasma",
+        "Projetor de cinema",
+        "Monitor LCD"
+      ],
+      "correct": 0,
+      "explanation": "O experimento Tennis for Two exibia sua imagem em um osciloscópio de laboratório, diferente das telas digitais atuais.",
+      "image": "./assets/tl-tennis-for-two.svg",
+      "source": {
+        "url": "https://www.computerhistory.org/timeline/graphics-games/",
+        "label": "Computer History Museum"
+      }
+    },
+    {
+      "id": "q10",
+      "topic": "1962",
+      "category": "Origens",
+      "era": "Pioneiros",
+      "difficulty": 2,
+      "question": "Em qual ambiente Spacewar! foi desenvolvido e difundido inicialmente?",
+      "options": [
+        "Computadores e universidades",
+        "Consoles portáteis",
+        "Fliperamas de shopping",
+        "Telefones celulares"
+      ],
+      "correct": 0,
+      "explanation": "Spacewar! nasceu no ambiente de computadores do MIT e circulou por comunidades técnicas e universitárias.",
+      "image": "./assets/tl-spacewar.svg",
+      "source": {
+        "url": "https://www.computerhistory.org/timeline/graphics-games/",
+        "label": "Computer History Museum"
+      }
+    },
+    {
+      "id": "q11",
+      "topic": "1977",
+      "category": "Tecnologia",
+      "era": "Consoles",
+      "difficulty": 2,
+      "question": "Qual característica ajudou o Atari VCS a ampliar sua biblioteca de jogos?",
+      "options": [
+        "Cartuchos intercambiáveis",
+        "Leitor Blu-ray",
+        "Download via internet",
+        "Discos ópticos"
+      ],
+      "correct": 0,
+      "explanation": "O Atari VCS utilizava cartuchos de jogos intercambiáveis. Sua biblioteca não dependia de mídias ópticas nem de internet.",
+      "image": "./assets/tl-atari-vcs.svg",
+      "source": {
+        "url": "https://www.computerhistory.org/timeline/graphics-games/",
+        "label": "Computer History Museum"
+      }
+    },
+    {
+      "id": "q12",
+      "topic": "1983",
+      "category": "Consoles",
+      "era": "8 bits",
+      "difficulty": 2,
+      "question": "Qual nome identifica a versão japonesa do console que originou o NES?",
+      "options": [
+        "Famicom",
+        "Game Gear",
+        "Saturn",
+        "Dreamcast"
+      ],
+      "correct": 0,
+      "explanation": "O Nintendo Family Computer ficou conhecido como Famicom no Japão. A marca NES é associada à versão lançada em outras regiões.",
+      "image": "./assets/tl-family-computer.svg",
+      "source": {
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "label": "Nintendo — história oficial"
+      }
+    },
+    {
+      "id": "q13",
+      "topic": "1989",
+      "category": "Portáteis",
+      "era": "8 bits",
+      "difficulty": 2,
+      "question": "Que recurso permitia trocar os jogos no Game Boy original?",
+      "options": [
+        "Cartuchos removíveis",
+        "Discos DVD",
+        "Cartões SD como padrão",
+        "Jogos apenas na memória interna"
+      ],
+      "correct": 0,
+      "explanation": "O Game Boy utilizava cartuchos de jogo removíveis, permitindo alternar entre títulos no mesmo aparelho.",
+      "image": "./assets/tl-game-boy.svg",
+      "source": {
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "label": "Nintendo — história oficial"
+      }
+    },
+    {
+      "id": "q14",
+      "topic": "1994",
+      "category": "Consoles",
+      "era": "3D",
+      "difficulty": 2,
+      "question": "Em qual país o primeiro PlayStation estreou em dezembro de 1994?",
+      "options": [
+        "Japão",
+        "Estados Unidos",
+        "Brasil",
+        "França"
+      ],
+      "correct": 0,
+      "explanation": "O primeiro PlayStation chegou ao mercado japonês em 3 de dezembro de 1994; os lançamentos nos EUA e na Europa ocorreram em 1995.",
+      "image": "./assets/tl-playstation.svg",
+      "source": {
+        "url": "https://www.playstation.com/pt-br/playstation-history/1994-ps-one/",
+        "label": "PlayStation — história oficial"
+      }
+    },
+    {
+      "id": "q15",
+      "topic": "1996",
+      "category": "Tecnologia",
+      "era": "3D",
+      "difficulty": 2,
+      "question": "Qual tendência visual marcou consoles como o Nintendo 64 e o primeiro PlayStation?",
+      "options": [
+        "Gráficos poligonais 3D",
+        "Exclusividade de gráficos vetoriais",
+        "Apenas texto em monitores",
+        "Ausência de cenários 3D"
+      ],
+      "correct": 0,
+      "explanation": "Os gráficos com polígonos 3D tornaram-se centrais em muitos jogos daquela geração; isso coexistiu com títulos 2D.",
+      "image": "./assets/home-era-03.svg",
+      "source": {
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "label": "Nintendo — história oficial"
+      }
+    },
+    {
+      "id": "q16",
+      "topic": "1972",
+      "category": "Arcade",
+      "era": "Arcade",
+      "difficulty": 2,
+      "question": "Qual descrição distingue Pong dos primeiros experimentos de laboratório?",
+      "options": [
+        "Tornou-se um marco comercial do arcade",
+        "Foi lançado primeiro para PlayStation",
+        "Usou internet para partidas online",
+        "Era exclusivo de computadores PDP-1"
+      ],
+      "correct": 0,
+      "explanation": "Pong tornou-se um marco dos fliperamas comerciais, ao contrário de experimentos anteriores produzidos em ambientes laboratoriais.",
+      "image": "./assets/tl-pong.svg",
+      "source": {
+        "url": "https://www.computerhistory.org/timeline/graphics-games/",
+        "label": "Computer History Museum"
+      }
+    },
+    {
+      "id": "q17",
+      "topic": "1994",
+      "category": "Consoles",
+      "era": "3D",
+      "difficulty": 3,
+      "question": "Qual é a data da estreia japonesa do primeiro PlayStation?",
+      "options": [
+        "3 de dezembro de 1994",
+        "9 de setembro de 1995",
+        "29 de setembro de 1995",
+        "3 de dezembro de 1996"
+      ],
+      "correct": 0,
+      "explanation": "A estreia japonesa aconteceu em 3/12/1994. As duas datas de setembro de 1995 correspondem aos lançamentos norte-americano e europeu.",
+      "image": "./assets/tl-playstation.svg",
+      "source": {
+        "url": "https://www.playstation.com/pt-br/playstation-history/1994-ps-one/",
+        "label": "PlayStation — história oficial"
+      }
+    },
+    {
+      "id": "q18",
+      "topic": "1983",
+      "category": "Consoles",
+      "era": "8 bits",
+      "difficulty": 3,
+      "question": "Por que não é correto apresentar 1983 como o lançamento mundial do NES?",
+      "options": [
+        "Foi a estreia japonesa do Famicom; outras regiões tiveram datas próprias",
+        "O primeiro Famicom surgiu apenas em 1990",
+        "O NES era lançado apenas como arcade",
+        "O console não teve versões fora do Japão"
+      ],
+      "correct": 0,
+      "explanation": "1983 corresponde à estreia japonesa do Family Computer; o NES foi comercializado em outras regiões em outros anos.",
+      "image": "./assets/tl-family-computer.svg",
+      "source": {
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "label": "Nintendo — história oficial"
+      }
+    },
+    {
+      "id": "q19",
+      "topic": "1958",
+      "category": "Origens",
+      "era": "Pioneiros",
+      "difficulty": 3,
+      "question": "O que seria historicamente impreciso afirmar sobre Tennis for Two?",
+      "options": [
+        "Que foi um console doméstico comercial em 1958",
+        "Que foi exibido em um osciloscópio",
+        "Que usava um computador analógico",
+        "Que foi apresentado em laboratório"
+      ],
+      "correct": 0,
+      "explanation": "Tennis for Two era uma experiência de laboratório exibida em osciloscópio, não um console doméstico disponível no comércio.",
+      "image": "./assets/tl-tennis-for-two.svg",
+      "source": {
+        "url": "https://www.computerhistory.org/timeline/graphics-games/",
+        "label": "Computer History Museum"
+      }
+    },
+    {
+      "id": "q20",
+      "topic": "1977",
+      "category": "Consoles",
+      "era": "Arcade",
+      "difficulty": 3,
+      "question": "Qual distinção sobre o Atari 2600 é historicamente precisa?",
+      "options": [
+        "Video Computer System era o nome inicial; Atari 2600 foi adotado depois",
+        "O sistema nasceu como PlayStation da Sony",
+        "Seu primeiro nome oficial era Nintendo VCS",
+        "O Atari 2600 estreou como portátil em 1989"
+      ],
+      "correct": 0,
+      "explanation": "O nome de lançamento foi Atari Video Computer System; a designação Atari 2600 tornou-se comum posteriormente.",
+      "image": "./assets/tl-atari-vcs.svg",
+      "source": {
+        "url": "https://www.computerhistory.org/timeline/graphics-games/",
+        "label": "Computer History Museum"
+      }
+    },
+    {
+      "id": "q21",
+      "topic": "1994",
+      "category": "Consoles",
+      "era": "3D",
+      "difficulty": 3,
+      "question": "Quais regiões tiveram lançamentos do primeiro PlayStation em setembro de 1995?",
+      "options": [
+        "América do Norte e Europa",
+        "Japão e América do Norte",
+        "Japão e Europa",
+        "Brasil e Japão"
+      ],
+      "correct": 0,
+      "explanation": "Segundo a cronologia da PlayStation, houve lançamentos em setembro de 1995 na América do Norte (dia 9) e na Europa (dia 29).",
+      "image": "./assets/tl-playstation.svg",
+      "source": {
+        "url": "https://www.playstation.com/pt-br/playstation-history/1994-ps-one/",
+        "label": "PlayStation — história oficial"
+      }
+    },
+    {
+      "id": "q22",
+      "topic": "1962",
+      "category": "Tecnologia",
+      "era": "Pioneiros",
+      "difficulty": 3,
+      "question": "Qual plataforma está ligada à estreia de Spacewar! e ajuda a diferenciá-lo de Pong?",
+      "options": [
+        "Computador PDP-1",
+        "Console Atari 2600",
+        "Famicom",
+        "Nintendo 64"
+      ],
+      "correct": 0,
+      "explanation": "Spacewar! foi desenvolvido para o PDP-1 em 1962; Pong ganhou espaço em arcades comerciais uma década depois.",
+      "image": "./assets/tl-spacewar.svg",
+      "source": {
+        "url": "https://www.computerhistory.org/timeline/graphics-games/",
+        "label": "Computer History Museum"
+      }
+    },
+    {
+      "id": "q23",
+      "topic": "1989",
+      "category": "Portáteis",
+      "era": "8 bits",
+      "difficulty": 3,
+      "question": "Qual afirmação evita confundir o lançamento do Game Boy entre regiões?",
+      "options": [
+        "1989 é o ano de estreia; mercados diferentes tiveram calendários próprios",
+        "O aparelho foi lançado simultaneamente em todo o planeta",
+        "Game Boy e Nintendo DS chegaram às lojas no mesmo ano",
+        "O Game Boy era um console apenas de mesa"
+      ],
+      "correct": 0,
+      "explanation": "O histórico oficial registra a estreia do Game Boy em 1989; datas de comercialização podem variar de país para país.",
+      "image": "./assets/tl-game-boy.svg",
+      "source": {
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "label": "Nintendo — história oficial"
+      }
+    },
+    {
+      "id": "q24",
+      "topic": "1996",
+      "category": "Consoles",
+      "era": "3D",
+      "difficulty": 3,
+      "question": "Qual interpretação é mais correta para o ano 1996 associado ao Nintendo 64?",
+      "options": [
+        "Lançamento inicial japonês, não uma data mundial uniforme",
+        "Data de criação de Pong",
+        "Lançamento do primeiro PlayStation na Europa",
+        "Ano em que surgiu o Game Boy"
+      ],
+      "correct": 0,
+      "explanation": "O Nintendo 64 teve sua estreia no Japão em 1996. Datas de outras regiões precisam ser apresentadas separadamente.",
+      "image": "./assets/tl-nintendo-64.svg",
+      "source": {
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "label": "Nintendo — história oficial"
+      }
+    }
+  ]
+}

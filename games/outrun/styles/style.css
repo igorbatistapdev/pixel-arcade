@@ -1,0 +1,479 @@
+/***************************************************************/
+/* ------------------------ VARIABLES ------------------------ */
+/***************************************************************/
+:root {
+  --black:         #000000;
+  --black-light:   #111113;
+  --asphalt:       #313335;
+  --asphalt-dark:  #262729;
+  --asphalt-light: #4b4f52;
+  --grey:          #a6aaad;
+  --grey-dark:     #757575;
+  --grey-light:    #cdcfd1;
+  --smoke:         #f5f5f5;
+  --smoke-dark:    #ebebeb;
+  --smoke-light:   #f7f7f7;
+  --white:         #ffffff;
+  --backlot:       #f4c40e;
+  --backlot-dark:  #e6b10d;
+  --backlot-light: #fece35;
+  
+  --green:         #0a7b5d;
+  --green-dark:    #03543f;
+  --green-light:   #16a17c;
+
+  --alert:         #dd2b2b;
+  --alert-dark:    #c42626;
+  --alert-light:   #dd4b4b;
+  --success:       #38bf2c;
+  --success-dark:  #31a626;
+  --success-light: #4ecc43;
+  --background:    #ede096;
+  
+  --topbar:        4px;
+  --bottombar:     64px;
+  --hud:           24vh;
+  --hud-smaller:   12vh;
+  --hud-larger:    48vh;
+  --distance:      16px;
+  --border:        4px;
+  --icon:          32px;
+}
+
+/***************************************************************/
+/* ------------------------- GLOBAL -------------------------- */
+/***************************************************************/
+@font-face {
+    font-family: 'PressStart2P';
+    src: url('../fonts/PressStart2P.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body,
+html {
+  background-color: var(--black-light);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: calc(var(--bottombar) * 6);
+  overflow: hidden;
+}
+
+#wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/***************************************************************/
+/* ------------------------- LAYOUT -------------------------- */
+/***************************************************************/
+/* Topbar */
+#header {
+  align-items: center;
+  background-color: var(--backlot);
+  display: flex;
+  height: var(--topbar);
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+/* Content */
+#content {
+  background-color: var(--black-light);
+  height: calc(100vh - var(--bottombar) - var(--topbar));
+  width: 100%;
+  z-index: 0;
+}
+#content #racer,
+#content #canvas {
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  width: calc((100vh - var(--bottombar) - var(--topbar)) * 4/3);
+}
+#content #racer {
+  z-index: 0;
+}
+#content #canvas {
+  background-color: var(--background);
+  object-fit: contain;
+  z-index: 0;
+}
+/* Bottombar */
+#bottombar {
+  align-items: center;
+  background-color: var(--asphalt-dark);
+  display: flex;
+  height: var(--bottombar);
+  justify-content: flex-start;
+  padding: var(--distance);
+  width: 100%;
+  z-index: 0;
+}
+
+/***************************************************************/
+/* -------------------------- GAME --------------------------- */
+/***************************************************************/
+/* Hud */
+#hud {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'PressStart2P', cursive;
+  height: 100%;
+  padding: var(--distance);
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+/* Nitro */
+#hud #nitro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: var(--hud-smaller);
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  width: var(--hud);
+}
+#hud #nitro .value {
+  border: var(--border) solid var(--smoke-dark);
+  border-radius: var(--border);
+  box-shadow: 0 0 var(--distance) rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  display: block;
+  height: var(--icon);
+  left: var(--distance);
+  line-height: var(--distance);
+  padding: var(--border);
+  position: absolute;
+  text-align: right;
+  text-shadow: 0 0 var(--border) var(--black);
+  top: calc(50% - var(--icon) / 2);
+  width: calc(100% - var(--distance) * 2);
+  z-index: 1;
+}
+#hud #nitro #nitro_slider_container {
+  display: block;
+  left: var(--distance);
+  position: absolute;
+  top: calc(50% - var(--icon) / 2);
+  width: calc(100% - var(--distance) * 2 - var(--border) * 4);
+  z-index: 0;
+}
+#hud #nitro #nitro_slider {
+  background-color: var(--success);
+  display: block;
+  height: var(--distance);
+  left: calc(var(--border) * 2);
+  position: absolute;
+  top: calc(var(--border) * 2);
+  transition: width 200ms ease;
+}
+#hud #nitro #nitro_slider.alert {
+  background-color: var(--alert);
+}
+#hud #nitro #nitro_slider.warning {
+  background-color: var(--backlot);
+}
+#hud #nitro #nitro_slider::before,
+#hud #nitro #nitro_slider::after {
+  content: '';
+  display: block;
+  height: var(--border);
+  left: 0;
+  position: absolute;
+  width: 100%;
+  transition: width 200ms ease;
+}
+#hud #nitro #nitro_slider::before {
+  background-color: var(--success-light);
+  top: 0;
+}
+#hud #nitro #nitro_slider::after {
+  background-color: var(--success-dark);
+  bottom: 0;
+}
+#hud #nitro #nitro_slider.alert::before {
+  background-color: var(--alert-light);
+}
+#hud #nitro #nitro_slider.alert::after {
+  background-color: var(--alert-dark);
+}
+#hud #nitro #nitro_slider.warning::before {
+  background-color: var(--backlot-light);
+}
+#hud #nitro #nitro_slider.warning::after {
+  background-color: var(--backlot-dark);
+}
+/* Speedometer */
+#hud #speed {
+  align-items: center;
+  border-radius: 100% 0 0 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: var(--hud);
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: var(--hud);
+}
+#hud #speed::before {
+  background: radial-gradient(circle, var(--black) 0%, transparent 80%);
+  border-radius: 100%;
+  content: '';
+  height: 200%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200%;
+  z-index: 0;
+}
+#hud #speed::after {
+  border-left: var(--border) dashed var(--white);
+  border-radius: 100%;
+  border-top: var(--border) dashed var(--alert-dark);
+  content: '';
+  height: calc(200% - var(--distance) * 2);
+  left: var(--distance);
+  opacity: 0.25;
+  position: absolute;
+  top: var(--distance);
+  width: calc(200% - var(--distance) * 2);
+  z-index: 1;
+}
+#hud #speed .value {
+  color: var(--white);
+  font-size: 4vh;
+  height: 100%;
+  padding: 16vh var(--distance) var(--distance) 8vh;
+  position: relative;
+  text-align: right;
+  width: 100%;
+  z-index: 2;
+}
+#hud #speed .value::after {
+  color: var(--grey);
+  bottom: var(--distance);
+  content: ' mph';
+  font-size: 1vh;
+  position: absolute;
+  right: var(--distance);
+}
+#hud #speed #speed_slider {
+  bottom: 0;
+  display: block;
+  height: 0;
+  position: absolute;
+  right: 0;
+  transform-origin: bottom right;
+  width: var(--hud);
+  z-index: -1;
+}
+#hud #speed #speed_slider::before{
+  border-bottom: 8px solid transparent;
+  border-left: var(--distance) solid transparent;
+  border-right: var(--hud) solid var(--alert);
+  border-top: 8px solid transparent;
+  bottom: -8px;
+  content: '';
+  display: block;
+  right: 0;
+  position: absolute;
+  width: 0;
+}
+/* Lap Time */
+#hud #current_lap_time {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: var(--hud-smaller);
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+#hud #current_lap_time .value {
+  color: var(--white);
+  font-size: 4vh;
+  text-shadow: 0 0 var(--distance) var(--black);
+}
+/* Laps */
+#hud #lap_time {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: var(--hud-smaller);
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  width: var(--hud-larger);
+}
+#hud #lap_time::before {
+  background: linear-gradient(90deg, var(--black) 0%, transparent 80%);
+  content: '';
+  height: 100%;
+  left: -50%;
+  position: absolute;
+  top: 0;
+  width: 150%;
+  z-index: 0;
+}
+#hud #last_lap_time,
+#hud #fast_lap_time {
+  color: var(--grey);
+  font-size: 1vh;
+  height: 2vh;
+  line-height: 2vh;
+  padding: 0 var(--distance);
+  position: relative;
+  text-align: left;
+  width: 100%;
+  z-index: 2;
+}
+#hud #last_lap_time .value,
+#hud #fast_lap_time .value {
+  color: var(--white);
+}
+
+/***************************************************************/
+/* ------------------------ CONTROLS ------------------------- */
+/***************************************************************/
+/* Mute button */
+#mute {
+  appearance: none;
+  background-position: 0 0;
+  background: url('../images/mute.png');
+  border: none;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  height: var(--icon);
+  position: absolute;
+  right: var(--distance);
+  top: var(--distance);
+  transition: transform 200ms ease;
+  width: var(--icon);
+}
+#mute.on {
+  background-position: -32px 0;
+}
+#mute:focus,
+#mute:hover,
+#mute:active {
+  outline: none;
+}
+#mute:hover {
+  transform: scale(1.1);
+}
+/* Instructions */
+#instructions {
+  align-items: center;
+  color: var(--smoke-dark);
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+#instructions p {
+  margin: 0 var(--distance);
+}
+/* Options */
+#controls {
+  display: none;
+}
+/* FPS */
+#fps-box {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+#fps-box > * {
+  min-width: var(--bottombar);
+  padding: var(--distance);
+  text-align: right;
+}
+#fps-box #stats {
+  flex-grow: 1;
+}
+#fps-box #fps,
+#fps-box #ms {
+  align-items: flex-end;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 auto;
+  width: var(--bottombar);
+}
+#fps-box #ms {
+  display: none;
+}
+#fps-box #fpsText,
+#fps-box #msText {
+  color: var(--grey);
+  font-size: 10px;
+  margin: var(--border);
+  text-align: right;
+  width: 100%;
+}
+#fps-box #fpsGraph,
+#fps-box #msGraph {
+  display: none;
+}
+
+
+/* PIXEL integration: responsive canvas and touch controls */
+#content { display:flex; flex-direction:column; align-items:center; height:auto; min-height:0; }
+#content #racer, #content #canvas {
+  width:min(100vw, calc((100vh - var(--bottombar) - var(--topbar)) * 4 / 3));
+  max-width:100vw;
+}
+#content #racer { height:auto; flex:0 0 auto; }
+#content #canvas { display:block; height:auto; aspect-ratio:4 / 3; }
+#touch-controls { display:none; width:min(100%, 920px); padding:10px 12px 14px; gap:10px; color:#fff; }
+.touch-steering, .touch-driving { display:flex; gap:8px; }
+.touch-steering button { flex:1; min-height:54px; font-size:1.45rem; }
+.touch-driving { flex:1; flex-wrap:wrap; }
+.touch-driving button { flex:1 1 calc(50% - 8px); min-height:42px; font-size:clamp(10px,2.4vw,13px); font-weight:800; letter-spacing:.04em; }
+#touch-controls button {
+  border:2px solid #fece35; border-radius:8px; background:#242629; color:#fff;
+  box-shadow:0 3px 0 #111; touch-action:none; user-select:none; -webkit-user-select:none;
+}
+#touch-controls button.is-pressed { background:#d94c37; transform:translateY(2px); box-shadow:0 1px 0 #111; }
+@media (pointer:coarse), (max-width:760px) {
+  html, body { min-height:100%; height:auto; overflow-x:hidden; overflow-y:auto; }
+  #wrapper { height:auto; min-height:100svh; justify-content:flex-start; }
+  #header { height:8px; min-height:8px; flex:0 0 8px; }
+  #content { width:100%; flex:0 0 auto; }
+  #content #racer, #content #canvas { width:100vw; max-width:100vw; }
+  #content #canvas { height:auto; }
+  #hud { padding:8px; }
+  #hud #speed .value, #hud #current_lap_time .value { font-size:clamp(12px,3vw,24px); }
+  #hud #speed .value { padding:10vh 8px 8px 5vh; }
+  #hud #lap_time { width:52%; }
+  #hud #lap_time::before { left:0; }
+  #hud #last_lap_time, #hud #fast_lap_time { font-size:8px; }
+  #hud #nitro { width:34%; }
+  #hud #nitro .value { font-size:10px; }
+  #touch-controls { display:flex; flex-direction:column; }
+  #bottombar { height:auto; min-height:64px; flex-wrap:wrap; gap:10px; padding:12px; }
+  #instructions { font-size:11px; }
+  #controls, #fps-box { display:none; }
+}

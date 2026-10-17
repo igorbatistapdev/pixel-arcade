@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open Sonic JS</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#071126" />
+  <link rel="icon" type="image/x-icon" href="data/images/icon.png">
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="mobile-controls" aria-label="Controles de toque do jogo">
+    <div class="mobile-direction">
+      <button type="button" data-key="ArrowLeft" aria-label="Mover para esquerda">◀</button>
+      <button type="button" data-key="ArrowRight" aria-label="Mover para direita">▶</button>
+    </div>
+    <div class="mobile-actions">
+      <button type="button" data-key="Enter" aria-label="Iniciar ou pausar">Ⅱ</button>
+      <button type="button" data-key=" " aria-label="Pular">PULAR</button>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/opensonic.js"></script>
+  <script>
+    // Controles acessíveis por toque; emitem as mesmas teclas usadas no jogo.
+    (() => {
+      const controls = document.getElementById('mobile-controls');
+      const isTouch = matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
+      if (!isTouch) return;
+      controls.classList.add('is-touch');
+      const release = button => {
+        if (!button.dataset.active) return;
+        const key = button.dataset.key;
+        window.dispatchEvent(new KeyboardEvent('keyup', { key, bubbles: true, cancelable: true }));
+        delete button.dataset.active;
+      };
+      controls.querySelectorAll('button').forEach(button => {
+        const press = event => {
+          event.preventDefault();
+          if (button.dataset.active) return;
+          button.dataset.active = '1';
+          const key = button.dataset.key;
+          window.dispatchEvent(new KeyboardEvent('keydown', { key, bubbles: true, cancelable: true }));
+          if (key === 'Enter') setTimeout(() => release(button), 140);
+        };
+        button.addEventListener('pointerdown', press);
+        button.addEventListener('pointerup', () => release(button));
+        button.addEventListener('pointercancel', () => release(button));
+        button.addEventListener('pointerleave', () => release(button));
+        button.addEventListener('contextmenu', event => event.preventDefault());
+      });
+      window.addEventListener('blur', () => controls.querySelectorAll('button').forEach(release));
+    })();
+  </script>
+</body>
+</html>

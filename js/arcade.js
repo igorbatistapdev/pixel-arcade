@@ -1,22 +1,70 @@
 const BEST_KEY = "pixel-arcade-records-v1";
 const GAMES = {
+<<<<<<< HEAD
+  spaceInvaders: { title: "Space Invaders", kind: "classic", badge: "ARCADE CLÁSSICO · 1978", description: "Defenda a Terra contra ondas de invasores em uma recriação jogável do clássico de 1978. Mire, dispare e tente superar seu recorde." },
+  outrun: { title: "OutRun JS · Corrida pseudo-3D", kind: "external", badge: "CORRIDA RETRÔ · INSPIRADO EM OUTRUN", description: "Uma experiência de corrida em perspectiva pseudo-3D, com curvas, tráfego, velocidade, nitro e visual inspirado nos arcades de corrida dos anos 1980." },
+  sonic: { title: "Sonic: teste de velocidade", kind: "external", badge: "PLATAFORMA · OPEN SONIC JS", description: "Jogue uma aventura de plataforma baseada no projeto Open Sonic JS, com fases, personagens, anéis, obstáculos e movimentação lateral. Inclui controles adaptados para toque.", legal: true },
+  pacman: { title: "Pac-Man — Labirinto e estratégia", kind: "external", badge: "ARCADE CLÁSSICO · 1980", description: "Atravesse o labirinto, colete pontos e power pellets, escape dos fantasmas e tente superar seu recorde. Inclui teclado, controles de toque e opções de acessibilidade." }
+=======
   sonic: { title: "Sonic: teste de velocidade", kind: "platform", badge: "PLATAFORMA · PROTÓTIPO", description: "Um protótipo de plataforma veloz com saltos, anéis e obstáculos. Usa formas originais temporárias, sem sprites, músicas ou artes oficiais da SEGA.", legal: true },
   quest: { title: "Pixel Quest", kind: "platform", badge: "AVENTURA · ORIGINAL", description: "Ajude uma exploradora inventora a atravessar florestas, ruínas e uma fortaleza, coletando cristais e ativando checkpoints." },
   race: { title: "Top Gear · Experiência retrô", kind: "race", badge: "CLÁSSICO · 1992", description: "Uma homenagem jogável ao clássico de corrida do Super Nintendo: estrada em perspectiva, ultrapassagens, painel de velocidade e três etapas de desafio." }
+>>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
 };
 const LEVELS = ["Fase 1 · Aquecimento", "Fase 2 · Zona de desafio", "Fase 3 · Reta final"];
 
 export function renderArcadeRoom() {
   const cards = Object.entries(GAMES).map(([id, game]) => `
     <article class="arcade-card">
+<<<<<<< HEAD
+      <div class="arcade-card-art arcade-art-${id}" ${id === "pacman" ? 'role="img" aria-label="Capa de Pac-Man enviada para o projeto"' : id === "outrun" ? 'role="img" aria-label="Anúncio histórico de OutRun fornecido para a exposição"' : 'aria-hidden="true"'}><span class="art-label">${game.badge}</span>${id === "pacman" ? '<img class="pacman-cover" src="./assets/pacman-cover.png" alt="Capa de Pac-Man fornecida para o PIXEL" loading="lazy">' : id === "outrun" ? '<img class="outrun-cover" src="./assets/outrun-cover.png" alt="Anúncio japonês de OutRun para PC Engine" loading="lazy">' : id === "spaceInvaders" ? '<img class="space-invaders-cover" src="./assets/era-space-invaders.jpg" alt="Arte representativa de Space Invaders" loading="lazy">' : id === "sonic" ? '<img class="sonic-speed-cover" src="./assets/sonic-speed-cover.png" alt="Imagem de capa ilustrativa para Sonic: teste de velocidade" loading="lazy">' : `<div class="arcade-art-hero">✦</div>`}</div>
+      <div class="arcade-card-body"><h2>${game.title}</h2><p>${game.description}</p>
+      ${game.legal ? '<p class="arcade-legal">Adaptação independente do projeto Open Sonic JS. A licença MIT do código não garante, por si só, direitos sobre todos os sprites, sons e músicas incluídos no projeto original.</p>' : ''}
+      <div class="arcade-tags"><span>${id === "outrun" ? "Perspectiva pseudo-3D" : id === "sonic" ? "Plataforma e fases" : "3 fases"}</span><span>${id === "outrun" || id === "sonic" ? "Controles adaptados" : "Recordes locais"}</span><span>PC + celular</span></div>
+=======
       <div class="arcade-card-art arcade-art-${id}" ${id === "race" ? 'role="img" aria-label="Capa clássica de Top Gear"' : 'aria-hidden="true"'}><span class="art-label">${game.badge}</span>${id === "race" ? '<img class="topgear-cover" src="./assets/topgear-cover.jpg" alt="Capa de Top Gear, jogo de corrida clássico" loading="lazy">' : `<div class="arcade-art-hero">${id === "sonic" ? "➤" : "✦"}</div>`}</div>
       <div class="arcade-card-body"><h2>${game.title}</h2><p>${game.description}</p>
       ${game.legal ? '<p class="arcade-legal">Protótipo não oficial. A publicação com personagem e elementos de Sonic depende da verificação e das permissões dos titulares. Esta versão não inclui assets oficiais.</p>' : ''}
       <div class="arcade-tags"><span>3 fases</span><span>Recordes locais</span><span>PC + celular</span></div>
+>>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
       <button class="button button-primary" type="button" data-arcade-start="${id}">Jogar agora <span aria-hidden="true">→</span></button></div>
     </article>`).join("");
   return `<section class="room-page section-shell arcade-room">
     <a class="back-link" href="#/">← Voltar ao saguão</a>
+<<<<<<< HEAD
+    <section class="arcade-cabinet-stage" aria-labelledby="cabinet-title">
+      <div class="cabinet-copy"><p class="eyebrow">SALA 004 · EXPERIÊNCIA INTERATIVA</p><h1 id="cabinet-title">O ARCADE <span>VIVE AQUI</span></h1><p>Escolha um jogo na tela do gabinete, aperte START e entre direto na experiência. A máquina acompanha a sua seleção.</p><div class="cabinet-features"><span>✦ 4 experiências</span><span>⌁ Sem cadastro</span><span>▣ PC + celular</span></div><button class="button button-primary cabinet-start-mobile" type="button" data-cabinet-start>▶ APERTE START</button></div>
+      <div class="arcade-cabinet-wrap arcade-cabinet-exact-wrap" aria-label="Gabinete de fliperama interativo">
+        <div class="arcade-cabinet-light"></div>
+        <div class="cabinet-exact-stage">
+          <img class="cabinet-exact-image" src="./assets/arcade-cabinet-exato.png" alt="Gabinete de arcade preto e amarelo, visto de frente, com tela, joystick, botões físicos e base completa">
+          <div class="cabinet-screen-overlay" aria-label="Seleção de jogo no monitor do fliperama">
+            <div class="cabinet-overlay-cover-wrap"><img class="cabinet-cover-image" src="./assets/era-space-invaders.jpg" alt="Capa de Space Invaders"><button type="button" class="cabinet-arrow cabinet-arrow-prev" data-cabinet-prev aria-label="Jogo anterior">‹</button><button type="button" class="cabinet-arrow cabinet-arrow-next" data-cabinet-next aria-label="Próximo jogo">›</button></div>
+            <strong class="cabinet-cover-title">SPACE INVADERS</strong>
+            <button type="button" class="cabinet-overlay-start" data-cabinet-start>▶ START</button>
+            <div class="cabinet-overlay-game-list" role="group" aria-label="Selecionar jogo">
+              ${Object.entries(GAMES).map(([id,g])=>`<button type="button" class="cabinet-game-option ${id==='spaceInvaders'?'is-selected':''}" data-cabinet-select="${id}" aria-pressed="${id==='spaceInvaders'?'true':'false'}" title="${g.title}"><img src="${id==='spaceInvaders'?'./assets/era-space-invaders.jpg':id==='pacman'?'./assets/pacman-cover.png':id==='outrun'?'./assets/outrun-cover.png':'./assets/sonic-speed-cover.png'}" alt=""><span>${g.title.replace(' JS · Corrida pseudo-3D','').replace(' — Labirinto e estratégia','').replace('Sonic: teste de velocidade','SONIC')}</span></button>`).join('')}
+            </div>
+          </div>
+        </div>
+        <button type="button" class="cabinet-start-mobile button button-primary" data-cabinet-start>▶ APERTE START</button>
+      </div>
+    </section>
+    <section class="arcade-timeline" aria-labelledby="arcade-timeline-title"><div class="arcade-timeline-heading"><div><p class="eyebrow">SALA 01 · ARQUIVO HISTÓRICO</p><h2 id="arcade-timeline-title">Linha do tempo<span>.</span></h2><p>Marcos selecionados da história dos videogames, organizados por era. Passe o mouse ou toque em cada marco para revelar um resumo.</p></div><div class="timeline-stats"><strong>8</strong><span>MARCOS</span><i></i><strong>1958</strong><span>PRIMEIRO REGISTRO</span></div></div><div class="arcade-era-track">
+      <button class="arcade-era-card era-origins" type="button" data-era="origins" aria-expanded="false"><img src="./assets/tl-tennis-for-two.svg" alt="" loading="lazy"><span class="era-number">1ª ERA</span><strong>Origens</strong><small>1958–1970</small><span class="era-detail">Experimentos acadêmicos transformam telas em espaços de interação.</span></button>
+      <button class="arcade-era-card era-arcades" type="button" data-era="arcades" aria-expanded="false"><img src="./assets/tl-spacewar.svg" alt="" loading="lazy"><span class="era-number">2ª ERA</span><strong>Arcades</strong><small>1971–1983</small><span class="era-detail">Fliperamas popularizam pontuação, recordes e partidas rápidas.</span></button>
+      <button class="arcade-era-card era-consoles" type="button" data-era="consoles" aria-expanded="false"><img src="./assets/tl-atari-vcs.svg" alt="" loading="lazy"><span class="era-number">3ª ERA</span><strong>Consoles</strong><small>1984–1996</small><span class="era-detail">Controles domésticos e personagens marcantes ampliam os gêneros.</span></button>
+      <button class="arcade-era-card era-modern" type="button" data-era="modern" aria-expanded="false"><img src="./assets/tl-playstation.svg" alt="" loading="lazy"><span class="era-number">4ª ERA</span><strong>3D e online</strong><small>1997–2010</small><span class="era-detail">Mundos tridimensionais e partidas conectadas mudam a escala dos jogos.</span></button>
+    </div><div class="arcade-timeline-rail"><span></span><span></span><span></span><span></span></div></section>
+    <div class="arcade-catalog-heading"><div><p class="eyebrow">ESCOLHA SUA MÁQUINA</p><h2>Jogos disponíveis<span>.</span></h2></div><p>Recordes são guardados neste navegador e dispositivo.</p></div>
+    <div class="arcade-grid">${cards}</div>
+    <section class="arcade-game" id="arcade-game" hidden aria-label="Área do jogo">
+      <div class="arcade-game-top"><h2 id="arcade-game-title">Jogo</h2><div class="arcade-hud"><span id="arcade-level">Fase 1</span><span id="arcade-score">Pontos: 0</span><span id="arcade-record">Recorde: 0</span></div></div>
+      <div class="arcade-canvas-wrap" id="arcade-canvas-wrap"><canvas class="arcade-canvas" id="arcade-canvas" width="960" height="540" aria-label="Área interativa do jogo"></canvas><div class="arcade-message" id="arcade-message"><h3 id="arcade-message-title">PREPARE-SE!</h3><p id="arcade-message-text">Use as setas ou WASD para jogar.</p><button class="button button-primary" type="button" id="arcade-message-action">Jogar</button></div></div>
+      <div class="space-invaders-frame-wrap" id="space-invaders-frame-wrap" hidden><iframe id="space-invaders-frame" title="Space Invaders — jogo arcade" src="about:blank" loading="lazy" allow="autoplay" referrerpolicy="no-referrer"></iframe></div>
+      <div class="outrun-frame-wrap" id="outrun-frame-wrap" hidden><iframe id="outrun-frame" title="OutRun JS — jogo de corrida pseudo-3D" src="about:blank" loading="lazy" allow="autoplay; fullscreen" referrerpolicy="no-referrer"></iframe></div>\n      <div class="sonic-frame-wrap" id="sonic-frame-wrap" hidden><iframe id="sonic-frame" title="Sonic: teste de velocidade — Open Sonic JS" src="about:blank" loading="lazy" allow="autoplay; fullscreen; gamepad" referrerpolicy="no-referrer"></iframe></div>
+      <div class="pacman-frame-wrap" id="pacman-frame-wrap" hidden><iframe id="pacman-frame" title="Pac-Man — jogo arcade" src="about:blank" loading="lazy" allow="autoplay; fullscreen; gamepad" referrerpolicy="no-referrer"></iframe></div>
+=======
     <p class="eyebrow">ROOM 04 · PIXEL ARCADE</p>
     <div class="room-page-heading"><div><span class="room-page-icon" aria-hidden="true">▶</span><h1>PIXEL ARCADE<span class="accent-text">.</span></h1></div><p>Não fique só na história: jogue. Escolha uma experiência, aprenda os controles e avance por três fases com dificuldade crescente.</p></div>
     <div class="arcade-kicker"><span>✦ 3 experiências</span><span>▦ 9 fases no total</span><span>⌁ Sem cadastro</span></div>
@@ -29,6 +77,7 @@ export function renderArcadeRoom() {
     <section class="arcade-game" id="arcade-game" hidden aria-label="Área do jogo">
       <div class="arcade-game-top"><h2 id="arcade-game-title">Jogo</h2><div class="arcade-hud"><span id="arcade-level">Fase 1</span><span id="arcade-score">Pontos: 0</span><span id="arcade-record">Recorde: 0</span></div></div>
       <div class="arcade-canvas-wrap"><canvas class="arcade-canvas" id="arcade-canvas" width="960" height="540" aria-label="Área interativa do jogo"></canvas><div class="arcade-message" id="arcade-message"><h3 id="arcade-message-title">PREPARE-SE!</h3><p id="arcade-message-text">Use as setas ou WASD para jogar.</p><button class="button button-primary" type="button" id="arcade-message-action">Jogar</button></div></div>
+>>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
       <div class="arcade-controls"><div class="arcade-key-help" id="arcade-help">Mover: ← → · Pular: Espaço/↑ · Pausar: P</div><div class="arcade-game-actions"><button class="button button-quiet" type="button" id="arcade-pause">Pausar</button><button class="button button-quiet" type="button" id="arcade-exit">Voltar aos jogos</button></div><div class="arcade-control-pad" aria-label="Controles de toque"><button type="button" data-pad="left" aria-label="Mover para esquerda">◀</button><button type="button" data-pad="jump" aria-label="Pular">▲</button><button type="button" data-pad="right" aria-label="Mover para direita">▶</button></div></div>
       <p class="arcade-record-note">Protótipo em Canvas, sem backend. O jogo Sonic é uma demonstração não oficial de mecânicas; não inclui sprites, música nem material oficial da franquia.</p>
     </section>
@@ -48,7 +97,11 @@ export function initArcadeRoom(root) {
   const scoreLabel = root.querySelector("#arcade-score");
   const recordLabel = root.querySelector("#arcade-record");
   const help = root.querySelector("#arcade-help");
+<<<<<<< HEAD
+  let gameId = "pacman", level = 0, score = 0, running = false, paused = false, finished = false;
+=======
   let gameId = "quest", level = 0, score = 0, running = false, paused = false, finished = false;
+>>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
   let player, platforms, items, hazards, camera, frame, distance, lastTime = 0, animationId = 0, pressed = new Set(), touch = new Set(), checkpoint = 0;
   let records = readRecords();
 
@@ -57,6 +110,94 @@ export function initArcadeRoom(root) {
   function updateHud() { levelLabel.textContent = LEVELS[level]; scoreLabel.textContent = gameId === "race" ? `Tempo: ${(frame / 60).toFixed(1)}s · ${score} pts` : `Pontos: ${score}`; recordLabel.textContent = `Recorde: ${records[gameId] || 0}`; }
   function showOverlay(head, message, action, fn) { overlay.hidden = false; overlayTitle.textContent = head; overlayText.textContent = message; overlayAction.textContent = action; overlayAction.onclick = fn; }
   function startGame(id) {
+<<<<<<< HEAD
+    if (id === "pacman") {
+      running = false; cancelAnimationFrame(animationId);
+      gameId = id; gamePanel.hidden = false; title.textContent = GAMES[id].title;
+      root.querySelector("#arcade-canvas-wrap").hidden = true;
+      root.querySelector("#space-invaders-frame-wrap").hidden = true;
+      root.querySelector("#space-invaders-frame").src = "about:blank";
+      root.querySelector("#outrun-frame-wrap").hidden = true;
+      root.querySelector("#outrun-frame").src = "about:blank";
+      root.querySelector("#sonic-frame-wrap").hidden = true;
+      root.querySelector("#sonic-frame").src = "about:blank";
+      root.querySelector("#pacman-frame-wrap").hidden = false;
+      root.querySelector("#pacman-frame").src = "./games/pacman/index.html";
+      overlay.hidden = true; help.textContent = "PC: setas ou WASD · Enter: iniciar · P: pausar. Celular: use os botões direcionais ou o joystick virtual dentro do jogo.";
+      levelLabel.textContent = "Labirinto clássico";
+      scoreLabel.textContent = "Pontos · fantasmas · power pellets";
+      recordLabel.textContent = "Recordes locais no jogo";
+      root.querySelector("#arcade-pause").hidden = true;
+      root.querySelector(".arcade-control-pad").hidden = true;
+      gamePanel.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+      return;
+    }
+    root.querySelector("#pacman-frame-wrap").hidden = true;
+    root.querySelector("#pacman-frame").src = "about:blank";
+    if (id === "sonic") {
+      running = false; cancelAnimationFrame(animationId);
+      gameId = id; gamePanel.hidden = false; title.textContent = GAMES[id].title;
+      root.querySelector("#arcade-canvas-wrap").hidden = true;
+      root.querySelector("#space-invaders-frame-wrap").hidden = true;
+      root.querySelector("#space-invaders-frame").src = "about:blank";
+      root.querySelector("#outrun-frame-wrap").hidden = true;
+      root.querySelector("#outrun-frame").src = "about:blank";
+      root.querySelector("#sonic-frame-wrap").hidden = false;
+      root.querySelector("#sonic-frame").src = "./games/sonic/sonic.html";
+      overlay.hidden = true; help.textContent = "PC: setas movem · Espaço: pular · Enter: iniciar/pausar · Esc: sair. Celular: use os controles na tela.";
+      levelLabel.textContent = "Open Sonic JS";
+      scoreLabel.textContent = "Plataforma · fases";
+      recordLabel.textContent = "Jogo integrado";
+      root.querySelector("#arcade-pause").hidden = true;
+      root.querySelector(".arcade-control-pad").hidden = true;
+      gamePanel.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+      return;
+    }
+    root.querySelector("#sonic-frame-wrap").hidden = true;
+    root.querySelector("#sonic-frame").src = "about:blank";
+    if (id === "outrun") {
+      root.querySelector("#sonic-frame-wrap").hidden = true;
+      root.querySelector("#sonic-frame").src = "about:blank";
+      running = false; cancelAnimationFrame(animationId);
+      gameId = id; gamePanel.hidden = false; title.textContent = GAMES[id].title;
+      root.querySelector("#arcade-canvas-wrap").hidden = true;
+      root.querySelector("#space-invaders-frame-wrap").hidden = true;
+      root.querySelector("#space-invaders-frame").src = "about:blank";
+      root.querySelector("#outrun-frame-wrap").hidden = false;
+      root.querySelector("#outrun-frame").src = "./games/outrun/index.html";
+      overlay.hidden = true; help.textContent = "PC: setas/WASD aceleram e viram · Shift: nitro · Espaço: freio de mão. Celular: use os controles na tela.";
+      levelLabel.textContent = "Corrida pseudo-3D"; scoreLabel.textContent = "Velocidade · voltas"; recordLabel.textContent = "Projeto independente";
+      root.querySelector("#arcade-pause").hidden = true;
+      root.querySelector(".arcade-control-pad").hidden = true;
+      gamePanel.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+      return;
+    }
+    root.querySelector("#outrun-frame-wrap").hidden = true;
+    root.querySelector("#outrun-frame").src = "about:blank";
+    if (id === "spaceInvaders") {
+      root.querySelector("#sonic-frame-wrap").hidden = true;
+      root.querySelector("#sonic-frame").src = "about:blank";
+      running = false; cancelAnimationFrame(animationId);
+      gameId = id; gamePanel.hidden = false; title.textContent = GAMES[id].title;
+      root.querySelector("#arcade-canvas-wrap").hidden = true;
+      root.querySelector("#space-invaders-frame-wrap").hidden = false;
+      root.querySelector("#space-invaders-frame").src = "./games/space-invaders/index.html";
+      overlay.hidden = true; help.textContent = "← / → ou A / D: mover · Espaço: disparar · Enter: iniciar";
+      levelLabel.textContent = "Clássico de 1978"; scoreLabel.textContent = "Tiro e sobrevivência"; recordLabel.textContent = "Recorde salvo no jogo";
+      root.querySelector("#arcade-pause").hidden = true;
+      root.querySelector(".arcade-control-pad").hidden = true;
+      gamePanel.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+      return;
+    }
+    root.querySelector("#space-invaders-frame-wrap").hidden = true;
+    root.querySelector("#space-invaders-frame").src = "about:blank";
+    root.querySelector("#outrun-frame-wrap").hidden = true;
+    root.querySelector("#outrun-frame").src = "about:blank";
+    root.querySelector("#arcade-canvas-wrap").hidden = false;
+    root.querySelector("#arcade-pause").hidden = false;
+    root.querySelector(".arcade-control-pad").hidden = false;
+=======
+>>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
     gameId = id; level = 0; score = 0; checkpoint = 0; startLevel();
     gamePanel.hidden = false; title.textContent = GAMES[id].title; help.textContent = id === "race" ? "Mover: ← → ou A/D · Desviar de obstáculos · P: pausar" : "Mover: ← → ou A/D · Pular: Espaço/↑/W · P: pausar";
     gamePanel.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
@@ -143,7 +284,11 @@ export function initArcadeRoom(root) {
     if(paused){ctx.fillStyle="rgba(0,0,0,.3)";ctx.fillRect(0,0,960,540);}
   }
   function drawRace() {
+<<<<<<< HEAD
+    // Perspectiva pseudo-3D do protótipo de corrida.
+=======
     // Perspectiva pseudo-3D inspirada em corridas de 16 bits como Top Gear.
+>>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
     const horizon = 205;
     const sky = ctx.createLinearGradient(0,0,0,horizon); sky.addColorStop(0,"#9389e8"); sky.addColorStop(1,"#d4c7e8"); ctx.fillStyle=sky;ctx.fillRect(0,0,960,horizon);
     ctx.fillStyle="#65778d";for(let i=0;i<42;i++){const x=i*24;const h=15+(i*17%32);ctx.fillRect(x,horizon-h,17,h);ctx.fillStyle="#d6bf76";for(let w=0;w<3;w++)ctx.fillRect(x+3+w*4,horizon-h+4,2,3);ctx.fillStyle="#65778d";}
@@ -165,10 +310,56 @@ export function initArcadeRoom(root) {
   function keyDown(e) { const keys=["ArrowLeft","ArrowRight","ArrowUp"," ","a","A","d","D","w","W","p","P"];if(keys.includes(e.key)){e.preventDefault();pressed.add(e.key);} if((e.key==="p"||e.key==="P")&&gamePanel&&!gamePanel.hidden&&!finished){togglePause();} }
   function keyUp(e){pressed.delete(e.key);}
   function togglePause(){if(finished)return;paused=!paused;root.querySelector("#arcade-pause").textContent=paused?"Continuar":"Pausar";if(!paused)overlay.hidden=true;else showOverlay("PAUSADO","O jogo está pausado.","Continuar",()=>{paused=false;overlay.hidden=true;root.querySelector("#arcade-pause").textContent="Pausar";});}
+<<<<<<< HEAD
+  let cabinetSelection = "spaceInvaders";
+  const cabinetOrder = Object.keys(GAMES);
+  const cabinetColors = {spaceInvaders:"#ffdc42", pacman:"#ffe600", outrun:"#ff9651", sonic:"#35a8ff"};
+  const cabinetCovers = {
+    spaceInvaders: {src:"./assets/era-space-invaders.jpg", alt:"Arte de Space Invaders"},
+    pacman: {src:"./assets/pacman-cover.png", alt:"Capa de Pac-Man"},
+    outrun: {src:"./assets/outrun-cover.png", alt:"Capa de OutRun"},
+    sonic: {src:"./assets/sonic-speed-cover.png", alt:"Capa de Sonic: teste de velocidade"}
+  };
+  function selectCabinetGame(id) {
+    if (!GAMES[id]) return;
+    cabinetSelection = id;
+    const cabinetOverlay = root.querySelector(".cabinet-screen-overlay");
+    if (cabinetOverlay) cabinetOverlay.style.setProperty("--game-color", cabinetColors[id] || "#ffe34c");
+    root.querySelectorAll("[data-cabinet-select]").forEach(button => {
+      const active = button.dataset.cabinetSelect === id;
+      button.classList.toggle("is-selected", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
+    const index = cabinetOrder.indexOf(id);
+    const cover = cabinetCovers[id];
+    const coverImage = root.querySelector(".cabinet-cover-image");
+    const coverTitle = root.querySelector(".cabinet-cover-title");
+    const count = root.querySelector(".cabinet-selection-count");
+    if (coverImage && cover) { coverImage.src = cover.src; coverImage.alt = cover.alt; }
+    if (coverTitle) coverTitle.textContent = GAMES[id].title.replace(" JS · Corrida pseudo-3D", "").replace(" — Labirinto e estratégia", "").toUpperCase();
+    if (count) count.textContent = `${String(index + 1).padStart(2,"0")} / ${String(cabinetOrder.length).padStart(2,"0")}`;
+    const screen = root.querySelector(".cabinet-screen");
+    if (screen) { screen.classList.remove("cabinet-screen-pulse"); void screen.offsetWidth; screen.classList.add("cabinet-screen-pulse"); }
+  }
+  root.addEventListener("click", e=>{
+    const selector=e.target.closest("[data-cabinet-select]"); if(selector) selectCabinetGame(selector.dataset.cabinetSelect);
+    const prev=e.target.closest("[data-cabinet-prev]"); if(prev){const i=cabinetOrder.indexOf(cabinetSelection);selectCabinetGame(cabinetOrder[(i-1+cabinetOrder.length)%cabinetOrder.length]);}
+    const next=e.target.closest("[data-cabinet-next]"); if(next){const i=cabinetOrder.indexOf(cabinetSelection);selectCabinetGame(cabinetOrder[(i+1)%cabinetOrder.length]);}
+    const cabinetStart=e.target.closest("[data-cabinet-start]"); if(cabinetStart) startGame(cabinetSelection);
+    const start=e.target.closest("[data-arcade-start]"); if(start) { selectCabinetGame(start.dataset.arcadeStart); startGame(start.dataset.arcadeStart); }
+    const era=e.target.closest("[data-era]"); if(era) { const was=era.getAttribute("aria-expanded")==="true"; root.querySelectorAll("[data-era]").forEach(b=>b.setAttribute("aria-expanded","false")); era.setAttribute("aria-expanded",String(!was)); }
+    const pad=e.target.closest("[data-pad]");if(pad){touch.add(pad.dataset.pad);setTimeout(()=>touch.delete(pad.dataset.pad),150);}
+  });
+  selectCabinetGame(cabinetSelection);
+  root.querySelectorAll("[data-pad]").forEach(btn=>{const down=e=>{e.preventDefault();touch.add(btn.dataset.pad);};const up=()=>touch.delete(btn.dataset.pad);btn.addEventListener("pointerdown",down);btn.addEventListener("pointerup",up);btn.addEventListener("pointercancel",up);btn.addEventListener("pointerleave",up);});
+  root.querySelector("#arcade-pause").addEventListener("click",togglePause);
+  root.querySelector("#arcade-exit").addEventListener("click",()=>{running=false;paused=false;cancelAnimationFrame(animationId);root.querySelector("#space-invaders-frame").src="about:blank";root.querySelector("#space-invaders-frame-wrap").hidden=true;root.querySelector("#outrun-frame").src="about:blank";root.querySelector("#outrun-frame-wrap").hidden=true;root.querySelector("#sonic-frame").src="about:blank";root.querySelector("#sonic-frame-wrap").hidden=true;root.querySelector("#arcade-canvas-wrap").hidden=false;root.querySelector("#arcade-pause").hidden=false;root.querySelector(".arcade-control-pad").hidden=false;gamePanel.hidden=true;root.querySelector(".arcade-grid").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});});
+=======
   root.addEventListener("click", e=>{const start=e.target.closest("[data-arcade-start]");if(start)startGame(start.dataset.arcadeStart);const pad=e.target.closest("[data-pad]");if(pad){touch.add(pad.dataset.pad);setTimeout(()=>touch.delete(pad.dataset.pad),150);}});
   root.querySelectorAll("[data-pad]").forEach(btn=>{const down=e=>{e.preventDefault();touch.add(btn.dataset.pad);};const up=()=>touch.delete(btn.dataset.pad);btn.addEventListener("pointerdown",down);btn.addEventListener("pointerup",up);btn.addEventListener("pointercancel",up);btn.addEventListener("pointerleave",up);});
   root.querySelector("#arcade-pause").addEventListener("click",togglePause);
   root.querySelector("#arcade-exit").addEventListener("click",()=>{running=false;paused=false;cancelAnimationFrame(animationId);gamePanel.hidden=true;root.querySelector(".arcade-grid").scrollIntoView({behavior:"smooth",block:"start"});});
+>>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
   window.addEventListener("keydown",keyDown);window.addEventListener("keyup",keyUp);
   window.addEventListener("blur",()=>{pressed.clear();touch.clear();});
   // Release keyboard listeners when navigating away from Sala 004.
