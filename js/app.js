@@ -1,18 +1,11 @@
 import { initNavigation } from "./navigation.js";
-<<<<<<< HEAD
 import { renderHome, initHome } from "./views.js";
-=======
-import { renderHome } from "./views.js";
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
 import { renderTimelineRoom, initTimeline } from "./timeline.js";
 import { renderConsoleGallery, initConsoleGallery } from "./consoles.js";
 import { renderGraphicsRoom, initGraphicsRoom } from "./graphics.js";
 import { renderArcadeRoom, initArcadeRoom } from "./arcade.js";
-<<<<<<< HEAD
 import { renderQuizRoom, initQuizRoom } from "./quiz.js";
 import { renderInsideConsoleRoom, initInsideConsoleRoom } from "./inside-console.js";
-=======
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
 
 const view = document.querySelector("#app-view");
 const nav = document.querySelector("#primary-nav");
@@ -21,26 +14,18 @@ let events = [];
 let eras = [];
 let consoles = [];
 let graphicsData = null;
-<<<<<<< HEAD
 let quizData = null;
 let quizCleanup = null;
 let hardwareCleanup = null;
-=======
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
 
 initNavigation();
 
 async function loadData() {
-<<<<<<< HEAD
   const [roomsResponse, eventsResponse, erasResponse, consolesResponse, graphicsResponse, quizResponse] = await Promise.all([
-=======
-  const [roomsResponse, eventsResponse, erasResponse, consolesResponse, graphicsResponse] = await Promise.all([
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
     fetch("./data/rooms.json"),
     fetch("./data/timeline-events.json"),
     fetch("./data/eras.json"),
     fetch("./data/consoles.json"),
-<<<<<<< HEAD
     fetch("./data/graphics-evolution.json"),
     fetch("./data/quiz.json")
   ]);
@@ -50,16 +35,6 @@ async function loadData() {
   [rooms, events, eras, consoles, graphicsData, quizData] = await Promise.all([
     roomsResponse.json(), eventsResponse.json(), erasResponse.json(),
     consolesResponse.json(), graphicsResponse.json(), quizResponse.json()
-=======
-    fetch("./data/graphics-evolution.json")
-  ]);
-  for (const response of [roomsResponse, eventsResponse, erasResponse, consolesResponse, graphicsResponse]) {
-    if (!response.ok) throw new Error(`Falha ao carregar dados (${response.status}).`);
-  }
-  [rooms, events, eras, consoles, graphicsData] = await Promise.all([
-    roomsResponse.json(), eventsResponse.json(), erasResponse.json(),
-    consolesResponse.json(), graphicsResponse.json()
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
   ]);
 }
 
@@ -67,10 +42,7 @@ function currentRoute() {
   const hash = window.location.hash || "#/";
   // Âncora da própria página inicial: não é uma rota do museu.
   if (hash === "#salas-home") return { page: "home", scrollTarget: "salas-home" };
-<<<<<<< HEAD
   if (hash === "#sobre") return { page: "home", scrollTarget: "sobre" };
-=======
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
   if (hash === "#" || hash === "#/") return { page: "home" };
   const match = hash.match(/^#\/sala\/([a-z0-9-]+)$/i);
   return match ? { page: "room", slug: match[1] } : { page: "not-found" };
@@ -78,17 +50,12 @@ function currentRoute() {
 
 function renderRoute() {
   const route = currentRoute();
-<<<<<<< HEAD
   if (quizCleanup) { quizCleanup(); quizCleanup = null; }
   if (hardwareCleanup) { hardwareCleanup(); hardwareCleanup = null; }
   if (typeof view.__homeCleanup === "function") { view.__homeCleanup(); view.__homeCleanup = null; }
   if (route.page === "home") {
     view.innerHTML = renderHome(rooms);
     initHome(view);
-=======
-  if (route.page === "home") {
-    view.innerHTML = renderHome(rooms);
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
   } else if (route.page === "room" && route.slug === "linha-do-tempo") {
     view.innerHTML = renderTimelineRoom(eras, events);
     initTimeline(view, events);
@@ -98,7 +65,6 @@ function renderRoute() {
   } else if (route.page === "room" && route.slug === "evolucao-grafica") {
     view.innerHTML = renderGraphicsRoom(graphicsData);
     initGraphicsRoom(view, graphicsData);
-<<<<<<< HEAD
   } else if (route.page === "room" && route.slug === "quiz") {
     view.innerHTML = renderQuizRoom();
     quizCleanup = initQuizRoom(view, quizData.questions);
@@ -108,11 +74,6 @@ function renderRoute() {
   } else if (route.page === "room" && (route.slug === "por-dentro-do-console" || route.slug === "pixel-quest")) {
     view.innerHTML = renderInsideConsoleRoom();
     hardwareCleanup = initInsideConsoleRoom(view);
-=======
-  } else if (route.page === "room" && route.slug === "mundos-dos-jogos") {
-    view.innerHTML = renderArcadeRoom();
-    initArcadeRoom(view);
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
   } else if (route.page === "room") {
     const room = rooms.find((item) => item.slug === route.slug);
     view.innerHTML = room ? renderRoomPage(room) : renderNotFound();

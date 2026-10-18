@@ -55,7 +55,6 @@
     "slug": "mundos-dos-jogos",
     "icon": "▶",
     "title": "PIXEL ARCADE",
-<<<<<<< HEAD
     "description": "Entre na Sala 004, escolha um fliperama e jogue experiências retrô diretamente no museu.",
     "action": "Explorar fliperamas",
     "content": {
@@ -66,17 +65,6 @@
         "Pac-Man: labirinto, estratégia e perseguição arcade.",
         "Pac-Man: labirinto e estratégia.",
         "Sonic: teste de velocidade abre o projeto web Open Sonic JS integrado, com controles adaptados para toque."
-=======
-    "description": "Entre na Sala 004 e experimente três jogos com fases, recordes locais e controles para computador e celular.",
-    "action": "Jogar agora",
-    "content": {
-      "heading": "Três jogos. Nove fases. Uma sala para jogar.",
-      "text": "Escolha uma experiência de plataforma ou corrida arcade, avance por três fases e acompanhe seu recorde salvo localmente no navegador.",
-      "bullets": [
-        "Sonic: protótipo não oficial de mecânicas, sem assets oficiais e com publicação condicionada à verificação de permissões.",
-        "Pixel Quest: aventura autoral de plataforma.",
-        "Turbo Pixel: corrida retrô contra o tempo."
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
       ]
     }
   },
@@ -99,7 +87,6 @@
   },
   {
     "number": "ROOM 06",
-<<<<<<< HEAD
     "slug": "por-dentro-do-console",
     "icon": "◫",
     "title": "Por dentro do console",
@@ -116,21 +103,3 @@
     }
   }
 ]
-=======
-    "slug": "pixel-quest",
-    "icon": "▶",
-    "title": "Pixel Quest",
-    "description": "Uma aventura original em estilo 16-bit está em desenvolvimento para o museu.",
-    "action": "Ver o projeto",
-    "content": {
-      "heading": "Uma aventura original em desenvolvimento.",
-      "text": "O jogo terá personagem original, cenário tropical, anéis com design próprio, obstáculos mecânicos e uma fase completa. Não utilizará sprites, música ou personagens de franquias existentes.",
-      "bullets": [
-        "Teclado e controles de toque.",
-        "HUD com pontuação, tempo e três vidas.",
-        "Efeitos sonoros próprios e opção de silenciar."
-      ]
-    }
-  }
-]
->>>>>>> b28090f26a2ea0a8cbcb2d33ea038a6f161b5d9a
