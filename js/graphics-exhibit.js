@@ -60,7 +60,7 @@ const PAIRS = [
     leftName: 'Grand Theft Auto',
     leftYear: '1997 · PC / PlayStation',
     rightName: 'Grand Theft Auto VI',
-    rightYear: '2025 · material promocional',
+    rightYear: '2026 · previsão de lançamento',
     desc: 'A série evidencia a mudança de escala: de cidades vistas de cima e simplificadas para metrópoles com iluminação, clima, arquitetura e sensação de lugar.',
     notes: ['Leitura aérea e simplificada → paisagem ampla e cinematográfica', 'Poucos carros e formas básicas → cidade cheia de volume e atmosfera', 'Função gráfica → construção de ambientação e identidade urbana'],
     accent: '#67EABD'

@@ -1,0 +1,105 @@
+[
+  {
+    "number": "ROOM 01",
+    "slug": "linha-do-tempo",
+    "icon": "◷",
+    "title": "Linha do tempo",
+    "description": "Viaje pelas eras e descubra marcos documentados que mudaram a história dos videogames.",
+    "action": "Explorar eras",
+    "content": {
+      "heading": "Uma história em construção, com fontes à vista.",
+      "text": "A linha do tempo reúne marcos selecionados e explica a diferença entre protótipos experimentais, jogos de arcade e consoles domésticos.",
+      "bullets": [
+        "Filtre os eventos por era.",
+        "Abra os registros para consultar contexto e fontes.",
+        "Observe notas sobre datas e regiões de lançamento."
+      ]
+    }
+  },
+  {
+    "number": "ROOM 02",
+    "slug": "consoles",
+    "icon": "▣",
+    "title": "Galeria de consoles",
+    "description": "Conheça dez máquinas marcantes, com datas por região, características técnicas, contexto e referências verificáveis.",
+    "action": "Ver a coleção",
+    "content": {
+      "heading": "De cartuchos e sprites a sistemas híbridos.",
+      "text": "A galeria reúne dez consoles com fichas individuais, contexto histórico, datas regionais, características técnicas e fontes consultáveis.",
+      "bullets": [
+        "Pesquise por nome, fabricante ou geração.",
+        "Abra cada ficha para consultar datas regionais e especificações.",
+        "Silhuetas originais em CSS evitam o uso de imagens sem licença confirmada."
+      ]
+    }
+  },
+  {
+    "number": "ROOM 03",
+    "slug": "evolucao-grafica",
+    "icon": "◈",
+    "title": "Evolução gráfica",
+    "description": "Compare estilos visuais e entenda a evolução de pixels, cores, resolução e 3D.",
+    "action": "Ver a evolução",
+    "content": {
+      "heading": "A imagem também conta a história da tecnologia.",
+      "text": "Esta sala vai comparar exemplos visuais com direitos de uso verificados e explicar limites técnicos de cada período sem reduzir a evolução a uma simples corrida por mais pixels.",
+      "bullets": [
+        "Paletas e limitações de cor.",
+        "Sprites, tiles e resolução.",
+        "Polígonos 3D e técnicas posteriores."
+      ]
+    }
+  },
+  {
+    "number": "ROOM 04",
+    "slug": "mundos-dos-jogos",
+    "icon": "▶",
+    "title": "PIXEL ARCADE",
+    "description": "Entre na Sala 004, escolha um fliperama e jogue experiências retrô diretamente no museu.",
+    "action": "Explorar fliperamas",
+    "content": {
+      "heading": "Escolha seu fliperama",
+      "text": "Explore jogos de diferentes épocas e experimente o clássico Space Invaders, com controles e recorde no próprio jogo. Novas experiências serão adicionadas gradualmente.",
+      "bullets": [
+        "Space Invaders: recriação jogável do arcade de 1978.",
+        "Pac-Man: labirinto, estratégia e perseguição arcade.",
+        "Pac-Man: labirinto e estratégia.",
+        "Sonic: teste de velocidade abre o projeto web Open Sonic JS integrado, com controles adaptados para toque."
+      ]
+    }
+  },
+  {
+    "number": "ROOM 05",
+    "slug": "quiz",
+    "icon": "✦",
+    "title": "Quiz histórico",
+    "description": "Teste seus conhecimentos e receba explicações sobre as respostas.",
+    "action": "Preparar desafio",
+    "content": {
+      "heading": "Conhecimento, contexto e explicação.",
+      "text": "O quiz interativo será montado a partir dos registros históricos do museu. Cada resposta terá explicação e referência para que o visitante possa continuar pesquisando.",
+      "bullets": [
+        "Perguntas de múltipla escolha.",
+        "Feedback explicativo.",
+        "Pontuação e opção de tentar novamente."
+      ]
+    }
+  },
+  {
+    "number": "ROOM 06",
+    "slug": "por-dentro-do-console",
+    "icon": "◫",
+    "title": "Por dentro do console",
+    "description": "Descubra como CPU, memória, gráficos, áudio e mídia trabalham juntos para dar vida aos jogos.",
+    "action": "Explorar o laboratório",
+    "content": {
+      "heading": "Descubra o videogame por dentro.",
+      "text": "A Sala 006 apresenta os componentes centrais de um console e mostra como cada avanço técnico influenciou a experiência de jogar, da era dos cartuchos aos sistemas atuais.",
+      "bullets": [
+        "Mapa interativo com CPU, memória, gráficos, áudio e armazenamento.",
+        "Comparação entre gerações e capacidades técnicas.",
+        "Linha de evolução técnica com impacto prático nos jogos."
+      ]
+    }
+  }
+]

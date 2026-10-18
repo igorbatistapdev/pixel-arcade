@@ -1,0 +1,1842 @@
+[
+  {
+    "id": "atari-2600",
+    "name": "Atari 2600",
+    "manufacturer": "Atari, Inc.",
+    "year": 1977,
+    "generation": "2ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "América do Norte",
+        "date": "11 de setembro de 1977",
+        "note": "Lançamento comercial nos EUA sob o nome Atari VCS."
+      },
+      {
+        "region": "Europa",
+        "date": "1978",
+        "note": "Ano de chegada a mercados europeus; datas variam por país."
+      },
+      {
+        "region": "Japão",
+        "date": "1983",
+        "note": "Comercializado como Atari 2800; não é a mesma data/nome da versão norte-americana."
+      }
+    ],
+    "hardware": {
+      "cpu": "MOS Technology 6507, derivado do 6502",
+      "memory": "128 bytes de RAM",
+      "media": "Cartuchos ROM",
+      "video": "Gráficos e som gerados pelo chip TIA; não há uma resolução fixa de framebuffer como em sistemas modernos."
+    },
+    "games": [
+      "Combat",
+      "Adventure",
+      "Pitfall!"
+    ],
+    "context": "O Atari VCS ajudou a popularizar o modelo de console doméstico programável por cartuchos. Seu hardware simples exigia que desenvolvedores administrassem cuidadosamente o tempo de processamento e a geração da imagem durante a varredura da televisão.",
+    "fact": "Adventure (1980) é frequentemente citado como um dos primeiros jogos de ação-aventura para consoles e contém um easter egg que revela o nome de seu criador.",
+    "sources": [
+      {
+        "label": "Computer History Museum — Graphics & Games timeline",
+        "url": "https://www.computerhistory.org/timeline/graphics-games/",
+        "type": "Institucional"
+      },
+      {
+        "label": "Atari — história corporativa",
+        "url": "https://www.atari.com/",
+        "type": "Fabricante (portal oficial; história geral)"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Atari_2600_console.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atari_2600_console.jpg",
+      "author": "Yarivi",
+      "license": "Licença declarada na página do arquivo; consultar condições atuais",
+      "alt": "Fotografia real do Atari 2600; crédito: Yarivi.",
+      "credit": "Foto: Yarivi / Wikimedia Commons"
+    }
+  },
+  {
+    "id": "famicom-nes",
+    "name": "Nintendo Family Computer / NES",
+    "manufacturer": "Nintendo",
+    "year": 1983,
+    "generation": "3ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Japão",
+        "date": "15 de julho de 1983",
+        "note": "Lançado como Family Computer (Famicom)."
+      },
+      {
+        "region": "América do Norte",
+        "date": "18 de outubro de 1985",
+        "note": "Lançamento de teste em Nova York; expansão nacional ocorreu depois, em 1986."
+      },
+      {
+        "region": "Europa",
+        "date": "1986–1987",
+        "note": "Lançamento gradual, com datas diferentes por país."
+      }
+    ],
+    "hardware": {
+      "cpu": "Processador Ricoh 8-bit baseado no MOS 6502",
+      "memory": "Memória principal e de vídeo limitadas, com capacidades dependentes da arquitetura e do cartucho",
+      "media": "Cartuchos; alguns mercados tiveram acessórios de disco",
+      "video": "PPU dedicada para composição de fundos e sprites; capacidades exatas variam com a região e o hardware."
+    },
+    "games": [
+      "Super Mario Bros.",
+      "The Legend of Zelda",
+      "Metroid"
+    ],
+    "context": "A Famicom/NES consolidou uma biblioteca doméstica baseada em cartuchos e ajudou a estabelecer séries que se tornaram centrais para a indústria. A versão japonesa e a versão internacional têm diferenças físicas e comerciais.",
+    "fact": "O nome Famicom foi usado no Japão; NES é o nome da versão internacional, com desenho externo diferente.",
+    "sources": [
+      {
+        "label": "Nintendo — História oficial da Nintendo",
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "type": "Fabricante"
+      },
+      {
+        "label": "Nintendo Careers — Our History",
+        "url": "https://careers.nintendo.com/our-history/",
+        "type": "Fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/NES-Console-Set.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NES-Console-Set.jpg",
+      "author": "Evan-Amos",
+      "license": "Domínio público, conforme página do arquivo",
+      "alt": "Fotografia real do Nintendo Family Computer / NES; crédito: Evan-Amos.",
+      "credit": "Foto: Evan-Amos / Wikimedia Commons"
+    }
+  },
+  {
+    "id": "mega-drive",
+    "name": "Sega Mega Drive / Genesis",
+    "manufacturer": "Sega",
+    "year": 1988,
+    "generation": "4ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Japão",
+        "date": "29 de outubro de 1988",
+        "note": "Lançado como Mega Drive."
+      },
+      {
+        "region": "América do Norte",
+        "date": "14 de agosto de 1989",
+        "note": "Lançado como Sega Genesis."
+      },
+      {
+        "region": "Europa",
+        "date": "novembro de 1990",
+        "note": "Lançamento por mercados; o dia pode variar conforme o país."
+      }
+    ],
+    "hardware": {
+      "cpu": "Motorola 68000 de 16/32 bits como CPU principal, acompanhado por Zilog Z80",
+      "memory": "Memória principal e de vídeo dedicadas; capacidade dependente da configuração do sistema",
+      "media": "Cartuchos ROM",
+      "video": "VDP com modos gráficos 2D e suporte a sprites; saída de vídeo dependente do modelo e região."
+    },
+    "games": [
+      "Sonic the Hedgehog",
+      "Streets of Rage 2",
+      "Phantasy Star IV"
+    ],
+    "context": "O Mega Drive/Genesis foi uma das plataformas centrais da disputa de consoles de 16 bits. A estratégia de marketing da Sega enfatizou velocidade, atitude e experiências de arcade em casa.",
+    "fact": "O mesmo console é conhecido como Mega Drive em grande parte do mundo e Genesis na América do Norte.",
+    "sources": [
+      {
+        "label": "Sega — portal corporativo oficial",
+        "url": "https://www.sega.co.jp/",
+        "type": "Fabricante"
+      },
+      {
+        "label": "Conventional Memory — datas de lançamento por região (fonte especializada secundária)",
+        "url": "https://conventionalmemory.io/guides/game-console-release-dates-japan-north-america-europe/",
+        "type": "Especializada"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+      "author": "Evan-Amos",
+      "license": "Domínio público, conforme página do arquivo",
+      "alt": "Fotografia real do Sega Mega Drive / Genesis; crédito: Evan-Amos.",
+      "credit": "Foto: Evan-Amos / Wikimedia Commons"
+    }
+  },
+  {
+    "id": "game-boy",
+    "name": "Game Boy",
+    "manufacturer": "Nintendo",
+    "year": 1989,
+    "generation": "4ª geração (portátil)",
+    "category": "Console portátil",
+    "regionDates": [
+      {
+        "region": "Japão",
+        "date": "21 de abril de 1989",
+        "note": "Lançamento inicial."
+      },
+      {
+        "region": "América do Norte",
+        "date": "31 de julho de 1989",
+        "note": "Lançamento nos EUA."
+      },
+      {
+        "region": "Europa",
+        "date": "28 de setembro de 1990",
+        "note": "Lançamento europeu citado pela cronologia consultada."
+      }
+    ],
+    "hardware": {
+      "cpu": "Processador Sharp LR35902, arquitetura híbrida baseada em conceitos Z80/8080",
+      "memory": "8 KB de RAM principal e 8 KB de RAM de vídeo",
+      "media": "Cartuchos ROM",
+      "video": "LCD refletivo monocromático de 160 × 144 pixels; quatro tons de cinza aparentes."
+    },
+    "games": [
+      "Tetris",
+      "Super Mario Land",
+      "The Legend of Zelda: Link’s Awakening"
+    ],
+    "context": "O Game Boy tornou os jogos portáteis com cartuchos intercambiáveis um fenômeno global. A combinação de autonomia, custo e uma biblioteca ampla ajudou o aparelho a manter relevância por muitos anos.",
+    "fact": "Tetris foi um título de lançamento importante em mercados internacionais e ajudou a demonstrar o apelo de partidas curtas e portáteis.",
+    "sources": [
+      {
+        "label": "Nintendo — História oficial",
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "type": "Fabricante"
+      },
+      {
+        "label": "Nintendo Careers — Our History",
+        "url": "https://careers.nintendo.com/our-history/",
+        "type": "Fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Game-Boy-Original.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Game-Boy-Original.jpg",
+      "author": "Evan-Amos",
+      "license": "Domínio público, conforme página do arquivo",
+      "alt": "Fotografia real do Game Boy; crédito: Evan-Amos.",
+      "credit": "Foto: Evan-Amos / Wikimedia Commons"
+    }
+  },
+  {
+    "id": "snes",
+    "name": "Super Nintendo Entertainment System / Super Famicom",
+    "manufacturer": "Nintendo",
+    "year": 1990,
+    "generation": "4ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Japão",
+        "date": "21 de novembro de 1990",
+        "note": "Lançado como Super Famicom."
+      },
+      {
+        "region": "América do Norte",
+        "date": "23 de agosto de 1991",
+        "note": "Lançamento nos EUA como Super Nintendo Entertainment System."
+      },
+      {
+        "region": "Europa",
+        "date": "junho de 1992",
+        "note": "Lançamento europeu; datas de distribuição podiam variar por país."
+      }
+    ],
+    "hardware": {
+      "cpu": "Ricoh 5A22, baseado no núcleo 65C816",
+      "memory": "128 KB de RAM principal",
+      "media": "Cartuchos ROM; alguns jogos incorporaram chips adicionais no cartucho",
+      "video": "PPU com camadas de fundo, sprites, efeitos de transparência e modos gráficos variados."
+    },
+    "games": [
+      "Super Mario World",
+      "The Legend of Zelda: A Link to the Past",
+      "Super Metroid"
+    ],
+    "context": "A plataforma ampliou a paleta visual, os recursos de áudio e os efeitos gráficos disponíveis nos consoles domésticos. Alguns cartuchos incluíam coprocessadores para acrescentar funções específicas.",
+    "fact": "O nome e o desenho externo mudam conforme o mercado: Super Famicom no Japão e SNES/Super Nintendo em outros territórios.",
+    "sources": [
+      {
+        "label": "Nintendo — História oficial",
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "type": "Fabricante"
+      },
+      {
+        "label": "Nintendo Careers — Our History",
+        "url": "https://careers.nintendo.com/our-history/",
+        "type": "Fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SNES-Mod1-Console-Set.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SNES-Mod1-Console-Set.jpg",
+      "author": "Evan-Amos",
+      "license": "Domínio público, conforme página do arquivo",
+      "alt": "Fotografia real do Super Nintendo Entertainment System / Super Famicom; crédito: Evan-Amos.",
+      "credit": "Foto: Evan-Amos / Wikimedia Commons"
+    }
+  },
+  {
+    "id": "playstation",
+    "name": "PlayStation",
+    "manufacturer": "Sony Computer Entertainment",
+    "year": 1994,
+    "generation": "5ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Japão",
+        "date": "3 de dezembro de 1994",
+        "note": "Lançamento original."
+      },
+      {
+        "region": "América do Norte",
+        "date": "9 de setembro de 1995",
+        "note": "Lançamento nos EUA."
+      },
+      {
+        "region": "Europa",
+        "date": "29 de setembro de 1995",
+        "note": "Lançamento europeu."
+      }
+    ],
+    "hardware": {
+      "cpu": "MIPS R3000A de 32 bits, aproximadamente 33,9 MHz",
+      "memory": "2 MB de RAM principal; 1 MB de RAM de vídeo",
+      "media": "CD-ROM",
+      "video": "Acelerador 3D com polígonos texturizados e saída de vídeo dependente da região."
+    },
+    "games": [
+      "Tekken 3",
+      "Final Fantasy VII",
+      "Gran Turismo"
+    ],
+    "context": "O PlayStation contribuiu para tornar o CD-ROM e os gráficos poligonais 3D centrais no mercado doméstico. A mídia óptica oferecia mais espaço que os cartuchos comuns da época para áudio, vídeo e conteúdo.",
+    "fact": "A data de lançamento japonesa foi em 1994, enquanto América do Norte e Europa receberam o console em 1995.",
+    "sources": [
+      {
+        "label": "PlayStation — história oficial 1994",
+        "url": "https://www.playstation.com/pt-br/playstation-history/1994-ps-one/",
+        "type": "Fabricante"
+      },
+      {
+        "label": "Sony — história corporativa",
+        "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/company/",
+        "type": "Fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/PSX-Console-wController.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PSX-Console-wController.png",
+      "author": "Evan-Amos",
+      "license": "Domínio público, conforme página do arquivo",
+      "alt": "Fotografia real do PlayStation; crédito: Evan-Amos.",
+      "credit": "Foto: Evan-Amos / Wikimedia Commons"
+    }
+  },
+  {
+    "id": "nintendo-64",
+    "name": "Nintendo 64",
+    "manufacturer": "Nintendo",
+    "year": 1996,
+    "generation": "5ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Japão",
+        "date": "23 de junho de 1996",
+        "note": "Lançamento japonês."
+      },
+      {
+        "region": "América do Norte",
+        "date": "29 de setembro de 1996",
+        "note": "Lançamento nos EUA."
+      },
+      {
+        "region": "Europa",
+        "date": "março de 1997",
+        "note": "Lançamento europeu citado pela cronologia da Nintendo."
+      }
+    ],
+    "hardware": {
+      "cpu": "CPU NEC VR4300 de 64 bits, baseada em MIPS R4300i",
+      "memory": "4 MB de RDRAM unificada; expansão para 8 MB com Expansion Pak em jogos compatíveis",
+      "media": "Cartuchos ROM",
+      "video": "Processador Reality Coprocessor para operações gráficas e de áudio; recursos dependem do software."
+    },
+    "games": [
+      "Super Mario 64",
+      "The Legend of Zelda: Ocarina of Time",
+      "GoldenEye 007"
+    ],
+    "context": "O Nintendo 64 destacou-se pela adoção de gráficos 3D e controles analógicos em uma plataforma baseada em cartuchos. A escolha de cartuchos trouxe vantagens de carregamento, mas limitações de capacidade em comparação com CDs.",
+    "fact": "A Nintendo anunciou o console como um sistema doméstico de 64 bits; a biblioteca explorou mundos 3D e controle analógico.",
+    "sources": [
+      {
+        "label": "Nintendo — História oficial",
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "type": "Fabricante"
+      },
+      {
+        "label": "Nintendo Careers — Our History",
+        "url": "https://careers.nintendo.com/our-history/",
+        "type": "Fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/N64-Console-Set.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:N64-Console-Set.jpg",
+      "author": "Evan-Amos",
+      "license": "Domínio público, conforme página do arquivo",
+      "alt": "Fotografia real do Nintendo 64; crédito: Evan-Amos.",
+      "credit": "Foto: Evan-Amos / Wikimedia Commons"
+    }
+  },
+  {
+    "id": "playstation-2",
+    "name": "PlayStation 2",
+    "manufacturer": "Sony Computer Entertainment",
+    "year": 2000,
+    "generation": "6ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Japão",
+        "date": "4 de março de 2000",
+        "note": "Lançamento original."
+      },
+      {
+        "region": "América do Norte",
+        "date": "26 de outubro de 2000",
+        "note": "Lançamento nos EUA."
+      },
+      {
+        "region": "Europa",
+        "date": "24 de novembro de 2000",
+        "note": "Lançamento europeu."
+      }
+    ],
+    "hardware": {
+      "cpu": "Emotion Engine, arquitetura MIPS de 128 bits anunciada pela Sony",
+      "memory": "32 MB de RDRAM principal; 4 MB de memória de vídeo e memória adicional para som",
+      "media": "DVD-ROM e CD-ROM, conforme o jogo e a região",
+      "video": "Graphics Synthesizer com memória de vídeo embutida; saída e modos gráficos dependem do título e do modelo."
+    },
+    "games": [
+      "Grand Theft Auto: San Andreas",
+      "Shadow of the Colossus",
+      "Gran Turismo 4"
+    ],
+    "context": "O PlayStation 2 combinou uma biblioteca extensa de jogos com reprodução de DVD, o que ampliou sua utilidade como aparelho de entretenimento doméstico. A compatibilidade com muitos jogos do PlayStation original também facilitou a transição para parte do público.",
+    "fact": "A reprodução de DVD foi uma função relevante no período em que leitores de DVD dedicados ainda custavam mais que muitos consoles.",
+    "sources": [
+      {
+        "label": "Sony — história corporativa",
+        "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/company/",
+        "type": "Fabricante"
+      },
+      {
+        "label": "PlayStation — história oficial",
+        "url": "https://www.playstation.com/pt-br/playstation-history/",
+        "type": "Fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/PS2-Fat-Console-Set.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PS2-Fat-Console-Set.jpg",
+      "author": "Evan-Amos",
+      "license": "Domínio público, conforme página do arquivo",
+      "alt": "Fotografia real do PlayStation 2; crédito: Evan-Amos.",
+      "credit": "Foto: Evan-Amos / Wikimedia Commons"
+    }
+  },
+  {
+    "id": "wii",
+    "name": "Wii",
+    "manufacturer": "Nintendo",
+    "year": 2006,
+    "generation": "7ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "América do Norte",
+        "date": "19 de novembro de 2006",
+        "note": "Primeiro grande mercado de lançamento."
+      },
+      {
+        "region": "Japão",
+        "date": "2 de dezembro de 2006",
+        "note": "Lançamento japonês."
+      },
+      {
+        "region": "Europa",
+        "date": "8 de dezembro de 2006",
+        "note": "Lançamento europeu."
+      }
+    ],
+    "hardware": {
+      "cpu": "IBM Broadway, derivado da arquitetura PowerPC",
+      "memory": "Memória principal e de vídeo integradas ao sistema; especificações detalhadas variam entre documentação pública e revisões",
+      "media": "Discos ópticos Wii de 12 cm e discos de GameCube em modelos compatíveis",
+      "video": "Saída de vídeo até 480p em configurações compatíveis; foco em controle por movimento."
+    },
+    "games": [
+      "Wii Sports",
+      "The Legend of Zelda: Twilight Princess",
+      "Mario Kart Wii"
+    ],
+    "context": "O Wii tornou o controle por movimento o centro da experiência de uso. A proposta buscou alcançar jogadores casuais e famílias além do público tradicional, com jogos de fácil demonstração em grupo.",
+    "fact": "O controle Wii Remote usava sensores de movimento e apontamento por infravermelho para criar interações diferentes dos controles convencionais.",
+    "sources": [
+      {
+        "label": "Nintendo — História oficial",
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "type": "Fabricante"
+      },
+      {
+        "label": "Nintendo Careers — Our History",
+        "url": "https://careers.nintendo.com/our-history/",
+        "type": "Fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wii-console.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wii-console.jpg",
+      "author": "Evan-Amos",
+      "license": "Domínio público, conforme página do arquivo",
+      "alt": "Fotografia real do Wii; crédito: Evan-Amos.",
+      "credit": "Foto: Evan-Amos / Wikimedia Commons"
+    }
+  },
+  {
+    "id": "switch",
+    "name": "Nintendo Switch",
+    "manufacturer": "Nintendo",
+    "year": 2017,
+    "generation": "8ª geração (híbrido portátil/doméstico)",
+    "category": "Console híbrido",
+    "regionDates": [
+      {
+        "region": "Japão",
+        "date": "3 de março de 2017",
+        "note": "Lançamento mundial em mercados selecionados, incluindo Japão."
+      },
+      {
+        "region": "América do Norte",
+        "date": "3 de março de 2017",
+        "note": "Lançamento nos EUA e Canadá."
+      },
+      {
+        "region": "Europa",
+        "date": "3 de março de 2017",
+        "note": "Lançamento em mercados europeus selecionados."
+      }
+    ],
+    "hardware": {
+      "cpu": "NVIDIA Tegra customizado; a Nintendo não divulga todas as frequências operacionais oficiais ao público",
+      "memory": "4 GB de memória LPDDR4 compartilhada",
+      "media": "Cartões de jogo proprietários e armazenamento interno eMMC; suporte a microSD",
+      "video": "Tela LCD de 6,2 polegadas e 1280 × 720 no modelo original; saída até 1080p na TV via dock."
+    },
+    "games": [
+      "The Legend of Zelda: Breath of the Wild",
+      "Super Mario Odyssey",
+      "Animal Crossing: New Horizons"
+    ],
+    "context": "O Switch combinou uso portátil e conexão à televisão em um único sistema, com controles Joy-Con destacáveis. Essa abordagem híbrida mudou a forma de transitar entre modos de jogo sem trocar de plataforma.",
+    "fact": "O Switch original foi lançado em 3 de março de 2017 em vários mercados principais, em vez de chegar ao Japão primeiro e a outras regiões meses depois.",
+    "sources": [
+      {
+        "label": "Nintendo — História oficial",
+        "url": "https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html",
+        "type": "Fabricante"
+      },
+      {
+        "label": "Nintendo — página oficial do sistema",
+        "url": "https://www.nintendo.com/us/switch/",
+        "type": "Fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo-Switch-Console-Bare-BR.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nintendo-Switch-Console-Bare-BR.jpg",
+      "author": "Evan-Amos",
+      "license": "Domínio público, conforme página do arquivo",
+      "alt": "Fotografia real do Nintendo Switch; crédito: Evan-Amos.",
+      "credit": "Foto: Evan-Amos / Wikimedia Commons"
+    }
+  },
+  {
+    "id": "magnavox-odyssey",
+    "name": "Magnavox Odyssey",
+    "manufacturer": "Magnavox",
+    "year": 1972,
+    "generation": "1ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1972",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Table Tennis",
+      "Ski",
+      "Simon Says"
+    ],
+    "context": "Um dos primeiros consoles domésticos comerciais. Seus jogos usavam circuitos dedicados e acessórios físicos para complementar a imagem da televisão.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://bojoga.com.br/acervo/consoles-de-mesa/geracao-1/odyssey/",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Magnavox_Odyssey.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Magnavox%20Odyssey",
+      "author": "Consultar a página original do arquivo",
+      "license": "Verificar a licença e a autoria na página do arquivo antes de reutilizar",
+      "alt": "Fotografia real do Magnavox Odyssey. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "telejogo",
+    "name": "Telejogo",
+    "manufacturer": "Philco/Ford",
+    "year": 1977,
+    "generation": "1ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1977",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Tênis",
+      "Futebol",
+      "Paredão"
+    ],
+    "context": "Console brasileiro dedicado a jogos no estilo Pong, com controles giratórios integrados e jogos gravados no aparelho.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://bojoga.com.br/acervo/consoles-de-mesa/geracao-1/telejogo/",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Telejogo.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Telejogo",
+      "author": "Consultar a página original do arquivo",
+      "license": "Verificar a licença e a autoria na página do arquivo antes de reutilizar",
+      "alt": "Fotografia real do Telejogo. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "coleco-telstar",
+    "name": "Coleco Telstar",
+    "manufacturer": "Coleco",
+    "year": 1976,
+    "generation": "1ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1976",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Hockey",
+      "Tennis",
+      "Handball"
+    ],
+    "context": "Console dedicado da família de jogos inspirados em Pong, vendido em diferentes variantes.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Coleco_Telstar",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ctelstar.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ctelstar.jpg",
+      "author": "Holek (consultar página de origem para confirmação dos termos)",
+      "license": "Consultar a página do arquivo; confirmar a licença antes de reutilizar.",
+      "alt": "Fotografia do Coleco Telstar. Crédito e licença informados na página de origem.",
+      "credit": "Imagem: Holek / Wikimedia Commons — verificar os termos na página do arquivo."
+    }
+  },
+  {
+    "id": "nintendo-color-tv-game",
+    "name": "Color TV-Game",
+    "manufacturer": "Nintendo",
+    "year": 1977,
+    "generation": "1ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1977",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Light Tennis"
+    ],
+    "context": "Primeira linha de consoles domésticos da Nintendo, lançada inicialmente no Japão com jogos dedicados.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Color_TV-Game",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo_Color_TV_game_6.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nintendo Color TV game 6.jpg",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do Color TV-Game. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "fairchild-channel-f",
+    "name": "Fairchild Channel F",
+    "manufacturer": "Fairchild Camera and Instrument",
+    "year": 1976,
+    "generation": "2ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1976",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Video Whizball",
+      "Hockey",
+      "Tennis"
+    ],
+    "context": "Pioneiro no uso de cartuchos ROM intercambiáveis em console doméstico.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Fairchild_Channel_F",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fairchild-Channel-F.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fairchild-Channel-F.jpg",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do Fairchild Channel F. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "intellivision",
+    "name": "Intellivision",
+    "manufacturer": "Mattel Electronics",
+    "year": 1979,
+    "generation": "2ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1979",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Major League Baseball",
+      "Astrosmash"
+    ],
+    "context": "Concorrente do Atari 2600 conhecido por gráficos coloridos e controles com teclado numérico.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Intellivision",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Intellivision-Console-Set.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Intellivision-Console-Set.jpg",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do Intellivision. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "colecovision",
+    "name": "ColecoVision",
+    "manufacturer": "Coleco",
+    "year": 1982,
+    "generation": "2ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1982",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Donkey Kong",
+      "Zaxxon"
+    ],
+    "context": "Console de 1982 que ficou conhecido por conversões de arcade e acessórios de expansão.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/ColecoVision",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/ColecoVision-Console-BR.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ColecoVision-Console-BR.jpg",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do ColecoVision. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "odyssey2",
+    "name": "Magnavox Odyssey² / Philips Odyssey",
+    "manufacturer": "Magnavox / Philips",
+    "year": 1978,
+    "generation": "2ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1978",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "K.C. Munchkin!",
+      "Pickaxe Pete"
+    ],
+    "context": "Console com teclado integrado e cartuchos; no Brasil foi comercializado como Odyssey.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://bojoga.com.br/acervo/consoles-de-mesa/geracao-2/odyssey-2/",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Magnavox-Odyssey2-Console-BR.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magnavox-Odyssey2-Console-BR.jpg",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do Magnavox Odyssey² / Philips Odyssey. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "atari-5200",
+    "name": "Atari 5200",
+    "manufacturer": "Atari",
+    "year": 1982,
+    "generation": "2ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1982",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Super Breakout",
+      "Pac-Man"
+    ],
+    "context": "Sistema de 1982 que levou capacidades próximas aos computadores Atari de 8 bits para a sala de estar.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Atari_5200",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Atari-5200-Console-Set.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Atari%205200",
+      "author": "Consultar a página original do arquivo",
+      "license": "Verificar a licença e a autoria na página do arquivo antes de reutilizar",
+      "alt": "Fotografia real do Atari 5200. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "master-system",
+    "name": "Sega Master System",
+    "manufacturer": "Sega",
+    "year": 1985,
+    "generation": "3ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1985",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Alex Kidd in Miracle World",
+      "Phantasy Star"
+    ],
+    "context": "Console de 8 bits da Sega, com presença marcante em vários mercados, incluindo o Brasil.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Master_System",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sega-Master-System-Console-BR.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sega-Master-System-Console-BR.jpg",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do Sega Master System. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "atari-7800",
+    "name": "Atari 7800",
+    "manufacturer": "Atari",
+    "year": 1986,
+    "generation": "3ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1986",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Asteroids",
+      "Food Fight"
+    ],
+    "context": "Console compatível com muitos jogos do Atari 2600, criado para competir no mercado de 8 bits.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Atari_7800",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Atari-7800-Console-Set.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Atari%207800",
+      "author": "Consultar a página original do arquivo",
+      "license": "Verificar a licença e a autoria na página do arquivo antes de reutilizar",
+      "alt": "Fotografia real do Atari 7800. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "game-gear",
+    "name": "Sega Game Gear",
+    "manufacturer": "Sega",
+    "year": 1990,
+    "generation": "4ª geração",
+    "category": "Portátil",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1990",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Sonic the Hedgehog",
+      "Columns"
+    ],
+    "context": "Portátil colorido da Sega, concorrente do Game Boy e baseado em arquitetura relacionada ao Master System.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Game_Gear",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sega-Game-Gear.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sega-Game-Gear.jpg",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do Sega Game Gear. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "atari-lynx",
+    "name": "Atari Lynx",
+    "manufacturer": "Atari",
+    "year": 1989,
+    "generation": "4ª geração",
+    "category": "Portátil",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1989",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "California Games",
+      "Blue Lightning"
+    ],
+    "context": "Portátil com tela colorida e recursos gráficos avançados para sua época.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Atari_Lynx",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Atari-Lynx-I-Handheld.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Atari%20Lynx",
+      "author": "Consultar a página original do arquivo",
+      "license": "Verificar a licença e a autoria na página do arquivo antes de reutilizar",
+      "alt": "Fotografia real do Atari Lynx. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "neo-geo-aes",
+    "name": "Neo Geo AES",
+    "manufacturer": "SNK",
+    "year": 1990,
+    "generation": "4ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1990",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "The King of Fighters",
+      "Metal Slug"
+    ],
+    "context": "Sistema doméstico de alto custo que oferecia versões muito próximas dos jogos da plataforma arcade da SNK.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Neo_Geo_(system)",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Neo-Geo-AES-Console-Set.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Neo%20Geo%20AES",
+      "author": "Consultar a página original do arquivo",
+      "license": "Verificar a licença e a autoria na página do arquivo antes de reutilizar",
+      "alt": "Fotografia real do Neo Geo AES. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "sega-saturn",
+    "name": "Sega Saturn",
+    "manufacturer": "Sega",
+    "year": 1994,
+    "generation": "5ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1994",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Virtua Fighter 2",
+      "Nights into Dreams"
+    ],
+    "context": "Console de 32 bits com forte biblioteca de jogos 2D e arquitetura voltada também a gráficos 3D.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Sega_Saturn",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sega_Saturn_Console.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sega Saturn Console.png",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do Sega Saturn. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "dreamcast",
+    "name": "Sega Dreamcast",
+    "manufacturer": "Sega",
+    "year": 1998,
+    "generation": "6ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1998",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Sonic Adventure",
+      "Shenmue"
+    ],
+    "context": "Último console doméstico da Sega, com modem integrado em algumas regiões e foco pioneiro em jogos online.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Dreamcast",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dreamcast-Console-Set.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dreamcast-Console-Set.png",
+      "author": "Evan-Amos",
+      "license": "Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0).",
+      "alt": "Fotografia do Sega Dreamcast. Crédito e licença informados na página de origem.",
+      "credit": "Imagem: Evan-Amos / Wikimedia Commons — CC BY-SA 3.0."
+    }
+  },
+  {
+    "id": "game-boy-color",
+    "name": "Game Boy Color",
+    "manufacturer": "Nintendo",
+    "year": 1998,
+    "generation": "5ª geração",
+    "category": "Portátil",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "1998",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Pokémon Gold and Silver",
+      "The Legend of Zelda: Oracle of Ages"
+    ],
+    "context": "Evolução colorida da linha Game Boy, mantendo compatibilidade com grande parte da biblioteca anterior.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Game_Boy_Color",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo-Game-Boy-Color-BR.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nintendo-Game-Boy-Color-BR.jpg",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do Game Boy Color. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "gamecube",
+    "name": "Nintendo GameCube",
+    "manufacturer": "Nintendo",
+    "year": 2001,
+    "generation": "6ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "2001",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Super Smash Bros. Melee",
+      "Metroid Prime"
+    ],
+    "context": "Console compacto que usava discos ópticos pequenos e controles reconhecidos por sua ergonomia.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/GameCube",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gamecube-console.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gamecube-console.png",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do Nintendo GameCube. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "xbox",
+    "name": "Xbox",
+    "manufacturer": "Microsoft",
+    "year": 2001,
+    "generation": "6ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "2001",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Halo: Combat Evolved",
+      "Forza Motorsport"
+    ],
+    "context": "Primeiro console da Microsoft, introduziu disco rígido interno e ajudou a popularizar o jogo online por console.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Xbox_(console)",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Xbox-Console-Set.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xbox-Console-Set.png",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do Xbox. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "psp",
+    "name": "PlayStation Portable (PSP)",
+    "manufacturer": "Sony",
+    "year": 2004,
+    "generation": "7ª geração",
+    "category": "Portátil",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "2004",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "God of War: Chains of Olympus",
+      "Gran Turismo"
+    ],
+    "context": "Portátil da Sony com mídia UMD, conectividade sem fio e foco em experiências próximas às de consoles domésticos.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/PlayStation_Portable",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Psp-1000.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Psp-1000.jpg",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do PlayStation Portable (PSP). Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "playstation-3",
+    "name": "PlayStation 3",
+    "manufacturer": "Sony",
+    "year": 2006,
+    "generation": "7ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "2006",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "The Last of Us",
+      "Uncharted 2"
+    ],
+    "context": "Console com mídia Blu-ray, serviços online e arquitetura Cell, importante na transição para jogos HD.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/PlayStation_3",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sony-PlayStation-3-CECHA01-wController-L.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=PlayStation%203",
+      "author": "Consultar a página original do arquivo",
+      "license": "Verificar a licença e a autoria na página do arquivo antes de reutilizar",
+      "alt": "Fotografia real do PlayStation 3. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "xbox-360",
+    "name": "Xbox 360",
+    "manufacturer": "Microsoft",
+    "year": 2005,
+    "generation": "7ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "2005",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Halo 3",
+      "Gears of War"
+    ],
+    "context": "Console que consolidou serviços online, conquistas e distribuição digital em larga escala.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Xbox_360",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Xbox-360-Pro-wController.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Xbox%20360",
+      "author": "Consultar a página original do arquivo",
+      "license": "Verificar a licença e a autoria na página do arquivo antes de reutilizar",
+      "alt": "Fotografia real do Xbox 360. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "nintendo-ds",
+    "name": "Nintendo DS",
+    "manufacturer": "Nintendo",
+    "year": 2004,
+    "generation": "7ª geração",
+    "category": "Portátil",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "2004",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Nintendogs",
+      "Mario Kart DS"
+    ],
+    "context": "Portátil com duas telas, sendo uma sensível ao toque, que ampliou as formas de interação.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Nintendo_DS",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo-DS-Fat-Blue.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Nintendo%20DS",
+      "author": "Consultar a página original do arquivo",
+      "license": "Verificar a licença e a autoria na página do arquivo antes de reutilizar",
+      "alt": "Fotografia real do Nintendo DS. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "playstation-4",
+    "name": "PlayStation 4",
+    "manufacturer": "Sony",
+    "year": 2013,
+    "generation": "8ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "2013",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "God of War",
+      "Marvel’s Spider-Man"
+    ],
+    "context": "Console focado em jogos HD, compartilhamento social e arquitetura de desenvolvimento mais acessível.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/PlayStation_4",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sony-PlayStation-4-PS4-Console-BR.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sony-PlayStation-4-PS4-Console-BR.jpg",
+      "author": "Evan-Amos",
+      "license": "Domínio público, conforme declaração do autor na página do arquivo.",
+      "alt": "Fotografia do PlayStation 4. Crédito e licença informados na página de origem.",
+      "credit": "Imagem: Evan-Amos / Wikimedia Commons — domínio público."
+    }
+  },
+  {
+    "id": "xbox-one",
+    "name": "Xbox One",
+    "manufacturer": "Microsoft",
+    "year": 2013,
+    "generation": "8ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "2013",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Forza Horizon 4",
+      "Halo 5: Guardians"
+    ],
+    "context": "Família de consoles da Microsoft que ampliou serviços digitais, compatibilidade e recursos multimídia.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Xbox_One",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Xbox-One-Console-BR.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xbox-One-Console-BR.jpg",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do Xbox One. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "nintendo-3ds",
+    "name": "Nintendo 3DS",
+    "manufacturer": "Nintendo",
+    "year": 2011,
+    "generation": "8ª geração",
+    "category": "Portátil",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "2011",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Super Mario 3D Land",
+      "Pokémon X and Y"
+    ],
+    "context": "Portátil com efeito estereoscópico 3D sem óculos e uma biblioteca de jogos próprios.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://en.wikipedia.org/wiki/Nintendo_3DS",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo-3DS-AquaOpen.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Nintendo%203DS",
+      "author": "Consultar a página original do arquivo",
+      "license": "Verificar a licença e a autoria na página do arquivo antes de reutilizar",
+      "alt": "Fotografia real do Nintendo 3DS. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  },
+  {
+    "id": "playstation-5",
+    "name": "PlayStation 5",
+    "manufacturer": "Sony",
+    "year": 2020,
+    "generation": "9ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "2020",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Astro’s Playroom",
+      "Marvel’s Spider-Man 2"
+    ],
+    "context": "Console de atual geração com SSD de alta velocidade, ray tracing compatível e controle com resposta tátil.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://www.playstation.com/pt-br/ps5/",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Playstation_5.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playstation_5.jpg",
+      "author": "Ryan Bennett",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0).",
+      "alt": "Fotografia do PlayStation 5. Crédito e licença informados na página de origem.",
+      "credit": "Imagem: Ryan Bennett / Wikimedia Commons — CC BY-SA 4.0."
+    }
+  },
+  {
+    "id": "xbox-series-x",
+    "name": "Xbox Series X",
+    "manufacturer": "Microsoft",
+    "year": 2020,
+    "generation": "9ª geração",
+    "category": "Console doméstico",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "2020",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Forza Motorsport",
+      "Starfield"
+    ],
+    "context": "Console de atual geração com foco em desempenho, tempos de carregamento reduzidos e compatibilidade retroativa.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://www.xbox.com/pt-BR/consoles/xbox-series-x",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Xbox_Series_%28X%29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xbox_Series_(X).jpg",
+      "author": "Der. Bellemer",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0), conforme página do arquivo.",
+      "alt": "Fotografia do Xbox Series X. Crédito e licença informados na página de origem.",
+      "credit": "Imagem: Der. Bellemer / Wikimedia Commons — CC BY-SA 4.0."
+    }
+  },
+  {
+    "id": "switch-2",
+    "name": "Nintendo Switch 2",
+    "manufacturer": "Nintendo",
+    "year": 2025,
+    "generation": "9ª geração",
+    "category": "Híbrido",
+    "regionDates": [
+      {
+        "region": "Lançamento inicial",
+        "date": "2025",
+        "note": "Ano de referência do lançamento inicial; datas e nomes comerciais variam por região."
+      }
+    ],
+    "hardware": {
+      "cpu": "Consultar referência técnica do modelo e revisão",
+      "memory": "Consultar documentação técnica da referência",
+      "media": "Varia conforme o modelo e a região",
+      "video": "Recursos gráficos característicos da geração; consulte a fonte técnica."
+    },
+    "games": [
+      "Mario Kart World",
+      "Donkey Kong Bananza"
+    ],
+    "context": "Sucessor híbrido do Switch, projetado para uso portátil e conectado à televisão. Verifique a disponibilidade e as especificações na página oficial.",
+    "fact": "As datas de lançamento podem variar conforme o país. Consulte as referências antes de utilizar este dado em materiais acadêmicos.",
+    "sources": [
+      {
+        "label": "Referência histórica e técnica do console",
+        "url": "https://www.nintendo.com/us/gaming-systems/switch-2/",
+        "type": "Referência especializada ou fabricante"
+      }
+    ],
+    "image": {
+      "type": "photograph",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo_Switch_2.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nintendo Switch 2.jpg",
+      "author": "Consultar a página do arquivo no Wikimedia Commons",
+      "license": "Consultar a licença indicada na página do arquivo no Wikimedia Commons",
+      "alt": "Fotografia real do Nintendo Switch 2. Consulte a página de origem para autoria e licença.",
+      "credit": "Imagem: Wikimedia Commons — verificar arquivo, autoria e licença"
+    }
+  }
+]

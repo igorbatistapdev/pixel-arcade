@@ -477,3 +477,21 @@ html {
   #instructions { font-size:11px; }
   #controls, #fps-box { display:none; }
 }
+
+/* PIXEL mobile touch corrections: visible, thumb-sized controls without blank vertical regions. */
+@media (pointer:coarse), (max-width:760px) {
+  #wrapper { height:auto; min-height:0; justify-content:flex-start; }
+  #content { min-height:0; height:auto; }
+  #content #racer { height:auto; }
+  #content #canvas { display:block; aspect-ratio:4/3; }
+  #touch-controls { width:100%; flex:0 0 auto; padding:10px 12px 12px; margin:0; gap:10px; background:#171e2c; border-top:1px solid #53677c; }
+  #touch-controls .touch-steering { display:grid; width:100%; grid-template-columns:1fr 1fr; gap:12px; margin:0; }
+  #touch-controls .touch-driving { display:grid; width:100%; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin:0; }
+  #touch-controls button { width:100%; min-width:0; min-height:57px; padding:10px 4px; border-radius:12px; font-size:clamp(13px,3vw,17px); }
+  #touch-controls .touch-steering button { min-height:59px; font-size:1.7rem; }
+  #touch-controls .touch-driving .accelerate { background:#185e53; border-color:#5fe8b0; }
+  .touch-driving-help { width:100%; margin:0; text-align:center; color:#d1dfeb; font-size:12px; line-height:1.5; }
+  #bottombar { padding:9px 12px; min-height:0; }
+  #instructions { display:none; }
+}
+@media (min-width:761px) and (pointer:fine) { .touch-driving-help { display:none; } }

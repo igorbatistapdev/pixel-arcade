@@ -43,6 +43,8 @@ function currentRoute() {
   // Âncora da própria página inicial: não é uma rota do museu.
   if (hash === "#salas-home") return { page: "home", scrollTarget: "salas-home" };
   if (hash === "#sobre") return { page: "home", scrollTarget: "sobre" };
+  if (hash === "#memorias-home") return { page: "home", scrollTarget: "memorias-home" };
+  if (hash === "#evolucao-home") return { page: "home", scrollTarget: "evolucao-home" };
   if (hash === "#" || hash === "#/") return { page: "home" };
   const match = hash.match(/^#\/sala\/([a-z0-9-]+)$/i);
   return match ? { page: "room", slug: match[1] } : { page: "not-found" };
@@ -79,6 +81,21 @@ function renderRoute() {
     view.innerHTML = room ? renderRoomPage(room) : renderNotFound();
   } else {
     view.innerHTML = renderNotFound();
+  }
+  // Nota pedagógica sem interação adicional: preserva o comportamento de cada sala.
+  if (route.page === "room") {
+    const roomInfo = rooms.find(room => room.slug === route.slug);
+    const question = roomInfo?.content?.reflection;
+    if (question && route.slug !== "pixel-quest") {
+      const note = document.createElement("aside");
+      note.className = "room-reflection section-shell";
+      note.setAttribute("aria-label", "Reflexão sobre sensibilidade e estética");
+      const label = document.createElement("p"); label.className = "eyebrow"; label.textContent = "UM OLHAR PARA ALÉM DA TELA";
+      const heading = document.createElement("h2"); heading.textContent = "Arte, tecnologia e sentimentos.";
+      const prompt = document.createElement("p"); prompt.textContent = question;
+      note.append(label, heading, prompt);
+      view.append(note);
+    }
   }
   document.title = route.page === "home" ? "PIXEL — Museu Interativo dos Videogames" :
     `${roomTitle(route.slug)} — PIXEL`;

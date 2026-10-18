@@ -4,6 +4,7 @@
   <head>
     <title>Outrun JS</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <link href="./styles/style.css" rel="stylesheet" type="text/css" />
     <link href="./styles/leaderboard.css" rel="stylesheet" type="text/css" />
   </head> 
@@ -60,6 +61,20 @@
         </div>
       </main>
       
+      <!-- Touch control pad: visible only on mobile; the original keyboard controls remain. -->
+      <section id="touch-controls" aria-label="Controles de direção e aceleração da corrida">
+        <div class="touch-steering">
+          <button type="button" data-control="left" aria-label="Virar para esquerda">◀</button>
+          <button type="button" data-control="right" aria-label="Virar para direita">▶</button>
+        </div>
+        <div class="touch-driving">
+          <button type="button" data-control="accelerate" class="accelerate" aria-label="Acelerar enquanto pressionado">▲ ACELERAR</button>
+          <button type="button" data-control="brake" aria-label="Frear enquanto pressionado">▼ FREAR</button>
+          <button type="button" data-control="nitro" aria-label="Usar nitro enquanto pressionado">⚡ NITRO</button>
+          <button type="button" data-control="handbrake" aria-label="Freio de mão">FREIO DE MÃO</button>
+        </div>
+        <p class="touch-driving-help">Segure ACELERAR para andar; combine com ◀/▶ para virar.</p>
+      </section>
       <!-- BOTTOMBAR -->
       <footer id="bottombar">
         <!-- Instructions -->

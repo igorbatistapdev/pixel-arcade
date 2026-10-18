@@ -1,0 +1,255 @@
+{
+  "intro": {
+    "eyebrow": "SALA 03 · EVOLUÇÃO GRÁFICA",
+    "title": "Do pixel ao mundo vivo.",
+    "description": "Uma viagem visual pelas linguagens gráficas dos videogames, de Space Invaders a GTA V. Use o controle deslizante para atravessar as épocas, veja o jogo que representa cada uma e compare como a arte, a tecnologia e o design mudaram."
+  },
+  "eras": [
+    {
+      "id": "pixels",
+      "year": "1970–1980",
+      "label": "Formas e pixels",
+      "title": "Cada pixel conta",
+      "summary": "Nos fliperamas, Space Invaders (1978) mostrou que formas simples feitas de poucos pixels, alto contraste e movimento legível bastavam para criar tensão. A arte nascia dos limites do hardware, não da falta de ideias.",
+      "concepts": [
+        "resolução limitada",
+        "formas geométricas",
+        "contraste",
+        "animação quadro a quadro"
+      ],
+      "featured": {
+        "title": "Space Invaders",
+        "year": "1978",
+        "studio": "Taito / Midway",
+        "platform": "Arcade",
+        "caption": "Space Invaders (1978) · Arcade"
+      },
+      "image": "./assets/era-space-invaders.jpg",
+      "imageAlt": "Arte de divulgação de Space Invaders, clássico de fliperama de 1978",
+      "sourceIds": [
+        "chm-games"
+      ]
+    },
+    {
+      "id": "sprites",
+      "year": "1980–1990",
+      "label": "Sprites e paletas",
+      "title": "Personagens com personalidade",
+      "summary": "Super Mario Bros. (1985) mostrou o poder de sprites bem desenhados, cenários montados com tiles e uma paleta curta e expressiva. Com pouca memória, um personagem reconhecível e o scroll lateral criaram um mundo inteiro.",
+      "concepts": [
+        "sprites",
+        "tiles",
+        "paletas",
+        "scroll lateral"
+      ],
+      "featured": {
+        "title": "Super Mario Bros.",
+        "year": "1985",
+        "studio": "Nintendo",
+        "platform": "NES",
+        "caption": "Super Mario Bros. (1985) · NES"
+      },
+      "image": "./assets/era-super-mario.jpg",
+      "imageAlt": "Arte de Super Mario Bros. para NES",
+      "sourceIds": [
+        "chm-games"
+      ]
+    },
+    {
+      "id": "16bit",
+      "year": "1990–1995",
+      "label": "16 bits e cor",
+      "title": "Arte desenhada à mão",
+      "summary": "Com o Mega Drive e o Super Nintendo, os 16 bits trouxeram mais cores, sprites maiores e trilhas marcantes. Streets of Rage (1991) mostra cenários urbanos detalhados e personagens com identidade, num estilo próximo da ilustração de capa.",
+      "concepts": [
+        "mais cores",
+        "sprites grandes",
+        "parallax",
+        "ilustração de capa"
+      ],
+      "featured": {
+        "title": "Streets of Rage",
+        "year": "1991",
+        "studio": "SEGA",
+        "platform": "Mega Drive / Genesis",
+        "caption": "Streets of Rage (1991) · Mega Drive"
+      },
+      "image": "./assets/era-streets-of-rage.jpg",
+      "imageAlt": "Arte de divulgação de Streets of Rage, jogo de luta de rua da SEGA",
+      "sourceIds": [
+        "sega-history"
+      ]
+    },
+    {
+      "id": "polygons",
+      "year": "1995–2000",
+      "label": "Polígonos e 3D",
+      "title": "Novos ângulos de jogo",
+      "summary": "A série Tomb Raider (1996) levou ao grande público personagens e cenários totalmente poligonais, com câmera móvel e exploração em profundidade. Texturas simples e modelos angulosos mudaram o desenho das fases e a direção de arte.",
+      "concepts": [
+        "polígonos",
+        "câmera virtual",
+        "texturas",
+        "profundidade"
+      ],
+      "featured": {
+        "title": "Tomb Raider",
+        "year": "1996",
+        "studio": "Core Design / Eidos",
+        "platform": "PlayStation, Saturn e PC",
+        "caption": "Tomb Raider: Chronicles (2000) · PlayStation"
+      },
+      "image": "./assets/era-tomb-raider.jpg",
+      "imagePos": "center 30%",
+      "imageAlt": "Arte de Tomb Raider: Chronicles com Lara Croft em uma caverna 3D",
+      "sourceIds": [
+        "chm-games",
+        "sony-history"
+      ]
+    },
+    {
+      "id": "modern",
+      "year": "2000–hoje",
+      "label": "Mundos modernos",
+      "title": "Detalhe, iluminação e escala",
+      "summary": "Grand Theft Auto V (2013) reúne cidade aberta, iluminação dinâmica, materiais detalhados e animação complexa. Mostra o que hardware mais potente permite: mundos extensos e vivos. Realismo, porém, não é melhor que estilos estilizados; é só outra linguagem.",
+      "concepts": [
+        "materiais",
+        "iluminação",
+        "animação",
+        "mundo aberto"
+      ],
+      "featured": {
+        "title": "Grand Theft Auto V",
+        "year": "2013",
+        "studio": "Rockstar Games",
+        "platform": "PS3, Xbox 360, depois PS4, Xbox One e PC",
+        "caption": "Grand Theft Auto V (2013)"
+      },
+      "image": "./assets/era-gta-v.jpg",
+      "imageAlt": "Arte de Grand Theft Auto V em quadros de cenas e personagens",
+      "sourceIds": [
+        "chm-games"
+      ]
+    }
+  ],
+  "sonicMilestones": [
+    {
+      "year": "1991",
+      "title": "Sonic the Hedgehog",
+      "platform": "Mega Drive / Genesis",
+      "description": "A estreia da série usou sprites 2D, cenários coloridos e animações desenhadas para comunicar velocidade. Datas regionais documentadas pela SEGA: América do Norte e Europa em junho; Japão em 26 de julho.",
+      "sourceIds": [
+        "sonic-manual",
+        "sega-history"
+      ],
+      "image": "./assets/sonic-1991.jpg",
+      "imageAlt": "Tela de título de Sonic the Hedgehog (1991) em pixel art"
+    },
+    {
+      "year": "1998",
+      "title": "Sonic Adventure",
+      "platform": "Dreamcast",
+      "description": "A série principal entrou em ambientes de ação totalmente 3D, com câmera móvel e níveis construídos em profundidade. Lançamento original japonês: 23 de dezembro de 1998.",
+      "sourceIds": [
+        "sonic-adventure-official"
+      ],
+      "image": "./assets/sonic-1998.jpg",
+      "imageAlt": "Arte de Sonic Adventure (1998)"
+    },
+    {
+      "year": "2011",
+      "title": "Sonic Generations",
+      "platform": "PlayStation 3, Xbox 360, PC e Nintendo 3DS (lançamentos variaram)",
+      "description": "Reuniu fases com abordagem clássica 2D e moderna 3D, permitindo observar como perspectiva e composição alteram a leitura da velocidade.",
+      "sourceIds": [
+        "sonic-generations-official"
+      ],
+      "image": "./assets/sonic-2011.jpg",
+      "imageAlt": "Arte de Sonic Generations (2011) com Sonic clássico e moderno"
+    },
+    {
+      "year": "2022",
+      "title": "Sonic Frontiers",
+      "platform": "PlayStation, Xbox, Nintendo Switch e PC",
+      "description": "Combina ação 3D com grandes áreas exploráveis. O visual mistura personagem estilizado e ambientes de escala ampla.",
+      "sourceIds": [
+        "sonic-frontiers-official"
+      ],
+      "image": "./assets/sonic-2022.jpg",
+      "imageAlt": "Arte de Sonic Frontiers (2022)"
+    }
+  ],
+  "sources": [
+    {
+      "id": "chm-games",
+      "name": "Computer History Museum — Graphics & Games Timeline",
+      "type": "institucional",
+      "url": "https://www.computerhistory.org/timeline/graphics-games/",
+      "supports": "Contexto histórico de jogos e evolução técnica."
+    },
+    {
+      "id": "sega-history",
+      "name": "SEGA — Company History / Timeline",
+      "type": "oficial",
+      "url": "https://www.sega.co.jp/en/company/history/index.html",
+      "supports": "Marcos da SEGA e estreia da série Sonic em 1991."
+    },
+    {
+      "id": "sonic-manual",
+      "name": "SEGA — Sonic the Hedgehog (manual oficial em PDF)",
+      "type": "oficial",
+      "url": "https://manuals.sega.com/wp-content/uploads/2022/06/SM_Sonic_Origin_En_220617.pdf",
+      "supports": "Datas regionais de lançamento do Sonic original: 23 de junho de 1991 nos EUA/Europa e 26 de julho de 1991 no Japão."
+    },
+    {
+      "id": "sonic-origins",
+      "name": "SEGA — Sonic Origins: página oficial",
+      "type": "oficial",
+      "url": "https://asia.sega.com/SonicOrigins/en/about/",
+      "supports": "Contexto dos jogos clássicos e preservação de gráficos pixelados em plataformas atuais."
+    },
+    {
+      "id": "sonic-adventure",
+      "name": "SEGA — Sonic Adventure (arquivo oficial de franquia)",
+      "type": "oficial",
+      "url": "https://www.sega.com/",
+      "supports": "Portal oficial da SEGA; a página específica do título pode variar por região. Confirmar a data regional antes de ampliar esta ficha."
+    },
+    {
+      "id": "sonic-generations",
+      "name": "SEGA — Sonic Generations (portal oficial da franquia)",
+      "type": "oficial",
+      "url": "https://www.sega.com/",
+      "supports": "Referência institucional geral para a série; verificar a página regional do jogo antes de acrescentar especificações detalhadas."
+    },
+    {
+      "id": "sony-history",
+      "name": "Sony — Corporate History",
+      "type": "oficial",
+      "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/company/",
+      "supports": "Contexto da geração de consoles 3D e do PlayStation."
+    },
+    {
+      "id": "sonic-adventure-official",
+      "name": "SEGA Sonic Channel — Sonic Adventure",
+      "type": "oficial",
+      "url": "https://sonic.sega.jp/SonicChannel/gametitle/SonicAdventure.html",
+      "supports": "Data de lançamento no Japão (23/12/1998), Dreamcast e descrição como ação 3D."
+    },
+    {
+      "id": "sonic-generations-official",
+      "name": "SEGA — Sonic Generations / portal oficial",
+      "type": "oficial",
+      "url": "https://www.sega.com/",
+      "supports": "Portal da SEGA para consultar a disponibilidade regional do título; datas e plataformas podem variar por edição."
+    },
+    {
+      "id": "sonic-frontiers-official",
+      "name": "SEGA — Sonic Frontiers (página oficial)",
+      "type": "oficial",
+      "url": "https://sonic.sega.jp/SonicChannel/",
+      "supports": "Portal oficial para informações do título; fonte contextual complementar."
+    }
+  ]
+}

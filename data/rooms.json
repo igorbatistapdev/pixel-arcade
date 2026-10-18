@@ -4,7 +4,7 @@
     "slug": "linha-do-tempo",
     "icon": "◷",
     "title": "Linha do tempo",
-    "description": "Viaje pelas eras e descubra marcos documentados que mudaram a história dos videogames.",
+    "description": "Viaje pelas eras e observe como os videogames acompanharam transformações culturais e formas de convivência.",
     "action": "Explorar eras",
     "content": {
       "heading": "Uma história em construção, com fontes à vista.",
@@ -13,7 +13,8 @@
         "Filtre os eventos por era.",
         "Abra os registros para consultar contexto e fontes.",
         "Observe notas sobre datas e regiões de lançamento."
-      ]
+      ],
+      "reflection": "Como o modo de jogar se transformou junto com a sociedade?"
     }
   },
   {
@@ -21,16 +22,17 @@
     "slug": "consoles",
     "icon": "▣",
     "title": "Galeria de consoles",
-    "description": "Conheça dez máquinas marcantes, com datas por região, características técnicas, contexto e referências verificáveis.",
+    "description": "Explore máquinas de diferentes gerações: tecnologias que também guardam memórias, encontros e descobertas.",
     "action": "Ver a coleção",
     "content": {
       "heading": "De cartuchos e sprites a sistemas híbridos.",
-      "text": "A galeria reúne dez consoles com fichas individuais, contexto histórico, datas regionais, características técnicas e fontes consultáveis.",
+      "text": "A galeria apresenta fichas com contexto histórico, plataformas, características técnicas, datas regionais e referências. Cada máquina representa também momentos de uma cultura compartilhada.",
       "bullets": [
         "Pesquise por nome, fabricante ou geração.",
-        "Abra cada ficha para consultar datas regionais e especificações.",
-        "Silhuetas originais em CSS evitam o uso de imagens sem licença confirmada."
-      ]
+        "Abra fichas para consultar contexto, características e datas.",
+        "Observe como os consoles influenciaram as maneiras de jogar e de conviver."
+      ],
+      "reflection": "Qual console lembra uma pessoa ou momento especial?"
     }
   },
   {
@@ -38,16 +40,17 @@
     "slug": "evolucao-grafica",
     "icon": "◈",
     "title": "Evolução gráfica",
-    "description": "Compare estilos visuais e entenda a evolução de pixels, cores, resolução e 3D.",
+    "description": "Compare a arte dos jogos, da pixel art aos mundos 3D, e perceba como estilos diferentes podem emocionar.",
     "action": "Ver a evolução",
     "content": {
       "heading": "A imagem também conta a história da tecnologia.",
-      "text": "Esta sala vai comparar exemplos visuais com direitos de uso verificados e explicar limites técnicos de cada período sem reduzir a evolução a uma simples corrida por mais pixels.",
+      "text": "A exposição utiliza comparações interativas de franquias e períodos para demonstrar como estilos artísticos evoluíram com os recursos técnicos.",
       "bullets": [
-        "Paletas e limitações de cor.",
-        "Sprites, tiles e resolução.",
-        "Polígonos 3D e técnicas posteriores."
-      ]
+        "Compare imagens da mesma franquia em épocas diferentes.",
+        "Observe a direção de arte para além da resolução ou do realismo.",
+        "Reflita sobre memória visual, atmosfera e expressão estética."
+      ],
+      "reflection": "Uma imagem precisa ser realista para emocionar?"
     }
   },
   {
@@ -55,17 +58,18 @@
     "slug": "mundos-dos-jogos",
     "icon": "▶",
     "title": "PIXEL ARCADE",
-    "description": "Entre na Sala 004, escolha um fliperama e jogue experiências retrô diretamente no museu.",
+    "description": "Entre no fliperama, experimente jogos de diferentes estilos e reflita sobre desafio, alegria e convivência.",
     "action": "Explorar fliperamas",
     "content": {
       "heading": "Escolha seu fliperama",
-      "text": "Explore jogos de diferentes épocas e experimente o clássico Space Invaders, com controles e recorde no próprio jogo. Novas experiências serão adicionadas gradualmente.",
+      "text": "Experimente Space Invaders, Pac-Man, OutRun JS e Open Sonic JS. Observe ritmo, som, regras, cooperação e sentimentos que surgem ao jogar.",
       "bullets": [
-        "Space Invaders: recriação jogável do arcade de 1978.",
-        "Pac-Man: labirinto, estratégia e perseguição arcade.",
-        "Pac-Man: labirinto e estratégia.",
-        "Sonic: teste de velocidade abre o projeto web Open Sonic JS integrado, com controles adaptados para toque."
-      ]
+        "Space Invaders: sobrevivência, pontuação e reflexos.",
+        "Pac-Man: labirinto, estratégia e perseguição.",
+        "OutRun JS: velocidade e reflexos em corrida pseudo-3D.",
+        "Open Sonic JS: plataforma, fases, anéis e exploração."
+      ],
+      "reflection": "Qual sensação surge quando você supera uma fase?"
     }
   },
   {
@@ -73,16 +77,17 @@
     "slug": "quiz",
     "icon": "✦",
     "title": "Quiz histórico",
-    "description": "Teste seus conhecimentos e receba explicações sobre as respostas.",
+    "description": "Teste seus conhecimentos, aprenda com as explicações e descubra novas relações entre cultura e tecnologia.",
     "action": "Preparar desafio",
     "content": {
       "heading": "Conhecimento, contexto e explicação.",
-      "text": "O quiz interativo será montado a partir dos registros históricos do museu. Cada resposta terá explicação e referência para que o visitante possa continuar pesquisando.",
+      "text": "O quiz está disponível com perguntas históricas, feedback explicativo e pontuação. Cada resposta é uma oportunidade de ampliar o repertório cultural.",
       "bullets": [
         "Perguntas de múltipla escolha.",
         "Feedback explicativo.",
         "Pontuação e opção de tentar novamente."
-      ]
+      ],
+      "reflection": "Que descoberta mudou sua forma de perceber os jogos?"
     }
   },
   {
@@ -90,7 +95,7 @@
     "slug": "por-dentro-do-console",
     "icon": "◫",
     "title": "Por dentro do console",
-    "description": "Descubra como CPU, memória, gráficos, áudio e mídia trabalham juntos para dar vida aos jogos.",
+    "description": "Descubra como CPU, memória, vídeo e som trabalham juntos para criar experiências artísticas e interativas.",
     "action": "Explorar o laboratório",
     "content": {
       "heading": "Descubra o videogame por dentro.",
@@ -99,7 +104,8 @@
         "Mapa interativo com CPU, memória, gráficos, áudio e armazenamento.",
         "Comparação entre gerações e capacidades técnicas.",
         "Linha de evolução técnica com impacto prático nos jogos."
-      ]
+      ],
+      "reflection": "Como cálculos e circuitos se transformam em emoções?"
     }
   }
 ]

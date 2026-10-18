@@ -25,3 +25,17 @@ canvas { display:block; width:100vw; height:auto; max-height:100dvh; max-height:
   canvas { max-height:100dvh; max-height:100vh; }
   #mobile-controls button { min-width:52px; min-height:52px; }
 }
+
+/* Mobile: give the touch pad its own area under the engine's 16:9 canvas. */
+@media (pointer:coarse), (max-width:760px) {
+  html, body { min-height:100%; height:auto; overflow-x:hidden; overflow-y:auto; }
+  body { display:flex; flex-direction:column; align-items:center; justify-content:flex-start; padding-bottom: max(10px,env(safe-area-inset-bottom)); }
+  canvas { flex:0 0 auto; width:100% !important; height:auto !important; max-height:none !important; aspect-ratio:480 / 271; object-fit:contain; }
+  #mobile-controls.is-touch { position:relative; left:auto; right:auto; bottom:auto; width:100%; margin-top:12px; padding:8px 10px; display:flex; flex:0 0 auto; justify-content:space-between; gap:8px; align-items:center; background:#08182c; border-top:1px solid #2f7bac; }
+  #mobile-controls .mobile-direction, #mobile-controls .mobile-actions { gap:8px; }
+  #mobile-controls button { min-width:49px; min-height:56px; padding:8px; font-size:16px; }
+  #mobile-controls button[data-key="Enter"] { min-width:80px; font-size:12px; border-color:#60dfff; }
+  #mobile-controls button[data-key=" "] { min-width:77px; }
+  #mobile-controls button[data-active="1"] { background:#2b7cc0; transform:translateY(2px); }
+}
+@media (min-width:761px) and (pointer:fine) { #mobile-controls { display:none; } }

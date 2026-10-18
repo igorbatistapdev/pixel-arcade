@@ -19,7 +19,7 @@ export function renderArcadeRoom() {
   return `<section class="room-page section-shell arcade-room">
     <a class="back-link" href="#/">← Voltar ao saguão</a>
     <section class="arcade-cabinet-stage" aria-labelledby="cabinet-title">
-      <div class="cabinet-copy"><p class="eyebrow">SALA 004 · EXPERIÊNCIA INTERATIVA</p><h1 id="cabinet-title">O ARCADE <span>VIVE AQUI</span></h1><p>Escolha um jogo na tela do gabinete, aperte START e entre direto na experiência. A máquina acompanha a sua seleção.</p><div class="cabinet-features"><span>✦ 4 experiências</span><span>⌁ Sem cadastro</span><span>▣ PC + celular</span></div><button class="button button-primary cabinet-start-mobile" type="button" data-cabinet-start>▶ APERTE START</button></div>
+      <div class="cabinet-copy"><p class="eyebrow">SALA 004 · EXPERIÊNCIA INTERATIVA</p><h1 id="cabinet-title">O ARCADE <span>VIVE AQUI</span></h1><p>Escolha seu jogo e descubra como movimento, desafio e som marcaram a cultura dos fliperamas. Aperte START para experimentar essas sensações.</p><div class="cabinet-features"><span>✦ 4 experiências</span><span>⌁ Sem cadastro</span><span>▣ PC + celular</span></div><button class="button button-primary cabinet-start-mobile" type="button" data-cabinet-start>▶ APERTE START</button></div>
       <div class="arcade-cabinet-wrap arcade-cabinet-exact-wrap" aria-label="Gabinete de fliperama interativo">
         <div class="arcade-cabinet-light"></div>
         <div class="cabinet-exact-stage">
@@ -36,22 +36,17 @@ export function renderArcadeRoom() {
         <button type="button" class="cabinet-start-mobile button button-primary" data-cabinet-start>▶ APERTE START</button>
       </div>
     </section>
-    <section class="arcade-timeline" aria-labelledby="arcade-timeline-title"><div class="arcade-timeline-heading"><div><p class="eyebrow">SALA 01 · ARQUIVO HISTÓRICO</p><h2 id="arcade-timeline-title">Linha do tempo<span>.</span></h2><p>Marcos selecionados da história dos videogames, organizados por era. Passe o mouse ou toque em cada marco para revelar um resumo.</p></div><div class="timeline-stats"><strong>8</strong><span>MARCOS</span><i></i><strong>1958</strong><span>PRIMEIRO REGISTRO</span></div></div><div class="arcade-era-track">
-      <button class="arcade-era-card era-origins" type="button" data-era="origins" aria-expanded="false"><img src="./assets/tl-tennis-for-two.svg" alt="" loading="lazy"><span class="era-number">1ª ERA</span><strong>Origens</strong><small>1958–1970</small><span class="era-detail">Experimentos acadêmicos transformam telas em espaços de interação.</span></button>
-      <button class="arcade-era-card era-arcades" type="button" data-era="arcades" aria-expanded="false"><img src="./assets/tl-spacewar.svg" alt="" loading="lazy"><span class="era-number">2ª ERA</span><strong>Arcades</strong><small>1971–1983</small><span class="era-detail">Fliperamas popularizam pontuação, recordes e partidas rápidas.</span></button>
-      <button class="arcade-era-card era-consoles" type="button" data-era="consoles" aria-expanded="false"><img src="./assets/tl-atari-vcs.svg" alt="" loading="lazy"><span class="era-number">3ª ERA</span><strong>Consoles</strong><small>1984–1996</small><span class="era-detail">Controles domésticos e personagens marcantes ampliam os gêneros.</span></button>
-      <button class="arcade-era-card era-modern" type="button" data-era="modern" aria-expanded="false"><img src="./assets/tl-playstation.svg" alt="" loading="lazy"><span class="era-number">4ª ERA</span><strong>3D e online</strong><small>1997–2010</small><span class="era-detail">Mundos tridimensionais e partidas conectadas mudam a escala dos jogos.</span></button>
-    </div><div class="arcade-timeline-rail"><span></span><span></span><span></span><span></span></div></section>
-    <div class="arcade-catalog-heading"><div><p class="eyebrow">ESCOLHA SUA MÁQUINA</p><h2>Jogos disponíveis<span>.</span></h2></div><p>Recordes são guardados neste navegador e dispositivo.</p></div>
+    <div class="arcade-catalog-heading"><div><p class="eyebrow">ESCOLHA SUA MÁQUINA</p><h2>Jogos disponíveis<span>.</span></h2></div><p>Experimente diferentes estilos de jogar. Que sentimentos surgem diante de um desafio, de uma vitória ou de uma lembrança compartilhada?</p></div>
     <div class="arcade-grid">${cards}</div>
     <section class="arcade-game" id="arcade-game" hidden aria-label="Área do jogo">
       <div class="arcade-game-top"><h2 id="arcade-game-title">Jogo</h2><div class="arcade-hud"><span id="arcade-level">Fase 1</span><span id="arcade-score">Pontos: 0</span><span id="arcade-record">Recorde: 0</span></div></div>
       <div class="arcade-canvas-wrap" id="arcade-canvas-wrap"><canvas class="arcade-canvas" id="arcade-canvas" width="960" height="540" aria-label="Área interativa do jogo"></canvas><div class="arcade-message" id="arcade-message"><h3 id="arcade-message-title">PREPARE-SE!</h3><p id="arcade-message-text">Use as setas ou WASD para jogar.</p><button class="button button-primary" type="button" id="arcade-message-action">Jogar</button></div></div>
       <div class="space-invaders-frame-wrap" id="space-invaders-frame-wrap" hidden><iframe id="space-invaders-frame" title="Space Invaders — jogo arcade" src="about:blank" loading="lazy" allow="autoplay" referrerpolicy="no-referrer"></iframe></div>
-      <div class="outrun-frame-wrap" id="outrun-frame-wrap" hidden><iframe id="outrun-frame" title="OutRun JS — jogo de corrida pseudo-3D" src="about:blank" loading="lazy" allow="autoplay; fullscreen" referrerpolicy="no-referrer"></iframe></div>\n      <div class="sonic-frame-wrap" id="sonic-frame-wrap" hidden><iframe id="sonic-frame" title="Sonic: teste de velocidade — Open Sonic JS" src="about:blank" loading="lazy" allow="autoplay; fullscreen; gamepad" referrerpolicy="no-referrer"></iframe></div>
+      <div class="outrun-frame-wrap" id="outrun-frame-wrap" hidden><iframe id="outrun-frame" title="OutRun JS — jogo de corrida pseudo-3D" src="about:blank" loading="lazy" allow="autoplay; fullscreen" referrerpolicy="no-referrer"></iframe></div>
+      <div class="sonic-frame-wrap" id="sonic-frame-wrap" hidden><iframe id="sonic-frame" title="Sonic: teste de velocidade — Open Sonic JS" src="about:blank" loading="lazy" allow="autoplay; fullscreen; gamepad" referrerpolicy="no-referrer"></iframe></div>
       <div class="pacman-frame-wrap" id="pacman-frame-wrap" hidden><iframe id="pacman-frame" title="Pac-Man — jogo arcade" src="about:blank" loading="lazy" allow="autoplay; fullscreen; gamepad" referrerpolicy="no-referrer"></iframe></div>
       <div class="arcade-controls"><div class="arcade-key-help" id="arcade-help">Mover: ← → · Pular: Espaço/↑ · Pausar: P</div><div class="arcade-game-actions"><button class="button button-quiet" type="button" id="arcade-pause">Pausar</button><button class="button button-quiet" type="button" id="arcade-exit">Voltar aos jogos</button></div><div class="arcade-control-pad" aria-label="Controles de toque"><button type="button" data-pad="left" aria-label="Mover para esquerda">◀</button><button type="button" data-pad="jump" aria-label="Pular">▲</button><button type="button" data-pad="right" aria-label="Mover para direita">▶</button></div></div>
-      <p class="arcade-record-note">Protótipo em Canvas, sem backend. O jogo Sonic é uma demonstração não oficial de mecânicas; não inclui sprites, música nem material oficial da franquia.</p>
+      <p class="arcade-record-note">Jogos integrados para fins educativos. Alguns projetos incorporam recursos de terceiros: consulte as respectivas licenças e créditos.</p>
     </section>
   </section>`;
 }
@@ -111,7 +106,7 @@ export function initArcadeRoom(root) {
       root.querySelector("#outrun-frame").src = "about:blank";
       root.querySelector("#sonic-frame-wrap").hidden = false;
       root.querySelector("#sonic-frame").src = "./games/sonic/sonic.html";
-      overlay.hidden = true; help.textContent = "PC: setas movem · Espaço: pular · Enter: iniciar/pausar · Esc: sair. Celular: use os controles na tela.";
+      overlay.hidden = true; help.textContent = "PC: setas movem · Espaço: pular · Enter: confirmar. Celular: START confirma menus e PULAR realiza saltos.";
       levelLabel.textContent = "Open Sonic JS";
       scoreLabel.textContent = "Plataforma · fases";
       recordLabel.textContent = "Jogo integrado";
@@ -132,7 +127,7 @@ export function initArcadeRoom(root) {
       root.querySelector("#space-invaders-frame").src = "about:blank";
       root.querySelector("#outrun-frame-wrap").hidden = false;
       root.querySelector("#outrun-frame").src = "./games/outrun/index.html";
-      overlay.hidden = true; help.textContent = "PC: setas/WASD aceleram e viram · Shift: nitro · Espaço: freio de mão. Celular: use os controles na tela.";
+      overlay.hidden = true; help.textContent = "PC: setas/WASD aceleram e viram · Shift: nitro · Espaço: freio de mão. Celular: pressione e segure ACELERAR e use ◀/▶ para virar.";
       levelLabel.textContent = "Corrida pseudo-3D"; scoreLabel.textContent = "Velocidade · voltas"; recordLabel.textContent = "Projeto independente";
       root.querySelector("#arcade-pause").hidden = true;
       root.querySelector(".arcade-control-pad").hidden = true;
@@ -149,7 +144,7 @@ export function initArcadeRoom(root) {
       root.querySelector("#arcade-canvas-wrap").hidden = true;
       root.querySelector("#space-invaders-frame-wrap").hidden = false;
       root.querySelector("#space-invaders-frame").src = "./games/space-invaders/index.html";
-      overlay.hidden = true; help.textContent = "← / → ou A / D: mover · Espaço: disparar · Enter: iniciar";
+      overlay.hidden = true; help.textContent = "PC: Enter inicia · ←/→ movem · Espaço dispara. Celular: use INICIAR, ◀, TIRO e ▶ dentro do jogo.";
       levelLabel.textContent = "Clássico de 1978"; scoreLabel.textContent = "Tiro e sobrevivência"; recordLabel.textContent = "Recorde salvo no jogo";
       root.querySelector("#arcade-pause").hidden = true;
       root.querySelector(".arcade-control-pad").hidden = true;
@@ -307,7 +302,6 @@ export function initArcadeRoom(root) {
     const next=e.target.closest("[data-cabinet-next]"); if(next){const i=cabinetOrder.indexOf(cabinetSelection);selectCabinetGame(cabinetOrder[(i+1)%cabinetOrder.length]);}
     const cabinetStart=e.target.closest("[data-cabinet-start]"); if(cabinetStart) startGame(cabinetSelection);
     const start=e.target.closest("[data-arcade-start]"); if(start) { selectCabinetGame(start.dataset.arcadeStart); startGame(start.dataset.arcadeStart); }
-    const era=e.target.closest("[data-era]"); if(era) { const was=era.getAttribute("aria-expanded")==="true"; root.querySelectorAll("[data-era]").forEach(b=>b.setAttribute("aria-expanded","false")); era.setAttribute("aria-expanded",String(!was)); }
     const pad=e.target.closest("[data-pad]");if(pad){touch.add(pad.dataset.pad);setTimeout(()=>touch.delete(pad.dataset.pad),150);}
   });
   selectCabinetGame(cabinetSelection);

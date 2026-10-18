@@ -9,6 +9,17 @@
   <script src="./game.js" defer></script>
 </head>
 <body>
-  <canvas id="gameCanvas" width="672" height="768" aria-label="Space Invaders. Use as setas para mover, Espaço para atirar e Enter para iniciar."></canvas>
+  <main class="invaders-layout">
+    <canvas id="gameCanvas" width="672" height="768" aria-label="Space Invaders. Use as setas para mover, Espaço para atirar e Enter para iniciar."></canvas>
+    <div id="mobile-invaders-controls" class="invaders-touch" aria-label="Controles para celular">
+      <button type="button" class="invaders-start" data-invader-key="Enter" aria-label="Iniciar ou reiniciar jogo">▶ INICIAR</button>
+      <div class="invaders-directions">
+        <button type="button" data-invader-key="ArrowLeft" aria-label="Mover canhão para esquerda">◀</button>
+        <button type="button" data-invader-key=" " aria-label="Disparar">● TIRO</button>
+        <button type="button" data-invader-key="ArrowRight" aria-label="Mover canhão para direita">▶</button>
+      </div>
+    </div>
+  </main>
+  <script src="./mobile-controls.js" defer></script>
 </body>
 </html>

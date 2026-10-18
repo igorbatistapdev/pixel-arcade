@@ -53,6 +53,20 @@ O acervo de consoles é alimentado pelo arquivo `data/consoles.json`, com **39 r
 
 ---
 
+# 🖼️ Jogos contemporâneos, novas sensibilidades
+
+A Home apresenta uma exposição cinematográfica dedicada à **interpretação artística de jogos contemporâneos**, conectando composição, atmosfera, imaginação, narrativa e sensibilidade, em diálogo com a Atividade Integradora VI. **Não é uma sétima sala:** o visitante explora a exposição diretamente na Home, sem perder acesso às seis salas originais.
+
+- **6 obras principais:** *Hollow Knight*, *Horizon Zero Dawn*, *Cyberpunk 2077*, *Marvel’s Spider-Man*, *The Last of Us* e *Minecraft*.
+- **6 olhares complementares:** *Ghost of Tsushima*, *Assassin’s Creed*, *Halo*, *Red Dead Redemption*, *Resident Evil* e *Hogwarts Legacy*.
+- **Interação:** ao selecionar uma imagem, abre-se um painel ampliado com comentário curatorial, pergunta de reflexão e acesso a uma sala relacionada. É possível fechar pelo botão, clicando no fundo ou pressionando `Esc`.
+- **Galerias atualizadas:** a seção **Sinta a arte dos games** recebeu novas artes de *Sonic*, *Pokémon*, *Star Wars* e *Mortal Kombat*. **Memórias que nos conectam** usa imagens de *Fortnite*, *Mario*, *Zelda* e *God of War* para trabalhar convivência, nostalgia, descoberta e superação.
+- **Interface:** mural responsivo, cores por temática, efeitos de profundidade, bordas luminosas, foco visível para teclado e respeito à configuração de movimento reduzido.
+
+As **20 imagens enviadas para esta atualização** foram otimizadas em WebP dentro de `assets/contemporaneo-*.webp`. Os direitos autorais continuam pertencendo aos titulares das obras; o envio de imagens para a curadoria **não representa, por si só, licença para sua redistribuição pública**.
+
+---
+
 # 📚 Contexto acadêmico
 
 | Informação | Descrição |
@@ -150,6 +164,18 @@ Uma das propostas centrais do projeto é demonstrar que os videogames podem desp
 | Imaginar novos mundos | Persistir e superar obstáculos | Sentir ritmo e movimento | Recordar histórias e pessoas |
 
 Essa área apresenta experiências visuais e referências a jogos conhecidos para convidar o visitante a refletir sobre como a arte digital influencia suas emoções.
+
+## 💖 Memórias que nos conectam — experiência interativa
+
+A Home conta com uma atividade curta de **reflexão sobre Sensibilidade e Estética**: o visitante responde à pergunta *“O que torna um jogo inesquecível para você?”* escolhendo uma entre quatro experiências:
+
+| ✨ Descoberta | 💗 Nostalgia | 🤝 Convivência | 🏆 Superação |
+|:---:|:---:|:---:|:---:|
+| Imaginar o desconhecido | Recordar fases da vida | Compartilhar momentos | Aprender com desafios |
+
+Cada opção atualiza um painel com **imagem, reflexão e caminho para outra sala**. É uma experiência de interpretação pessoal, **sem respostas certas ou erradas e sem transmissão ou armazenamento de respostas**. Sua finalidade é conectar histórias dos videogames à educação dos sentidos, à cultura e às relações humanas.
+
+A identidade da Home foi aprimorada com **moldura neon cinematográfica, miniaturas selecionáveis no carrossel, cards ilustrados das seis salas, galeria de imagens coloridas, efeitos de luz e animações responsivas**. As imagens já pertencentes ao acervo foram preservadas; as novas ilustrações vetoriais originais aparecem em `assets/home-memory-scene.svg` e `assets/home-sunset.svg`.
 
 ---
 
@@ -390,6 +416,8 @@ pixel-arcade/
 │   ├── pixel-logo-full.svg
 │   ├── capa-mario.webp
 │   ├── capa-sonic.webp
+│   ├── home-memory-scene.svg
+│   ├── home-sunset.svg
 │   └── ...
 │
 ├── css/                        # Estilos e animações
@@ -397,6 +425,7 @@ pixel-arcade/
 │   ├── home-v5.css
 │   ├── pixel-azul-petroleo.css
 │   ├── pixel-home-artistic.css
+│   ├── pixel-home-cinematic.css
 │   ├── quiz.css
 │   └── hardware-lab.css
 │

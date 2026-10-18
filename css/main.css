@@ -1160,3 +1160,36 @@ main:focus { outline: none; }
   .evo-slider-overlay h3 { font-size: 1.8rem; }
   .evo-shift-list li { font-size: .82rem; }
 }
+
+/* Sala 03: cards da arte abstrata sem sobreposição em telas pequenas. */
+@media (max-width:720px) {
+  .evo-mural { display:grid; grid-template-columns:minmax(0,1fr); align-content:start; gap:14px; padding:18px; min-height:0; height:auto; overflow:hidden; }
+  .evo-mural-panel { position:relative; inset:auto !important; left:auto !important; top:auto !important; transform:none !important; width:100% !important; max-width:100%; aspect-ratio:auto; height:112px; padding:12px; border-radius:16px; margin:0; z-index:2; }
+  .evo-mural-panel.is-pixel,.evo-mural-panel.is-sprite,.evo-mural-panel.is-polygon,.evo-mural-panel.is-modern { left:auto !important; top:auto !important; }
+  .evo-mural-track { left:50%; top:22px; bottom:22px; z-index:0; opacity:.5; }
+  .evo-mural-panel .evo-mural-core { inset:18% 12% 8%; }
+  .evo-mural-orbit { pointer-events:none; }
+}
+@media (max-width:400px) {
+  .evo-mural { padding:12px; gap:13px; }
+  .evo-mural-panel { height:108px; }
+}
+
+/* Embedded games: fit touch controls within the iframe on narrow portrait devices. */
+@media (max-width:620px) {
+  .arcade-game { padding:12px; }
+  .arcade-game-actions { width:100%; }
+  .arcade-game-actions .button { flex:1 1 130px; justify-content:center; }
+  .space-invaders-frame-wrap { min-height:0; }
+  .space-invaders-frame-wrap iframe { height:min(88dvh,760px); min-height:540px; }
+  .outrun-frame-wrap { min-height:0; }
+  .outrun-frame-wrap iframe { height:min(83dvh,720px); min-height:540px; }
+  .sonic-frame-wrap { min-height:0; }
+  .sonic-frame-wrap iframe { height:clamp(340px,58dvh,600px); min-height:340px; }
+}
+
+/* Bloco textual pedagógico. Não altera a interatividade de nenhuma sala. */
+.room-reflection { margin-top:34px; margin-bottom:40px; padding:clamp(20px,4vw,34px); border:1px solid rgba(255,212,71,.32); border-radius:18px; background:linear-gradient(125deg,rgba(12,47,67,.92),rgba(9,25,46,.97)); box-shadow:inset 0 1px rgba(255,255,255,.04); }
+.room-reflection .eyebrow { color:#ffd447; }
+.room-reflection h2 { font-size:clamp(1.4rem,3vw,2rem); margin:10px 0 12px; letter-spacing:-.025em; }
+.room-reflection p:last-child { color:#d1e9f5; max-width:780px; font-size:clamp(.95rem,2vw,1.1rem); line-height:1.7; }

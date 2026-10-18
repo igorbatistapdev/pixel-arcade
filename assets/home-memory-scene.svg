@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620" role="img" aria-label="Ilustração original: quarto de videogames com duas pessoas, console, TV e luz quente">
+<defs>
+<linearGradient id="wall" x2=".95" y2="1"><stop stop-color="#241936"/><stop offset=".5" stop-color="#542c55"/><stop offset="1" stop-color="#9a4762"/></linearGradient>
+<linearGradient id="floor" x2="0" y2="1"><stop stop-color="#352445"/><stop offset="1" stop-color="#080e27"/></linearGradient>
+<linearGradient id="screen" x2="0" y2="1"><stop stop-color="#61dff2"/><stop offset=".5" stop-color="#62b0dc"/><stop offset="1" stop-color="#2d8bd2"/></linearGradient>
+<linearGradient id="sunset" x2="0" y2="1"><stop stop-color="#ffcf8d"/><stop offset=".5" stop-color="#ff7b8a"/><stop offset="1" stop-color="#8c4a9e"/></linearGradient>
+<radialGradient id="lampGlow"><stop stop-color="#ffc778" stop-opacity=".74"/><stop offset=".38" stop-color="#f7a15b" stop-opacity=".28"/><stop offset="1" stop-color="#f8b66b" stop-opacity="0"/></radialGradient>
+<radialGradient id="tvGlow"><stop stop-color="#4fc7fa" stop-opacity=".5"/><stop offset="1" stop-color="#4fc7fa" stop-opacity="0"/></radialGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="shadow"><feGaussianBlur stdDeviation="13"/></filter>
+<pattern id="wallGrid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" stroke="#f5b2c8" stroke-opacity=".06" fill="none"/></pattern>
+</defs>
+<rect width="920" height="620" fill="url(#wall)"/>
+<rect width="920" height="620" fill="url(#wallGrid)"/>
+<rect x="530" y="0" width="390" height="520" fill="url(#lampGlow)" opacity=".45"/>
+<path d="M0 420H920V620H0Z" fill="url(#floor)"/>
+<path d="M0 426H920" stroke="#bd6382" stroke-opacity=".6" stroke-width="6"/>
+<!-- sunset window -->
+<rect x="570" y="54" width="290" height="236" rx="12" fill="#2b1a3c" stroke="#e38c9e" stroke-width="11"/>
+<rect x="583" y="68" width="264" height="209" fill="url(#sunset)"/>
+<circle cx="733" cy="164" r="70" fill="#ffd39c" opacity=".8"/>
+<path d="M583 228l50 -59 47 51 40 -47 63 62 64 -49v91H583Z" fill="#743e79"/>
+<path d="M583 249l41 -35 57 32 53 -51 61 54 52 -28v56H583Z" fill="#46315e"/>
+<path d="M583 262l18 -27h28v42h-46Zm40 15v-50h18v50Zm66 0v-36h42v36Zm71 0v-59h26v59Zm34 0v-42h34v42Z" fill="#2c2355"/>
+<path d="M716 68V277M583 176H847" stroke="#3b254a" stroke-width="9"/>
+<path d="M582 176H848" stroke="#f3bdd0" stroke-opacity=".2" stroke-width="2"/>
+<!-- shelves -->
+<rect x="36" y="93" width="246" height="14" fill="#2d203b" stroke="#d4818b" stroke-width="3"/>
+<rect x="39" y="197" width="212" height="14" fill="#30203e" stroke="#d4818b" stroke-width="3"/>
+<rect x="46" y="53" width="39" height="39" rx="4" fill="#102945" stroke="#9f76cb" stroke-width="3"/>
+<path d="M57 66h18v13H57z" fill="#30b8e6"/>
+<rect x="104" y="54" width="13" height="37" fill="#ec7d91"/><rect x="121" y="63" width="23" height="28" fill="#676ac6"/><rect x="149" y="57" width="30" height="34" fill="#f1ad7c"/><rect x="186" y="45" width="38" height="45" fill="#354c86"/>
+<rect x="221" y="65" width="43" height="26" rx="5" fill="#342b5d" stroke="#ffad91" stroke-width="3"/>
+<circle cx="232" cy="78" r="3" fill="#9fffe7"/><circle cx="252" cy="78" r="3" fill="#ffaac0"/>
+<rect x="53" y="149" width="40" height="47" rx="3" fill="#123353" stroke="#71d6ff" stroke-width="3"/>
+<rect x="104" y="151" width="16" height="44" fill="#f5b98a"/><rect x="129" y="147" width="19" height="48" fill="#b164a2"/><rect x="156" y="164" width="24" height="31" fill="#597bc0"/>
+<path d="M195 196v-27h13v-12h14v39Z" fill="#4ca2a2"/>
+<!-- frame and poster -->
+<rect x="344" y="47" width="140" height="128" rx="4" fill="#251c3b" stroke="#e7a080" stroke-width="7"/>
+<rect x="357" y="59" width="114" height="101" fill="#13254a"/>
+<path d="M370 145h90l-16 -22 -17 9 -19 -29 -16 20 -22 -8Z" fill="#6d4e9a"/>
+<circle cx="421" cy="85" r="15" fill="#fbd285"/>
+<path d="M370 145v-20h13v20m56 0v-14h13v14" stroke="#37d3ec" stroke-width="7"/>
+<!-- wall lamps -->
+<ellipse cx="533" cy="342" rx="244" ry="220" fill="url(#lampGlow)"/>
+<path d="M518 237l-12 26h54l-12 -26Z" fill="#ffbd73" stroke="#ffdbaa" stroke-width="5"/>
+<path d="M531 264v80" stroke="#442747" stroke-width="9"/>
+<ellipse cx="531" cy="348" rx="18" ry="7" fill="#211b36"/>
+<!-- TV glow -->
+<ellipse cx="258" cy="371" rx="250" ry="185" fill="url(#tvGlow)"/>
+<!-- console & TV stand -->
+<rect x="51" y="412" width="485" height="21" rx="5" fill="#aa6579"/>
+<rect x="72" y="429" width="32" height="100" fill="#7b4868"/>
+<rect x="474" y="429" width="32" height="100" fill="#7b4868"/>
+<rect x="110" y="443" width="332" height="63" rx="8" fill="#422d55" stroke="#a46d84" stroke-width="4"/>
+<rect x="150" y="460" width="99" height="31" rx="5" fill="#141a31" stroke="#7bb2c4" stroke-width="3"/>
+<path d="M183 475h32m-16 -16v31" stroke="#5cd3e0" stroke-width="4"/>
+<circle cx="352" cy="475" r="5" fill="#f9989f"/><circle cx="373" cy="470" r="5" fill="#ffd06f"/>
+<rect x="70" y="245" width="462" height="174" rx="23" fill="#1b1a38" stroke="#5b4566" stroke-width="14"/>
+<rect x="93" y="263" width="416" height="137" rx="8" fill="url(#screen)"/>
+<!-- original platformer landscape on TV -->
+<path d="M94 329l55 -43 51 42 70 -39 70 35 50 -44 59 46 60 -22v96H93Z" fill="#6c80c0"/>
+<path d="M93 344l46 -20 29 16 39 -35 46 44 42 -16 43 24 42 -26 55 17 74 -32v84H93Z" fill="#4ca4c4"/>
+<rect x="93" y="360" width="416" height="40" fill="#248c81"/>
+<path d="M93 367h416v12H93Z" fill="#62ba7c"/>
+<path d="M195 365v-59m-15 9 17 -20 15 19m-18 -6 0 -16" stroke="#246856" stroke-width="10"/>
+<circle cx="193" cy="304" r="20" fill="#43a778"/>
+<path d="M290 358v-42h58v42m-9 -43v-17h-43v17" fill="#d97f89" stroke="#612c5f" stroke-width="5"/>
+<rect x="320" y="335" width="10" height="22" fill="#3a3061"/>
+<rect x="419" y="331" width="21" height="29" fill="#ffda81"/><rect x="425" y="326" width="12" height="8" fill="#ffda81"/>
+<path d="M440 349h15v11h-15" fill="#ff987f"/>
+<circle cx="120" cy="290" r="18" fill="white" opacity=".85"/><circle cx="143" cy="287" r="21" fill="white" opacity=".85"/>
+<path d="M93 399H509" stroke="#30d8d3" stroke-width="5"/>
+<ellipse cx="290" cy="283" rx="161" ry="18" fill="#fff" opacity=".08"/>
+<!-- TV knobs -->
+<circle cx="518" cy="284" r="6" fill="#ffb77b"/><circle cx="518" cy="308" r="6" fill="#80cde0"/>
+<!-- plants -->
+<rect x="794" y="414" width="64" height="72" fill="#bf6d72"/><path d="M810 414q-80 -55 -37 -89q12 47 38 56q-38 -96 11 -135q18 49 -3 103q50 -79 77 -63q-15 52 -73 96q57 -38 77 5q-38 11 -70 27" fill="#317b75" stroke="#19515e" stroke-width="6"/>
+<!-- carpet -->
+<ellipse cx="541" cy="545" rx="322" ry="54" fill="#110d29" opacity=".42" filter="url(#shadow)"/>
+<path d="M235 505l535 -2 97 96H160Z" fill="#735074" opacity=".7" stroke="#d28aa0" stroke-width="6"/>
+<path d="M251 520l508 0m-553 42h607" stroke="#e4a3a0" stroke-opacity=".17" stroke-width="6"/>
+<!-- figures sitting in front of TV, original silhouettes -->
+<ellipse cx="640" cy="553" rx="127" ry="22" fill="#120f28" opacity=".7" filter="url(#shadow)"/>
+<path d="M562 534c-12 -79 15 -126 55 -141c44 -19 80 14 85 58l29 74 -21 29 -57 -17 -48 13Z" fill="#263b72" stroke="#172647" stroke-width="7"/>
+<path d="M585 401c-17 -49 9 -84 41 -89c42 -2 62 22 56 61l-23 38 -56 13Z" fill="#251c3a"/>
+<path d="M602 387c-12 -40 -5 -54 31 -56c29 4 41 18 29 55l-19 24 -25 -2Z" fill="#e7a67f"/>
+<path d="M592 374c-17 -31 9 -60 42 -63c36 1 47 26 36 50l-20 -15 -29 -2 -18 24Z" fill="#1d1831"/>
+<path d="M570 476l-58 41 44 27 65 -33m74 -30 61 31 -30 29 -71 -31" fill="#233267" stroke="#15213f" stroke-width="10"/>
+<path d="M584 447l-37 20m138 -22 48 29" stroke="#cc9b83" stroke-width="15" stroke-linecap="round"/>
+<ellipse cx="716" cy="562" rx="78" ry="13" fill="#160d2e" opacity=".7"/>
+<path d="M716 542q-25 -69 15 -105q37 -30 80 17l25 84 -47 13Z" fill="#a95383" stroke="#46264b" stroke-width="8"/>
+<path d="M728 425q-27 -53 10 -74q43 -12 57 29l-16 44Z" fill="#241933"/>
+<path d="M743 411q-16 -20 -5 -44q27 -19 45 13l-6 35Z" fill="#e8a383"/>
+<path d="M737 364q11 -33 39 -23q32 17 12 43q-18 -19 -34 -14Z" fill="#201b32"/>
+<path d="M740 498l-49 39m100 -44 58 43" stroke="#ad6289" stroke-width="24" stroke-linecap="round"/>
+<path d="M738 462l-27 25m91 -20 24 22" stroke="#e1a080" stroke-width="13" stroke-linecap="round"/>
+<!-- gamepads in hands -->
+<rect x="690" y="473" width="70" height="32" rx="15" fill="#19243c" stroke="#68b9d0" stroke-width="4"/>
+<path d="M708 484v11m-5 -5h11" stroke="#78e8ef" stroke-width="3"/>
+<circle cx="741" cy="485" r="3" fill="#ffbd69"/><circle cx="748" cy="491" r="3" fill="#ff77a6"/>
+
+<rect x="255" y="201" width="3" height="3" fill="#ffe3b1" opacity="0.38"/>
+<rect x="873" y="178" width="4" height="4" fill="#79dbf3" opacity="0.17"/>
+<rect x="743" y="555" width="3" height="3" fill="#79dbf3" opacity="0.3"/>
+<rect x="477" y="48" width="3" height="3" fill="#ffe3b1" opacity="0.38"/>
+<rect x="78" y="183" width="4" height="4" fill="#f797b0" opacity="0.38"/>
+<rect x="434" y="23" width="4" height="4" fill="#ffe3b1" opacity="0.22"/>
+<rect x="616" y="161" width="5" height="5" fill="#f797b0" opacity="0.38"/>
+<rect x="186" y="367" width="5" height="5" fill="#ffe3b1" opacity="0.17"/>
+<rect x="647" y="38" width="3" height="3" fill="#ffe3b1" opacity="0.3"/>
+<rect x="678" y="283" width="3" height="3" fill="#f797b0" opacity="0.38"/>
+<rect x="579" y="355" width="3" height="3" fill="#ffe3b1" opacity="0.3"/>
+<rect x="17" y="290" width="5" height="5" fill="#f797b0" opacity="0.17"/>
+<rect x="615" y="486" width="2" height="2" fill="#f797b0" opacity="0.3"/>
+<rect x="462" y="57" width="4" height="4" fill="#79dbf3" opacity="0.22"/>
+<rect x="779" y="66" width="5" height="5" fill="#f797b0" opacity="0.38"/>
+<rect x="665" y="306" width="5" height="5" fill="#79dbf3" opacity="0.38"/>
+<rect x="39" y="134" width="3" height="3" fill="#f797b0" opacity="0.38"/>
+<rect x="302" y="133" width="3" height="3" fill="#f797b0" opacity="0.3"/>
+<rect x="23" y="219" width="5" height="5" fill="#f797b0" opacity="0.38"/>
+<rect x="234" y="490" width="5" height="5" fill="#ffe3b1" opacity="0.3"/>
+<rect x="46" y="305" width="4" height="4" fill="#79dbf3" opacity="0.3"/>
+<rect x="239" y="544" width="5" height="5" fill="#f797b0" opacity="0.22"/>
+<rect x="767" y="127" width="2" height="2" fill="#f797b0" opacity="0.17"/>
+<rect x="123" y="378" width="4" height="4" fill="#79dbf3" opacity="0.38"/>
+<rect x="625" y="299" width="3" height="3" fill="#ffe3b1" opacity="0.3"/>
+<rect x="549" y="120" width="3" height="3" fill="#ffe3b1" opacity="0.38"/>
+<rect x="697" y="76" width="5" height="5" fill="#f797b0" opacity="0.22"/>
+<rect x="849" y="60" width="3" height="3" fill="#ffe3b1" opacity="0.38"/>
+<path d="M0 611h920" stroke="#eaa382" stroke-opacity=".21" stroke-width="15"/></svg>

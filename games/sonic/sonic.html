@@ -15,7 +15,7 @@
       <button type="button" data-key="ArrowRight" aria-label="Mover para direita">▶</button>
     </div>
     <div class="mobile-actions">
-      <button type="button" data-key="Enter" aria-label="Iniciar ou pausar">Ⅱ</button>
+      <button type="button" data-key="Enter" aria-label="Iniciar, confirmar seleção ou pausar">▶ START</button>
       <button type="button" data-key=" " aria-label="Pular">PULAR</button>
     </div>
   </div>
@@ -25,12 +25,20 @@
     (() => {
       const controls = document.getElementById('mobile-controls');
       const isTouch = matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
-      if (!isTouch) return;
+      if (!isTouch && window.innerWidth > 760) return;
       controls.classList.add('is-touch');
+      const codes = { ArrowLeft:37, ArrowRight:39, ArrowUp:38, ArrowDown:40, Enter:13, ' ':32 };
+      const send = (key, type) => {
+        const event = new KeyboardEvent(type, { key, code: key === ' ' ? 'Space' : key, bubbles:true, cancelable:true });
+        // Open Sonic JS reads legacy keyCode rather than KeyboardEvent.key.
+        Object.defineProperty(event, 'keyCode', { get: () => codes[key] || 0 });
+        Object.defineProperty(event, 'which', { get: () => codes[key] || 0 });
+        window.dispatchEvent(event);
+      };
       const release = button => {
         if (!button.dataset.active) return;
         const key = button.dataset.key;
-        window.dispatchEvent(new KeyboardEvent('keyup', { key, bubbles: true, cancelable: true }));
+        send(key, 'keyup');
         delete button.dataset.active;
       };
       controls.querySelectorAll('button').forEach(button => {
@@ -39,16 +47,17 @@
           if (button.dataset.active) return;
           button.dataset.active = '1';
           const key = button.dataset.key;
-          window.dispatchEvent(new KeyboardEvent('keydown', { key, bubbles: true, cancelable: true }));
+          send(key, 'keydown');
           if (key === 'Enter') setTimeout(() => release(button), 140);
         };
-        button.addEventListener('pointerdown', press);
+        button.addEventListener('pointerdown', event => { press(event); try { button.setPointerCapture(event.pointerId); } catch (_) {} });
         button.addEventListener('pointerup', () => release(button));
         button.addEventListener('pointercancel', () => release(button));
-        button.addEventListener('pointerleave', () => release(button));
+        button.addEventListener('lostpointercapture', () => release(button));
         button.addEventListener('contextmenu', event => event.preventDefault());
       });
       window.addEventListener('blur', () => controls.querySelectorAll('button').forEach(release));
+      document.addEventListener('visibilitychange', () => { if(document.hidden) controls.querySelectorAll('button').forEach(release); });
     })();
   </script>
 </body>
