@@ -1,435 +1,91 @@
 
 <div align="center">
 
-  <img src="assets/pixel-logo-full.svg" alt="PIXEL — Museu Digital dos Videogames" width="420" />
+# PIXEL — Museu Interativo dos Videogames
 
-  # PIXEL - Museu Interativo dos Videogames
+**Mais que jogos. Memórias que nos conectam.**
 
-  ### Mais que jogos. Memórias que nos conectam.
+<a href="https://igorbatistapdev.github.io/pixel-arcade/"><img src="assets/readme/hero-home.png" alt="Página inicial do PIXEL, com o título Uma história feita de pixels, um painel de jogos iluminado em ciano e miniaturas do carrossel" width="100%"></a>
 
-  Uma experiência digital para **explorar a história dos videogames**, compreender sua evolução e descobrir como a arte, a tecnologia e a memória afetiva transformam a maneira como sentimos e nos relacionamos com os jogos.
+[**Abrir o projeto**](https://igorbatistapdev.github.io/pixel-arcade/) · [**Explorar o repositório**](https://github.com/igorbatistapdev/pixel-arcade)
 
-  [![GitHub](https://img.shields.io/badge/GitHub-PIXEL_ARCADE-0B1E3A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/igorbatistapdev/pixel-arcade)
-  ![Projeto Acadêmico](https://img.shields.io/badge/Projeto-Acad%C3%AAmico-FFD200?style=for-the-badge&labelColor=0B1E3A)
-  ![Acesso Gratuito](https://img.shields.io/badge/Acesso-Gratuito-00C2FF?style=for-the-badge&labelColor=0B1E3A)
+![Projeto acadêmico](https://img.shields.io/badge/Projeto-acad%C3%AAmico-FFD200?style=flat-square&labelColor=0B1E3A) ![Sensibilidade e Estética](https://img.shields.io/badge/Eixo-Sensibilidade%20e%20Est%C3%A9tica-00C2FF?style=flat-square&labelColor=0B1E3A) ![Site estático](https://img.shields.io/badge/Plataforma-GitHub%20Pages-0B1E3A?style=flat-square&logo=github&logoColor=white)
 
-  <br>
-
-  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-  ![JSON](https://img.shields.io/badge/JSON-Dados-405D72?style=flat-square)
-  ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Publicação-222222?style=flat-square&logo=githubpages&logoColor=white)
+**Atividade Integradora VI · Sistemas de Informação · Unilasalle-RJ**
 
 </div>
 
 ---
+
+## Visão geral
+
+O **PIXEL** é um museu digital interativo dedicado à história e à cultura dos videogames. Por meio de exposições, comparações visuais, jogos e atividades educativas, aproxima **história, arte, tecnologia e memória afetiva**. O visitante é convidado a observar, experimentar e refletir sobre o significado cultural e humano dos jogos.
+
+<div align="center">
+<img src="assets/readme/visao-geral.png" alt="Quatro pilares do PIXEL: História — arquivo e patrimônio; Arte — cor e expressão; Tecnologia — ciência e interação; Memória — afeto e convivência" width="100%">
+</div>
+
+## Panorama do museu
+
+| Salas | Jogos no arcade | Questões no quiz | Artes no carrossel | Registros de consoles |
+|:---:|:---:|:---:|:---:|:---:|
+| **6** | **4** | **24** | **8** | **39** |
+
+<sub>Dados descritos na versão documentada do projeto. O acervo de consoles está organizado em `data/consoles.json`; as experiências são acessíveis pelo navegador, sem cadastro.</sub>
+
+## Galeria de telas
+
+As imagens abaixo apresentam a **Home e as seis salas**. Cada captura deve ser produzida no próprio site, preferencialmente em tela desktop com os elementos da sala visíveis.
 
 <div align="center">
 
-**APRENDA · EXPLORE · JOGUE · SINTA**
+<a href="https://igorbatistapdev.github.io/pixel-arcade/"><img src="assets/readme/hero-home.png" alt="Home do PIXEL: carrossel de jogos, identidade azul-petróleo e chamada Uma história feita de pixels" width="90%"></a>
 
-## 🎮 Um museu que você não apenas visita. Você vive.
+**Home — entrada do museu e experiências de arte, história e memória**
 
-</div>
-
-O **PIXEL** é um museu digital interativo dedicado à história e à cultura dos videogames. A proposta é transformar conteúdos históricos e tecnológicos em uma experiência **visual, acessível e participativa**, combinando exposições, comparações gráficas, jogos, desafios e experimentos sobre o funcionamento dos consoles.
-
-Mas existe uma pergunta que acompanha toda a experiência:
-
-> **Por que certos jogos continuam vivos na nossa memória, mesmo depois que desligamos o console?**
-
-A resposta envolve mais que processadores ou resolução de tela. Envolve **arte, trilhas sonoras, personagens, descobertas, desafios, amizade, imaginação e sentimentos**.
-
-O PIXEL parte desse encontro entre técnica e sensibilidade para mostrar que os videogames também são expressão cultural.
-
-### ✨ O projeto em números
-
-| 🏛️ 6 salas temáticas | 🕹️ 4 experiências no arcade | 🎓 24 questões no quiz | 🎨 8 artes no carrossel |
-|:---:|:---:|:---:|:---:|
-| História e experimentação | Jogos integrados ao museu | Aprendizado com explicações | Imagens e animações na home |
-
-O acervo de consoles é alimentado pelo arquivo `data/consoles.json`, com **39 registros**.
-
----
-
-# 🖼️ Jogos contemporâneos, novas sensibilidades
-
-A Home apresenta uma exposição cinematográfica dedicada à **interpretação artística de jogos contemporâneos**, conectando composição, atmosfera, imaginação, narrativa e sensibilidade, em diálogo com a Atividade Integradora VI. **Não é uma sétima sala:** o visitante explora a exposição diretamente na Home, sem perder acesso às seis salas originais.
-
-- **6 obras principais:** *Hollow Knight*, *Horizon Zero Dawn*, *Cyberpunk 2077*, *Marvel’s Spider-Man*, *The Last of Us* e *Minecraft*.
-- **6 olhares complementares:** *Ghost of Tsushima*, *Assassin’s Creed*, *Halo*, *Red Dead Redemption*, *Resident Evil* e *Hogwarts Legacy*.
-- **Interação:** ao selecionar uma imagem, abre-se um painel ampliado com comentário curatorial, pergunta de reflexão e acesso a uma sala relacionada. É possível fechar pelo botão, clicando no fundo ou pressionando `Esc`.
-- **Galerias atualizadas:** a seção **Sinta a arte dos games** recebeu novas artes de *Sonic*, *Pokémon*, *Star Wars* e *Mortal Kombat*. **Memórias que nos conectam** usa imagens de *Fortnite*, *Mario*, *Zelda* e *God of War* para trabalhar convivência, nostalgia, descoberta e superação.
-- **Interface:** mural responsivo, cores por temática, efeitos de profundidade, bordas luminosas, foco visível para teclado e respeito à configuração de movimento reduzido.
-
-As **20 imagens enviadas para esta atualização** foram otimizadas em WebP dentro de `assets/contemporaneo-*.webp`. Os direitos autorais continuam pertencendo aos titulares das obras; o envio de imagens para a curadoria **não representa, por si só, licença para sua redistribuição pública**.
-
----
-
-# 📚 Contexto acadêmico
-
-| Informação | Descrição |
-|---|---|
-| **Instituição** | Unilasalle-RJ — Rio de Janeiro |
-| **Curso** | Sistemas de Informação |
-| **Responsável pelo repositório** | Igor Batista Pereira |
-| **Componente curricular** | Atividade Integradora VI |
-| **Eixo temático** | Sensibilidade e Estética |
-| **Natureza** | Projeto acadêmico e educacional |
-| **Finalidade** | Sem fins comerciais |
-| **Formato** | Museu virtual interativo, acessível pelo navegador |
-
-## 🎓 Por que videogames em Sensibilidade e Estética?
-
-A estética não está restrita à pintura, à escultura ou ao cinema. Ela também se manifesta nas **cores, formas, sons, movimentos, interfaces e narrativas** que compõem um jogo digital.
-
-Um videogame pode ser observado tanto como **produto de uma evolução tecnológica** quanto como **obra de expressão artística**.
-
-A limitação de pixels nos primeiros consoles, por exemplo, influenciou decisões criativas de artistas e desenvolvedores. Com o avanço do hardware, surgiram novas possibilidades de composição, ambientação, iluminação, som e interatividade.
-
-No contexto da **Atividade Integradora VI — Sensibilidade e Estética**, o PIXEL propõe conectar diferentes dimensões:
-
-| Dimensão | Relação com o projeto |
-|---|---|
-| ❤️ **Sensibilidade** | Emoções, percepções e experiências despertadas pelos videogames |
-| 🎨 **Estética** | Linguagens visuais, sonoras e narrativas dos jogos |
-| 💭 **Memória afetiva** | Lembranças pessoais e coletivas associadas aos games |
-| 🤝 **Cultura e convivência** | Relações sociais construídas dentro e fora das partidas |
-| 💻 **Tecnologia** | Evolução dos consoles, do hardware e dos recursos computacionais |
-| 📖 **Educação** | Aprendizagem por meio de exploração e experimentação |
-
-> **Propósito acadêmico:** demonstrar, por meio de uma aplicação web, como a Computação pode contribuir para a divulgação cultural e para a construção de experiências educativas que valorizam a arte e a sensibilidade humana.
-
-## 🎯 Objetivos do projeto
-
-### Objetivo geral
-
-Desenvolver um ambiente digital educativo e interativo que apresente a trajetória dos videogames e relacione sua evolução tecnológica à estética, à cultura e à memória afetiva.
-
-### Objetivos específicos
-
-1. Organizar marcos históricos de forma compreensível e acompanhada de referências.
-2. Apresentar diferentes gerações de consoles e suas características.
-3. Evidenciar mudanças na linguagem visual dos jogos por meio de comparações.
-4. Promover aprendizagem ativa com jogos, desafios e atividades interativas.
-5. Explicar conceitos de hardware de maneira visual e experimental.
-6. Valorizar a dimensão artística e social dos videogames.
-7. Oferecer uma experiência responsiva, sem exigir cadastro ou instalação.
-
----
-
-# 🎨 Identidade visual — do pixel à emoção
-
-A linguagem visual do PIXEL combina a atmosfera nostálgica dos fliperamas com uma interface digital contemporânea.
-
-| Elemento | Identidade | Intenção |
-|---|---|---|
-| **Azul-petróleo profundo** | `#0B1E3A` | Criar profundidade e ambientação imersiva |
-| **Ciano luminoso** | `#00C2FF` | Representar energia, tecnologia e movimento |
-| **Amarelo arcade** | `#FFD200` | Destacar interações e referências retrô |
-| **Pixel art e neon** | Geometria, luzes e animações | Remeter às origens dos jogos eletrônicos |
-| **Galeria afetiva** | Composições coloridas | Valorizar imaginação, lembranças e emoção |
-
-## 🖼️ Uma capa viva
-
-Na página inicial, um **painel inspirado em um monitor de arcade** exibe automaticamente oito imagens de universos marcantes dos videogames.
-
-O carrossel oferece:
-
-- Reprodução automática;
-- Transições suaves;
-- Controles manuais;
-- Brilhos e iluminação em neon;
-- Raios e efeitos elétricos estilizados;
-- Adaptação a diferentes tamanhos de tela.
-
-<div align="center">
-
-| | | | |
-|:---:|:---:|:---:|:---:|
-| <img src="assets/capa-mario.webp" width="170" alt="Mario"> | <img src="assets/capa-sonic.webp" width="170" alt="Sonic"> | <img src="assets/capa-street-fighter.webp" width="170" alt="Street Fighter"> | <img src="assets/capa-metal-slug.webp" width="170" alt="Metal Slug"> |
-| **Mario** | **Sonic** | **Street Fighter** | **Metal Slug** |
-| <img src="assets/capa-mortal-kombat.webp" width="170" alt="Mortal Kombat"> | <img src="assets/capa-star-wars.webp" width="170" alt="Star Wars"> | <img src="assets/capa-crash.webp" width="170" alt="Crash"> | <img src="assets/capa-mega-man.webp" width="170" alt="Mega Man"> |
-| **Mortal Kombat** | **Star Wars** | **Crash** | **Mega Man X** |
+<table>
+<tr>
+<td width="50%" align="center"><a href="https://igorbatistapdev.github.io/pixel-arcade/#/sala/linha-do-tempo"><img src="assets/readme/sala-01-linha-do-tempo.png" alt="Sala 01: linha do tempo dos videogames com períodos, datas e marcos históricos" width="100%"></a><br><strong>01 — Linha do tempo</strong><br><sub>Marcos da história dos videogames</sub></td>
+<td width="50%" align="center"><a href="https://igorbatistapdev.github.io/pixel-arcade/#/sala/consoles"><img src="assets/readme/sala-02-consoles.png" alt="Sala 02: galeria pesquisável de consoles com imagens e informações históricas" width="100%"></a><br><strong>02 — Galeria de consoles</strong><br><sub>Plataformas e gerações</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://igorbatistapdev.github.io/pixel-arcade/#/sala/evolucao-grafica"><img src="assets/readme/sala-03-evolucao-grafica.png" alt="Sala 03: exposição de evolução gráfica com comparações visuais entre jogos" width="100%"></a><br><strong>03 — Evolução gráfica</strong><br><sub>Da pixel art aos mundos tridimensionais</sub></td>
+<td align="center"><a href="https://igorbatistapdev.github.io/pixel-arcade/#/sala/mundos-dos-jogos"><img src="assets/readme/sala-04-pixel-arcade.png" alt="Sala 04: PIXEL ARCADE com Space Invaders aberto na área de jogo" width="100%"></a><br><strong>04 — PIXEL ARCADE</strong><br><sub>Space Invaders e outras experiências jogáveis</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://igorbatistapdev.github.io/pixel-arcade/#/sala/quiz"><img src="assets/readme/sala-05-quiz-historico.png" alt="Sala 05: interface do quiz histórico com uma pergunta e alternativas" width="100%"></a><br><strong>05 — Quiz histórico</strong><br><sub>Aprendizagem com perguntas e explicações</sub></td>
+<td align="center"><a href="https://igorbatistapdev.github.io/pixel-arcade/#/sala/por-dentro-do-console"><img src="assets/readme/sala-06-hardware-lab.png" alt="Sala 06: laboratório interativo com elementos de hardware e experimentos visuais" width="100%"></a><br><strong>06 — Por dentro do console</strong><br><sub>Hardware, componentes e experimentação</sub></td>
+</tr>
+</table>
 
 </div>
 
-## 💛 Sinta a arte dos games
+### Experiências adicionais da Home
 
-Uma das propostas centrais do projeto é demonstrar que os videogames podem despertar diferentes sensações.
+A Home também inclui a galeria **Sinta a arte dos games**, a exposição **Jogos contemporâneos, novas sensibilidades** — com imagens ampliadas e comentários curatoriais — e **Memórias que nos conectam**, atividade com quatro escolhas reflexivas: descoberta, nostalgia, convivência e superação.
 
-| ✨ Descoberta | ⚔️ Desafio | ⚡ Velocidade | 💛 Memória |
-|:---:|:---:|:---:|:---:|
-| Imaginar novos mundos | Persistir e superar obstáculos | Sentir ritmo e movimento | Recordar histórias e pessoas |
+## Percurso do visitante
 
-Essa área apresenta experiências visuais e referências a jogos conhecidos para convidar o visitante a refletir sobre como a arte digital influencia suas emoções.
-
-## 💖 Memórias que nos conectam — experiência interativa
-
-A Home conta com uma atividade curta de **reflexão sobre Sensibilidade e Estética**: o visitante responde à pergunta *“O que torna um jogo inesquecível para você?”* escolhendo uma entre quatro experiências:
-
-| ✨ Descoberta | 💗 Nostalgia | 🤝 Convivência | 🏆 Superação |
-|:---:|:---:|:---:|:---:|
-| Imaginar o desconhecido | Recordar fases da vida | Compartilhar momentos | Aprender com desafios |
-
-Cada opção atualiza um painel com **imagem, reflexão e caminho para outra sala**. É uma experiência de interpretação pessoal, **sem respostas certas ou erradas e sem transmissão ou armazenamento de respostas**. Sua finalidade é conectar histórias dos videogames à educação dos sentidos, à cultura e às relações humanas.
-
-A identidade da Home foi aprimorada com **moldura neon cinematográfica, miniaturas selecionáveis no carrossel, cards ilustrados das seis salas, galeria de imagens coloridas, efeitos de luz e animações responsivas**. As imagens já pertencentes ao acervo foram preservadas; as novas ilustrações vetoriais originais aparecem em `assets/home-memory-scene.svg` e `assets/home-sunset.svg`.
-
----
-
-# 🏛️ Explore as seis salas do museu
-
-Cada sala oferece uma maneira diferente de conhecer os videogames: **observar, comparar, jogar, responder e experimentar**.
-
-## 01 · Linha do Tempo — Uma história que continua
-
-<img src="assets/home-room-01.svg" alt="Sala 01 — Linha do tempo" width="640">
-
-Uma viagem por marcos históricos, dos experimentos que antecederam os consoles aos sistemas que ampliaram a presença dos games no cotidiano.
-
-### O que o visitante encontra?
-
-- Linha do tempo interativa;
-- Períodos importantes da história dos videogames;
-- Datas e acontecimentos históricos;
-- Filtros de navegação;
-- Explicações e curiosidades;
-- Referências para aprofundamento;
-- Contextualização da evolução tecnológica.
-
-A exposição procura distinguir experimentos, demonstrações, lançamentos comerciais e particularidades regionais quando aplicável.
-
-**Rota:** `#/sala/linha-do-tempo`
-
----
-
-## 02 · Galeria de Consoles — Máquinas que fizeram história
-
-<img src="assets/home-room-02.svg" alt="Sala 02 — Galeria de consoles" width="640">
-
-Um acervo pesquisável dedicado às plataformas que marcaram diferentes gerações.
-
-### Funcionalidades
-
-- Pesquisa de consoles;
-- Fichas informativas;
-- Fabricantes e anos de lançamento;
-- Gerações de videogames;
-- Características técnicas;
-- Jogos representativos;
-- Curiosidades históricas;
-- Fontes e referências.
-
-A base atual reúne **39 registros**, incluindo informações regionais quando documentadas.
-
-**Rota:** `#/sala/consoles`
-
----
-
-## 03 · Evolução Gráfica — Quando a imagem conta histórias
-
-<img src="assets/home-room-03.svg" alt="Sala 03 — Evolução gráfica" width="640">
-
-Uma exposição sobre como limitações e avanços técnicos influenciaram a direção de arte dos jogos — dos pixels e sprites às experiências tridimensionais e cinematográficas.
-
-### Experiências disponíveis
-
-- Exploração de diferentes linguagens visuais;
-- Comparações entre períodos técnicos;
-- Comparador de imagens com controle deslizante;
-- Estudos sobre mudanças em franquias conhecidas;
-- Conteúdo explicativo e histórico;
-- Estudo de caso sobre a evolução visual de Sonic.
-
-### Franquias utilizadas nas comparações
-
-| Franquia | Proposta de análise |
-|---|---|
-| **Mario** | Evolução de cenários, personagens e cores |
-| **Tomb Raider** | Transformação dos modelos e ambientes tridimensionais |
-| **Star Wars** | Mudanças na representação de universos cinematográficos |
-| **Street Fighter** | Evolução dos personagens e estilos de luta |
-| **Grand Theft Auto** | Ampliação dos cenários e do detalhamento visual |
-
-O objetivo não é apenas identificar qual jogo possui gráficos mais modernos, mas compreender **como diferentes tecnologias ampliaram as possibilidades artísticas dos desenvolvedores**.
-
-**Rota:** `#/sala/evolucao-grafica`
-
----
-
-## 04 · PIXEL ARCADE — A história também se joga
-
-<img src="assets/home-room-04.svg" alt="Sala 04 — PIXEL Arcade" width="640">
-
-Inspirada nos fliperamas clássicos, essa sala transforma a visita ao museu em uma experiência jogável.
-
-O ambiente apresenta um gabinete de arcade interativo, seleção de experiências e jogos acessíveis diretamente pelo navegador.
-
-### 🕹️ Jogos disponíveis
-
-| Jogo / experiência | Características |
-|---|---|
-| **Space Invaders** | Reflexos, pontuação e ação arcade |
-| **Pac-Man** | Labirintos, coleta de pontos e estratégia |
-| **OutRun JS** | Corrida em perspectiva pseudo-3D e estética retrô |
-| **Open Sonic JS** | Plataforma lateral, velocidade e exploração |
-
-### Recursos da sala
-
-- Seleção de jogos;
-- Interface inspirada em máquinas de fliperama;
-- Jogos executados no navegador;
-- Experiências interativas;
-- Controles adaptados em partes do acervo;
-- Recursos de pontuação e recordes locais quando disponíveis.
-
-> **Por que incluir jogos jogáveis?** Porque compreender a história dos videogames também envolve experimentar suas mecânicas, suas limitações e as sensações produzidas pela interação.
-
-**Rota:** `#/sala/mundos-dos-jogos`
-
----
-
-## 05 · Quiz Histórico — Aprenda jogando
-
-<img src="assets/home-room-05.svg" alt="Sala 05 — Quiz histórico" width="640">
-
-Uma experiência de aprendizagem ativa para testar o conhecimento adquirido durante a visita.
-
-### Funcionalidades
-
-- Banco com **24 questões**;
-- Diferentes níveis de dificuldade;
-- **Jornada Histórica:** 18 perguntas;
-- **Desafio Rápido:** 10 perguntas;
-- Alternativas e sistema de pontuação;
-- Feedback para as respostas;
-- Explicações educativas;
-- Revisão dos erros;
-- Conquistas e recordes locais;
-- Cronômetro configurável;
-- Suporte a atalhos de teclado.
-
-A proposta do quiz não é simplesmente avaliar o visitante.
-
-**Cada resposta representa uma oportunidade de descobrir algo novo sobre a história dos videogames.**
-
-**Rota:** `#/sala/quiz`
-
----
-
-## 06 · Por Dentro do Console — O laboratório dos videogames
-
-<img src="assets/hardware-hero.svg" alt="Sala 06 — Laboratório de hardware" width="640">
-
-Uma abordagem interativa da tecnologia que sustenta as experiências digitais.
-
-### O que você pode explorar?
-
-- Funcionamento básico da CPU;
-- Memória e armazenamento;
-- Processamento gráfico;
-- Recursos de áudio;
-- Evolução dos componentes;
-- Representações visuais de hardware;
-- Experimentos interativos;
-- Comparações entre tecnologias.
-
-### 🔬 Hardware Lab 3D
-
-Uma experiência visual que permite explorar componentes e compreender suas funções.
-
-### 🎮 Experimentos de renderização
-
-O visitante pode modificar parâmetros de uma cena demonstrativa em Canvas para observar diferenças visuais e compreender conceitos relacionados ao processamento gráfico.
-
-### 💎 Objetos e significados
-
-Itens, ícones e elementos característicos dos jogos ajudam a demonstrar como pequenas representações visuais conseguem transmitir informações, emoções e significados.
-
-> **Observação:** os experimentos de renderização possuem finalidade didática. Seus indicadores não representam benchmarks reais de consoles comerciais.
-
-**Rota:** `#/sala/por-dentro-do-console`
-
----
-
-# 🧠 A experiência que queremos provocar
-
-O PIXEL não foi pensado apenas como uma sequência de páginas.
-
-Seu percurso permite que visitantes de diferentes gerações façam conexões entre **o que os jogos eram**, **como se transformaram** e **o que significam para nós**.
-
-```text
-          DESCOBRIR
-    Conhecer marcos e histórias
-              │
-              ▼
-          OBSERVAR
-    Perceber estilos e mudanças
-              │
-              ▼
-          EXPERIMENTAR
-       Interagir e jogar
-              │
-              ▼
-           SENTIR
-   Reconhecer emoções e memórias
-              │
-              ▼
-         COMPARTILHAR
-   Conversar sobre experiências
+```mermaid
+flowchart LR
+    A[Descobrir<br/>a história] --> B[Observar<br/>arte e mudanças]
+    B --> C[Experimentar<br/>jogos e recursos]
+    C --> D[Sentir<br/>emoções e memórias]
+    D --> E[Compartilhar<br/>reflexões]
 ```
 
-**Tecnologia** explica parte de como os jogos foram construídos.
+O percurso é uma **proposta pedagógica de visita**, não uma sequência obrigatória: as salas podem ser exploradas livremente.
 
-**Arte e sensibilidade** ajudam a entender por que eles permanecem importantes para tantas pessoas.
-
----
-
-# 🛠️ Tecnologias e arquitetura
-
-O PIXEL foi desenvolvido como uma aplicação web **estática, modular e executada no navegador**, sem necessidade de banco de dados ou servidor de aplicação.
-
-| Tecnologia | Utilização |
-|---|---|
-| **HTML5** | Estrutura das páginas e componentes |
-| **CSS3** | Estilização, responsividade e animações |
-| **JavaScript** | Navegação, interatividade, jogos e quiz |
-| **JSON** | Organização dos dados e conteúdos históricos |
-| **Canvas API** | Renderização e experimentos gráficos |
-| **SVG** | Logotipos, ícones e ilustrações |
-| **WebP** | Imagens otimizadas |
-| **Git** | Controle de versões |
-| **GitHub** | Hospedagem do repositório |
-| **GitHub Pages** | Publicação estática do site |
-
-## 📁 Estrutura do projeto
+## Estrutura do projeto
 
 ```text
 pixel-arcade/
-│
-├── index.html                  # Página principal
-├── README.md                   # Documentação
-│
-├── assets/                     # Imagens, capas e identidade visual
-│   ├── pixel-logo-full.svg
-│   ├── capa-mario.webp
-│   ├── capa-sonic.webp
-│   ├── home-memory-scene.svg
-│   ├── home-sunset.svg
-│   └── ...
-│
-├── css/                        # Estilos e animações
-│   ├── main.css
-│   ├── home-v5.css
-│   ├── pixel-azul-petroleo.css
-│   ├── pixel-home-artistic.css
-│   ├── pixel-home-cinematic.css
-│   ├── quiz.css
-│   └── hardware-lab.css
-│
-├── js/                         # Lógica da aplicação
+├── index.html               # Entrada da aplicação
+├── README.md                # Documentação
+├── assets/                  # Capas, capturas, SVGs e imagens
+│   └── readme/              # Materiais visuais desta documentação
+├── css/                     # Estilos, responsividade e animações
+├── js/                      # Rotas, páginas e interações
 │   ├── app.js
 │   ├── views.js
 │   ├── navigation.js
@@ -438,132 +94,216 @@ pixel-arcade/
 │   ├── graphics.js
 │   ├── arcade.js
 │   ├── quiz.js
-│   ├── inside-console.js
 │   └── ...
-│
-├── data/                       # Conteúdos estruturados
+├── data/                    # Arquivos JSON do acervo
 │   ├── rooms.json
 │   ├── timeline-events.json
 │   ├── consoles.json
 │   ├── graphics-evolution.json
 │   └── quiz.json
-│
-└── games/                      # Experiências jogáveis
+└── games/                   # Jogos integrados ao museu
     ├── space-invaders/
     ├── pacman/
     ├── outrun/
     └── sonic/
 ```
 
+## Arquitetura e funcionamento
+
+```mermaid
+flowchart TD
+    U[Visitante no navegador] --> I[index.html]
+    I --> R[JavaScript: app.js e roteamento por hash]
+    R --> V[Views e módulos das salas]
+    V --> D[Dados JSON: salas, consoles, eras e quiz]
+    V --> C[CSS, imagens SVG e WebP]
+    V --> A[PIXEL ARCADE]
+    A --> F[Jogos locais em games/ integrados por iframe]
+```
+
+O PIXEL é uma **aplicação estática**, desenvolvida com HTML, CSS e JavaScript. A navegação entre as salas utiliza endereços com `#/sala/...`; o conteúdo estruturado está em arquivos JSON. **Não há backend nem banco de dados de aplicação.**
+
 ---
 
-# 🚀 Como executar o projeto
+## Relação com a Atividade Integradora VI
 
-## Pré-requisitos
+### Sensibilidade e Estética: arte, ciência e cultura
 
-- Navegador atualizado;
-- Python 3 ou outro servidor HTTP estático;
-- Git, caso deseje clonar o repositório.
+O projeto foi desenvolvido no contexto da **Atividade Integradora VI — Sensibilidade e Estética**, do curso de **Sistemas de Informação da Unilasalle-RJ**. Sua proposta está ligada à área de **Cultura, Educação e Comunicação** e interpreta os videogames como manifestações da cultura visual e digital, que articulam **expressão artística, conhecimento técnico e experiência humana**.
 
-## 1. Clone o repositório
+Ao explorar sons, imagens, movimentos, narrativas e interações, o visitante pode refletir sobre como uma linguagem criada pela Computação também mobiliza **percepções, imaginação, afetos e relações sociais**.
+
+> **Questão central:** como os videogames, além de produtos tecnológicos, podem ser compreendidos como experiências estéticas e referências da memória cultural?
+
+### Dimensões formativas
+
+| Dimensão | Onde aparece no PIXEL | Contribuição educativa |
+|---|---|---|
+| **Sensibilidade** | Sinta a arte dos games; exposição contemporânea | Perceber atmosfera, composição, movimento e sensações |
+| **Estética** | Sala 03 — Evolução gráfica | Comparar linguagens artísticas e escolhas visuais |
+| **Memória afetiva** | Memórias que nos conectam | Refletir sobre lembranças e experiências pessoais |
+| **Cultura e convivência** | Sala 01; atividade de memórias | Compreender os jogos como referências sociais e culturais |
+| **Tecnologia** | Sala 02 e Sala 06 | Relacionar hardware e programação à experiência audiovisual |
+| **Educação** | Sala 04 — Arcade; Sala 05 — Quiz | Aprender por experimentação, desafio e reflexão |
+
+### Patrimônio cultural e memória
+
+A linha do tempo e a galeria de consoles organizam referências da história dos videogames, apresentando objetos, jogos e transformações técnicas que também marcam hábitos, linguagens e gerações. O projeto **não reivindica reconhecimento patrimonial formal** para o acervo: utiliza o conceito de patrimônio cultural como perspectiva de estudo e valorização dessas memórias.
+
+### Vivência estética
+
+A exposição **Jogos contemporâneos, novas sensibilidades** relaciona cenas de diferentes jogos a temas como silêncio, contemplação, movimento, narrativas e identidade visual. O visitante pode abrir uma imagem, ler um comentário curatorial e considerar uma pergunta reflexiva — sem a necessidade de uma resposta certa.
+
+### Convivência e experiência humana
+
+Em **Memórias que nos conectam**, o visitante escolhe entre descoberta, nostalgia, convivência e superação. O conteúdo muda para apresentar uma reflexão associada à escolha. Essa atividade **não coleta nem armazena respostas pessoais**.
+
+## Objetivos do projeto
+
+**Objetivo geral:** desenvolver um museu digital interativo que apresente a história dos videogames e conecte sua evolução tecnológica à arte, à cultura e à sensibilidade humana.
+
+**Objetivos específicos:**
+
+1. Organizar marcos históricos, plataformas e referências documentadas.
+2. Apresentar diferentes expressões visuais e sua evolução técnica.
+3. Estimular a observação e a reflexão por meio de exposições interativas.
+4. Promover aprendizagem ativa com jogos e quiz histórico.
+5. Explicar conceitos de hardware e Computação de forma visual.
+6. Valorizar memória afetiva, criatividade e experiências compartilhadas.
+7. Facilitar o acesso ao acervo por meio de um site responsivo e sem cadastro.
+
+## Público-alvo e uso educacional
+
+O museu é pensado para **estudantes, visitantes interessados em videogames e pessoas de diferentes gerações**. Pode apoiar apresentações acadêmicas e atividades educativas em escolas, mediante mediação e adequação ao público.
+
+O acesso ocorre pelo navegador. **Não é necessário criar uma conta**, instalar um aplicativo ou disponibilizar informações pessoais para explorar as seções públicas.
+
+## Contribuição da Computação
+
+O curso de Sistemas de Informação contribui para a organização e a apresentação do conhecimento por meio de **dados estruturados, interfaces e interatividade**:
+
+| Recurso técnico | Aplicação cultural e educativa |
+|---|---|
+| **JSON** | Organização de marcos, consoles e perguntas em dados reutilizáveis |
+| **JavaScript e roteamento** | Visita entre salas e atualização dos conteúdos sem backend |
+| **Canvas e jogos** | Experimentação direta de linguagens interativas |
+| **HTML e CSS responsivo** | Consulta do acervo em diferentes tamanhos de tela |
+| **GitHub Pages** | Publicação do site estático por endereço acessível na web |
+
+## Rigor histórico e curadoria
+
+O projeto procura distinguir três naturezas de conteúdo:
+
+| Tipo | Como deve ser interpretado |
+|---|---|
+| **Fatos documentados** | Datas, eventos e especificações apoiados por fontes identificadas |
+| **Interpretações curatoriais** | Leituras sobre estética, cultura e emoções propostas para reflexão |
+| **Criações do PIXEL** | Ilustrações, textos autorais, interfaces e experimentos didáticos |
+
+As comparações visuais têm propósito educativo e não pretendem medir objetivamente o valor artístico de jogos diferentes. A linha do tempo é seletiva; **não representa um inventário exaustivo** da história dos videogames.
+
+## Registro da atividade de extensão
+
+| Campo | Registro |
+|---|---|
+| Professor(a) orientador(a) | **[PREENCHER]** |
+| Turma / período | **[PREENCHER]** |
+| Data de apresentação | **[PREENCHER]** |
+| Local ou modalidade da ação | **[PREENCHER]** |
+| Público participante / atingido | **[PREENCHER]** |
+| Atividades realizadas com o público | **[PREENCHER]** |
+| Registro de avaliação ou devolutiva | **[PREENCHER]** |
+
+*O preenchimento depende da realização e do registro efetivo das atividades. A publicação do repositório, por si só, não comprova alcance de público ou validação institucional.*
+
+---
+
+## Identidade visual
+
+<div align="center">
+<img src="assets/readme/identidade-visual.png" alt="Paleta visual do PIXEL: azul-petróleo #0B1E3A, ciano #00C2FF, amarelo #FFD200 e texto claro #E6EBF2" width="100%">
+</div>
+
+A interface combina **referências à pixel art e aos fliperamas** com um tratamento digital contemporâneo. Utiliza tipografia de inspiração arcade nos destaques e texto de leitura contínua com fontes modernas, além de efeitos luminosos e animações discretas. Entre as fontes utilizadas no projeto estão **Press Start 2P** e **Space Grotesk**.
+
+## Tecnologias utilizadas
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=flat-square&logo=githubpages&logoColor=white)
+
+| Tecnologia | Finalidade |
+|---|---|
+| HTML5 | Estrutura semântica das páginas |
+| CSS3 | Layout, identidade, animações e responsividade |
+| JavaScript | Navegação, conteúdo dinâmico, quiz e interações |
+| JSON | Organização do acervo e das perguntas |
+| Canvas API | Experimentos gráficos e experiências interativas |
+| SVG e WebP | Ilustrações vetoriais e imagens otimizadas |
+| Git / GitHub | Versionamento e repositório |
+| GitHub Pages | Hospedagem do site estático |
+
+## Como executar localmente
+
+**Requisitos:** navegador atualizado e Python 3 (ou outro servidor HTTP estático). Git é necessário apenas para clonar o repositório.
+
+**1. Obtenha os arquivos:**
 
 ```bash
 git clone https://github.com/igorbatistapdev/pixel-arcade.git
 cd pixel-arcade
 ```
 
-Se você baixou o projeto em ZIP, extraia o conteúdo e abra no terminal a pasta que contém o arquivo `index.html`.
+**2. Inicie um servidor HTTP na pasta que contém `index.html`:**
 
-## 2. Inicie o servidor local
-
-### Windows — PowerShell
+Windows (PowerShell):
 
 ```powershell
 py -m http.server 8000
 ```
 
-### Linux ou macOS
+Linux ou macOS:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-## 3. Acesse no navegador
+**3. Acesse:** http://localhost:8000
 
-```text
-http://localhost:8000
-```
+Para interromper, pressione `Ctrl + C` no terminal. Abrir `index.html` diretamente por `file://` pode impedir o carregamento de módulos e arquivos JSON.
 
-Pronto! Agora você pode explorar as salas, consultar o acervo, realizar o quiz e experimentar os jogos.
+## Publicação no GitHub Pages
 
-Para encerrar o servidor, pressione `Ctrl + C` no terminal.
+1. Abra o repositório no GitHub e entre em **Settings → Pages**.
+2. Em **Build and deployment**, escolha **Deploy from a branch**.
+3. Selecione `main` e `/(root)` e salve.
+4. Aguarde a conclusão da publicação e abra o endereço do projeto.
 
-> **Importante:** recomenda-se executar o projeto por um servidor HTTP local porque o JavaScript carrega módulos e dados JSON. Abrir diretamente o `index.html` pelo protocolo `file://` pode gerar restrições de acesso.
+**Site:** https://igorbatistapdev.github.io/pixel-arcade/
 
----
+## Acessibilidade e responsividade
 
-# 🌍 Publicação no GitHub Pages
+O PIXEL possui recursos voltados à navegação e à adaptação da interface, incluindo:
 
-O PIXEL pode ser hospedado como um site estático pelo GitHub Pages.
+- Layouts responsivos para diferentes tamanhos de tela.
+- Botões e links identificáveis, com textos alternativos em imagens relevantes.
+- Interações por teclado em recursos específicos e controles por toque em partes do arcade.
+- Respeito à preferência por movimento reduzido em animações implementadas com esse suporte.
+- Controles do carrossel e pausa durante determinadas interações.
+- Acesso público às seções do museu sem cadastro.
 
-### Passo a passo
+Esses recursos **não equivalem a uma certificação de conformidade integral com WCAG**. Compatibilidade, contraste e usabilidade devem continuar sendo testados em dispositivos e navegadores reais.
 
-1. Acesse o repositório no GitHub.
-2. Abra **Settings**.
-3. Clique em **Pages**.
-4. Em **Build and deployment**, selecione **Deploy from a branch**.
-5. Escolha a branch `main`.
-6. Selecione a pasta `/(root)`.
-7. Salve as configurações.
-8. Aguarde a conclusão da publicação.
+## Referências históricas
 
-O endereço esperado é:
-
-```text
-https://igorbatistapdev.github.io/pixel-arcade/
-```
-
-> O endereço acima somente estará disponível após a configuração e a conclusão da publicação no GitHub Pages.
-
----
-
-# ♿ Responsividade e acessibilidade
-
-O projeto busca oferecer uma experiência acessível e adequada a diferentes dispositivos.
-
-### Cuidados adotados
-
-- Interface responsiva;
-- Adaptação para celulares, tablets e computadores;
-- Navegação por botões e links identificáveis;
-- Descrições em elementos visuais;
-- Controles de teclado nas experiências em que foram implementados;
-- Atenção à preferência por movimento reduzido;
-- Pausa do carrossel durante determinadas interações;
-- Conteúdos disponíveis sem cadastro.
-
-A acessibilidade e a compatibilidade com dispositivos são aspectos de melhoria contínua e devem ser acompanhadas por testes práticos.
-
----
-
-# 🔎 Referências históricas
-
-A curadoria procura distinguir fatos documentados, marcos tecnológicos e interpretações sobre estética e cultura.
-
-Entre as referências utilizadas no conteúdo histórico estão:
+Fontes indicadas no acervo e no README de referência:
 
 - [Computer History Museum — Graphics & Games](https://www.computerhistory.org/timeline/graphics-games/)
 - [Nintendo — História da empresa](https://www.nintendo.co.jp/corporate/history/index.html)
 - [Nintendo — História das consolas](https://www.nintendo.com/pt-pt/Consolas-e-acessorios/Historia-da-Nintendo/Historia-da-Nintendo-625945.html)
 - [PlayStation — História dos consoles](https://www.playstation.com/pt-br/playstation-history/)
 
-Outras referências específicas estão associadas aos registros das salas e aos arquivos disponíveis no diretório `data/`.
+Referências adicionais estão associadas aos registros do acervo e aos arquivos no diretório `data/`.
 
-O acervo possui caráter educativo e não pretende representar de maneira exaustiva toda a história dos videogames.
-
----
-
-# ⚖️ Direitos autorais e uso educacional
+## Direitos autorais e uso educacional
 
 O **PIXEL é um projeto acadêmico independente, sem finalidade comercial**, desenvolvido para fins de estudo e apresentação educacional.
 
@@ -580,43 +320,20 @@ O projeto não representa, não é patrocinado e não possui vínculo oficial co
 
 A proposta do projeto é exclusivamente educativa, cultural e acadêmica.
 
----
-
-# 💛 O que torna o PIXEL especial?
-
-O PIXEL procura unir **rigor histórico, exploração interativa e sensibilidade estética** em uma experiência que conversa com quem jogou no passado, com quem joga hoje e com quem está descobrindo esse universo pela primeira vez.
-
-Não se trata apenas de comparar gráficos antigos com modernos ou conhecer especificações técnicas.
-
-Trata-se de compreender que, por trás de cada tela, também existem **pessoas, criatividade, escolhas artísticas, emoções e histórias compartilhadas**.
-
-A evolução dos videogames não pode ser medida apenas pela quantidade de pixels, pela potência de um processador ou pelo realismo de uma imagem.
-
-Ela também está presente na capacidade que os jogos possuem de **criar lembranças, despertar sentimentos e conectar pessoas**.
-
----
+## Créditos acadêmicos
 
 <div align="center">
 
-  ### 🟡 PRESS START TO REMEMBER
+<img src="assets/pixel-logo-symbol.svg" alt="Símbolo pixelado do museu PIXEL" width="80">
 
-  **Os consoles mudam. As tecnologias evoluem. Algumas emoções permanecem.**
+**PIXEL — Museu Interativo dos Videogames**
 
-  <br>
+**Igor Batista Pereira**  
+Sistemas de Informação · Unilasalle-RJ  
+Atividade Integradora VI — Sensibilidade e Estética
 
-  <img src="assets/pixel-logo-symbol.svg" alt="Símbolo do PIXEL" width="90" />
+**Os consoles mudam. As tecnologias evoluem. Algumas emoções permanecem.**
 
-  <br><br>
-
-  **PIXEL · HISTÓRIA · ARTE · TECNOLOGIA · MEMÓRIA**
-
-  <br>
-
-  Desenvolvido no contexto da **Atividade Integradora VI — Sensibilidade e Estética**  
-  **Sistemas de Informação · Unilasalle-RJ**
-
-  <br>
-
-  [⬆ Voltar ao início](#pixel--museu-interativo-dos-videogames)
+[**Visitar o museu**](https://igorbatistapdev.github.io/pixel-arcade/) · [**Voltar ao início**](#pixel--museu-interativo-dos-videogames)
 
 </div>
